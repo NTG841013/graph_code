@@ -38,7 +38,7 @@ export function processRepo(root: string, filePaths: string[]): { edges: Edge[];
       const normalizedRoot = path.resolve(absoluteRoot);
       
       // Ensure the target is within the root
-      if (targetPath.startsWith(normalizedRoot)) {
+      if (targetPath.startsWith(normalizedRoot.endsWith(path.sep) ? normalizedRoot : normalizedRoot + path.sep)) {
         const to = path.relative(normalizedRoot, targetPath).replace(/\\/g, '/');
         edges.push({ from, to, type });
       } else {
