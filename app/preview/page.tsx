@@ -74,8 +74,8 @@ export default function PreviewPage() {
         <main className="relative flex-1 bg-background overflow-hidden">
           <MapCanvas 
             analysis={MOCK_ANALYSIS} 
-            selectedFilePath={selectedFile?.path}
-            selectedFolderId={selectedFolder?.id}
+            selectedFilePath={selectedFile?.path ?? null}
+            selectedFolderId={selectedFolder?.id ?? null}
             onFileSelect={setSelectedFile}
             onFolderSelect={setSelectedFolder}
           />
