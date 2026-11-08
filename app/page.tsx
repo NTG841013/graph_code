@@ -39,7 +39,7 @@ async function OrganizationHome() {
 
         <Suspense
           fallback={
-            <div className="mt-8 h-48 animate-pulse border border-border bg-surface/30" />
+            <div className="mt-8 h-48 border border-border bg-surface/30" />
           }
         >
           <AnalysisList orgName={orgName} />
