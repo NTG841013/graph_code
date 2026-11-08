@@ -5,6 +5,7 @@ import {
   WebhookEvent,
   OrganizationInvitationJSON,
   OrganizationMembershipJSON,
+  OrganizationJSON,
   DeletedObjectJSON,
 } from "@clerk/nextjs/server";
 
@@ -54,6 +55,7 @@ export async function POST(req: Request) {
   let invitationId: string | null = null;
   let invitedEmail: string | null = null;
   let role: string | null = null;
+  let organizationName: string | null = null;
 
   switch (eventType) {
     case "organizationInvitation.created":
@@ -84,6 +86,13 @@ export async function POST(req: Request) {
       role = data.role;
       break;
     }
+    case "organization.created":
+    case "organization.updated": {
+      const data = eventData as OrganizationJSON;
+      organizationId = data.id;
+      organizationName = data.name;
+      break;
+    }
     case "organization.deleted": {
       const data = eventData as DeletedObjectJSON;
       organizationId = data.id ?? null;
@@ -111,6 +120,7 @@ export async function POST(req: Request) {
     p_invitation_id: invitationId,
     p_invited_email: invitedEmail,
     p_role: role,
+    p_name: organizationName,
   });
 
   if (error) {
