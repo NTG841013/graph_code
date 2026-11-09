@@ -1,6 +1,5 @@
 import { getAnalyses, type AnalysisResponse } from "@/app/lib/data/analyses";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; page?: number }) {
   let response: AnalysisResponse;
@@ -18,11 +17,7 @@ export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; pa
 
   const { data: analyses, totalCount, totalPages } = response;
 
-  if (totalCount > 0 && analyses.length === 0 && page > 1) {
-    redirect(`/?page=${totalPages}`);
-  }
-
-  if (!analyses || analyses.length === 0) {
+  if (totalCount === 0) {
     return (
       <div className="mt-10 border border-dashed border-border p-12 text-center">
         <p className="text-sm text-muted">No repository analyses yet.</p>
@@ -79,40 +74,48 @@ export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; pa
             </tr>
           </thead>
           <tbody className="divide-y divide-border/20">
-            {analyses.map((analysis) => {
-              const [owner, repo] = (analysis.projects?.name || "unnamed/project").split('/');
-              return (
-                <tr key={analysis.id} className="group align-top">
-                  <td className="px-1 py-3">
-                    <div className="text-muted/80">
-                      {owner}{repo ? '/' : ''}<span className="font-bold text-foreground">{repo || ''}</span>
-                    </div>
-                    {analysis.status === 'failed' && analysis.error_message && (
-                      <div className="mt-1 text-[10px] text-muted leading-tight">
-                        {analysis.error_message}
+            {analyses.length > 0 ? (
+              analyses.map((analysis) => {
+                const [owner, repo] = (analysis.projects?.name || "unnamed/project").split('/');
+                return (
+                  <tr key={analysis.id} className="group align-top">
+                    <td className="px-1 py-3">
+                      <div className="text-muted/80">
+                        {owner}{repo ? '/' : ''}<span className="font-bold text-foreground">{repo || ''}</span>
                       </div>
-                    )}
-                  </td>
-                  <td className="px-1 py-3">
-                    <div className="flex items-center gap-2 text-muted">
-                      <StatusIcon status={analysis.status} className="w-3.5 h-3.5" />
-                      <span>{analysis.status === 'running' ? 'parsing' : analysis.status === 'pending' ? 'queued' : analysis.status === 'completed' ? 'complete' : analysis.status}</span>
-                    </div>
-                  </td>
-                    <td className="px-1 py-3 text-muted">
-                      {analysis.commit_hash ? analysis.commit_hash.substring(0, 7) : "—"}
+                      {analysis.status === 'failed' && analysis.error_message && (
+                        <div className="mt-1 text-[10px] text-muted leading-tight">
+                          {analysis.error_message}
+                        </div>
+                      )}
                     </td>
-                  <td className="px-1 py-3 text-muted whitespace-nowrap">
-                    {formatRelativeTime(analysis.created_at)}
-                  </td>
-                  <td className="px-1 py-3 text-muted whitespace-nowrap">
-                    {analysis.status === 'completed' || analysis.status === 'failed' 
-                      ? formatRelativeTime(analysis.finished_at || analysis.created_at)
-                      : "—"}
-                  </td>
-                </tr>
-              );
-            })}
+                    <td className="px-1 py-3">
+                      <div className="flex items-center gap-2 text-muted">
+                        <StatusIcon status={analysis.status} className="w-3.5 h-3.5" />
+                        <span>{analysis.status === 'running' ? 'parsing' : analysis.status === 'pending' ? 'queued' : analysis.status === 'completed' ? 'complete' : analysis.status}</span>
+                      </div>
+                    </td>
+                      <td className="px-1 py-3 text-muted">
+                        {analysis.commit_hash ? analysis.commit_hash.substring(0, 7) : "—"}
+                      </td>
+                    <td className="px-1 py-3 text-muted whitespace-nowrap">
+                      {formatRelativeTime(analysis.created_at)}
+                    </td>
+                    <td className="px-1 py-3 text-muted whitespace-nowrap">
+                      {analysis.status === 'completed' || analysis.status === 'failed' 
+                        ? formatRelativeTime(analysis.finished_at || analysis.created_at)
+                        : "—"}
+                    </td>
+                  </tr>
+                );
+              })
+            ) : (
+              <tr>
+                <td colSpan={5} className="px-1 py-12 text-center text-muted/50 font-mono italic">
+                  No analyses found on this page.
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>

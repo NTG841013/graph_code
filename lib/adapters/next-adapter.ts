@@ -24,14 +24,8 @@ export const NextAdapter: ParserAdapter = {
   },
 
   shouldInclude(path: string): boolean {
-    const excluded = [
-      /node_modules/,
-      /\.next/,
-      /\.git/,
-      /dist/,
-      /\.turbo/,
-    ];
-    return !excluded.some(p => p.test(path));
+    const excluded = /(?:^|\/)(?:node_modules|\.next|\.git|dist|\.turbo)(?:\/|$)/;
+    return !excluded.test(path);
   },
 
   resolveImport(_sourceFile: string, _specifier: string): string | null {

@@ -53,6 +53,8 @@ describe('NextAdapter', () => {
     it('includes source files', () => {
       expect(NextAdapter.shouldInclude('app/page.tsx')).toBe(true);
       expect(NextAdapter.shouldInclude('lib/parser/graph.ts')).toBe(true);
+      expect(NextAdapter.shouldInclude('lib/distribution.ts')).toBe(true);
+      expect(NextAdapter.shouldInclude('components/distance.tsx')).toBe(true);
     });
   });
 });

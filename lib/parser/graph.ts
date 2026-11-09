@@ -180,37 +180,65 @@ function findSCCs(nodes: string[], adjacency: Map<string, string[]>): string[][]
   const lowlink = new Map<string, number>();
   const sccs: string[][] = [];
 
-  function strongconnect(u: string) {
-    indices.set(u, index);
-    lowlink.set(u, index);
+  for (const startNode of nodes) {
+    if (indices.has(startNode)) continue;
+
+    const workStack: { u: string; children: string[]; nextChildIndex: number }[] = [
+      {
+        u: startNode,
+        children: adjacency.get(startNode) || [],
+        nextChildIndex: 0,
+      },
+    ];
+
+    indices.set(startNode, index);
+    lowlink.set(startNode, index);
     index++;
-    stack.push(u);
-    onStack.add(u);
+    stack.push(startNode);
+    onStack.add(startNode);
 
-    for (const v of (adjacency.get(u) || [])) {
-      if (!indices.has(v)) {
-        strongconnect(v);
-        lowlink.set(u, Math.min(lowlink.get(u)!, lowlink.get(v)!));
-      } else if (onStack.has(v)) {
-        lowlink.set(u, Math.min(lowlink.get(u)!, indices.get(v)!));
+    while (workStack.length > 0) {
+      const current = workStack[workStack.length - 1];
+      const u = current.u;
+
+      if (current.nextChildIndex < current.children.length) {
+        const v = current.children[current.nextChildIndex];
+        current.nextChildIndex++;
+
+        if (!indices.has(v)) {
+          indices.set(v, index);
+          lowlink.set(v, index);
+          index++;
+          stack.push(v);
+          onStack.add(v);
+
+          workStack.push({
+            u: v,
+            children: adjacency.get(v) || [],
+            nextChildIndex: 0,
+          });
+        } else if (onStack.has(v)) {
+          lowlink.set(u, Math.min(lowlink.get(u)!, indices.get(v)!));
+        }
+      } else {
+        workStack.pop();
+
+        if (lowlink.get(u) === indices.get(u)) {
+          const scc: string[] = [];
+          let node;
+          do {
+            node = stack.pop()!;
+            onStack.delete(node);
+            scc.push(node);
+          } while (u !== node);
+          sccs.push(scc);
+        }
+
+        if (workStack.length > 0) {
+          const parent = workStack[workStack.length - 1];
+          lowlink.set(parent.u, Math.min(lowlink.get(parent.u)!, lowlink.get(u)!));
+        }
       }
-    }
-
-    if (lowlink.get(u) === indices.get(u)) {
-      const scc: string[] = [];
-      let v;
-      do {
-        v = stack.pop()!;
-        onStack.delete(v);
-        scc.push(v);
-      } while (u !== v);
-      sccs.push(scc);
-    }
-  }
-
-  for (const node of nodes) {
-    if (!indices.has(node)) {
-      strongconnect(node);
     }
   }
   return sccs;
