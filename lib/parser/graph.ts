@@ -7,10 +7,11 @@ export interface GraphInsight {
   data?: unknown;
 }
 
-export function getBlastRadius(
+function walkGraph(
   edges: Edge[],
   startNode: string,
-  maxDepth: number = 2
+  direction: 'up' | 'down',
+  maxDepth: number
 ): string[] {
   const result = new Set<string>();
   let currentLayer = new Set([startNode]);
@@ -19,9 +20,12 @@ export function getBlastRadius(
     const nextLayer = new Set<string>();
     for (const node of currentLayer) {
       for (const edge of edges) {
-        if (edge.from === node && !result.has(edge.to) && edge.to !== startNode) {
-          nextLayer.add(edge.to);
-          result.add(edge.to);
+        const match = direction === 'down' ? edge.from === node : edge.to === node;
+        const target = direction === 'down' ? edge.to : edge.from;
+
+        if (match && !result.has(target) && target !== startNode) {
+          nextLayer.add(target);
+          result.add(target);
         }
       }
     }
@@ -32,29 +36,20 @@ export function getBlastRadius(
   return Array.from(result);
 }
 
+export function getBlastRadius(
+  edges: Edge[],
+  startNode: string,
+  maxDepth: number = 2
+): string[] {
+  return walkGraph(edges, startNode, 'up', maxDepth);
+}
+
 export function getDependencyChain(
   edges: Edge[],
   startNode: string,
   maxDepth: number = 2
 ): string[] {
-  const result = new Set<string>();
-  let currentLayer = new Set([startNode]);
-
-  for (let depth = 0; depth < maxDepth; depth++) {
-    const nextLayer = new Set<string>();
-    for (const node of currentLayer) {
-      for (const edge of edges) {
-        if (edge.to === node && !result.has(edge.from) && edge.from !== startNode) {
-          nextLayer.add(edge.from);
-          result.add(edge.from);
-        }
-      }
-    }
-    if (nextLayer.size === 0) break;
-    currentLayer = nextLayer;
-  }
-
-  return Array.from(result);
+  return walkGraph(edges, startNode, 'down', maxDepth);
 }
 
 export function findInsights(analysis: AnalysisResult): GraphInsight[] {
