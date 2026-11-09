@@ -1,4 +1,6 @@
 import { createSupabaseAdminClient } from "@/app/lib/supabase/server";
+import { Database } from "@/app/lib/supabase/database.types";
+import { SupabaseClient } from "@supabase/supabase-js";
 import { Webhook } from "svix";
 import { headers } from "next/headers";
 import {
@@ -107,8 +109,9 @@ export async function POST(req: Request) {
     return new Response("Missing organization ID", { status: 400 });
   }
 
-  const supabase = createSupabaseAdminClient();
+  const supabase = createSupabaseAdminClient() as SupabaseClient<Database>;
 
+  // @ts-expect-error - RPC parameters are not correctly picked up from Database type
   const { error } = await supabase.rpc("record_clerk_org_event", {
     p_event_id: eventId,
     p_organization_id: organizationId,

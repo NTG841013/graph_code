@@ -1,46 +1,21 @@
-import { createSupabaseServerClient } from "@/app/lib/supabase/server";
+import { getAnalyses, type AnalysisResponse } from "@/app/lib/data/analyses";
+import Link from "next/link";
 
-interface Analysis {
-  id: string;
-  status: "pending" | "running" | "completed" | "failed";
-  created_at: string;
-  finished_at: string | null;
-  commit_hash: string | null;
-  error_message: string | null;
-  projects: {
-    name: string;
-    repo_url: string;
-  } | null;
-}
-
-export async function AnalysisList({ orgName }: { orgName?: string }) {
-  const supabase = await createSupabaseServerClient();
+export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; page?: number }) {
+  let response: AnalysisResponse;
   
-  const { data, error } = await supabase
-    .from('analyses')
-    .select(`
-      id,
-      status,
-      created_at,
-      finished_at,
-      commit_hash,
-      error_message,
-      projects (
-        name,
-        repo_url
-      )
-    `)
-    .order('created_at', { ascending: false });
-
-  const analyses = data as unknown as Analysis[] | null;
-
-  if (error) {
+  try {
+    response = await getAnalyses(page);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown error";
     return (
       <div className="mt-8 border border-danger/20 bg-danger/5 p-4 text-xs font-mono text-danger">
-        Failed to load analyses: {error.message}
+        Failed to load analyses: {message}
       </div>
     );
   }
+
+  const { data: analyses, totalCount, totalPages } = response;
 
   if (!analyses || analyses.length === 0) {
     return (
@@ -65,7 +40,7 @@ export async function AnalysisList({ orgName }: { orgName?: string }) {
       <div className="flex items-center justify-between border-b border-border/50 pb-2 px-1">
         <div className="flex items-baseline gap-2">
           <span className="text-sm font-semibold text-foreground">{orgName || "Organization"}</span>
-          <span className="text-xs text-muted">{analyses.length} analyses</span>
+          <span className="text-xs text-muted">{totalCount} analyses total</span>
         </div>
         <div className="flex items-center gap-4 text-[10px] uppercase tracking-tighter text-muted">
           <div className="flex items-center gap-1.5">
@@ -136,6 +111,37 @@ export async function AnalysisList({ orgName }: { orgName?: string }) {
           </tbody>
         </table>
       </div>
+
+      {totalPages > 1 && (
+        <div className="flex items-center justify-between border-t border-border/20 pt-4 px-1">
+          <div className="text-[10px] text-muted uppercase tracking-tighter font-mono">
+            Page {page} of {totalPages}
+          </div>
+          <div className="flex items-center gap-4 font-mono text-[10px] uppercase tracking-tighter">
+            {page > 1 ? (
+              <Link 
+                href={`/?page=${page - 1}`}
+                className="text-muted hover:text-foreground transition-colors"
+              >
+                [ Previous ]
+              </Link>
+            ) : (
+              <span className="text-muted/30 cursor-not-allowed">[ Previous ]</span>
+            )}
+            
+            {page < totalPages ? (
+              <Link 
+                href={`/?page=${page + 1}`}
+                className="text-muted hover:text-foreground transition-colors"
+              >
+                [ Next ]
+              </Link>
+            ) : (
+              <span className="text-muted/30 cursor-not-allowed">[ Next ]</span>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

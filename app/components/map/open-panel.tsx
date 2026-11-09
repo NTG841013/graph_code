@@ -4,7 +4,17 @@ import { getFileColor } from './constants';
 import { useRef, useCallback, useEffect, useState } from 'react';
 
 export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
-  const { folder, onClose, onSelectFile, selectedFile, connectedFilePaths, hasSelection, isActive } = data;
+  const { 
+    folder, 
+    onClose, 
+    onSelectFile, 
+    selectedFile, 
+    connectedFilePaths, 
+    hasSelection, 
+    isActive,
+    isDimmed,
+    matchCount
+  } = data;
   const updateNodeInternals = useUpdateNodeInternals();
   const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollTop, setScrollTop] = useState(0);
@@ -28,6 +38,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
     <div className={`
       border shadow-2xl min-w-[180px] max-w-[300px] overflow-hidden group transition-all rounded-sm bg-background/95
       ${data.isSelected ? 'border-accent ring-2 ring-accent/30 border-2' : isActuallyActive ? 'border-white/80 border-2' : 'border-white/10'}
+      ${isDimmed ? 'opacity-20 grayscale-[0.5]' : 'opacity-100'}
     `}>
       <header 
         onClick={(e) => {
@@ -42,7 +53,9 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className={`font-mono text-[10px] font-medium ${isActuallyActive ? 'text-foreground/90' : 'text-foreground/40'}`}>
-              {folder.files.length} files
+              {folder.files.length} files {matchCount !== undefined && matchCount > 0 && (
+                <span className="text-accent ml-1">({matchCount} match)</span>
+              )}
             </span>
             <div className={`flex items-center gap-1.5 text-[9px] font-mono ${isActuallyActive ? 'text-accent' : 'text-accent/30'}`}>
               <span>←{folder.fanIn}</span>

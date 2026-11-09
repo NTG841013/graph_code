@@ -96,28 +96,44 @@ create policy "Users can view their organization" on public.organizations
   for select to authenticated using (id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access projects of their organization" on public.projects
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access analyses of their organization" on public.analyses
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access files of their organization" on public.files
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access edges of their organization" on public.edges
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access routes of their organization" on public.routes
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access explanations of their organization" on public.explanations
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access file_roles of their organization" on public.file_roles
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 create policy "Users can access insights of their organization" on public.insights
-  for all to authenticated using (organization_id = (auth.jwt() ->> 'org_id'));
+  for all to authenticated
+  using (organization_id = (auth.jwt() ->> 'org_id'))
+  with check (organization_id = (auth.jwt() ->> 'org_id'));
 
 -- Update record_clerk_org_event function to sync organizations table
 create or replace function public.record_clerk_org_event(

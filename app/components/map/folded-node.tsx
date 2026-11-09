@@ -2,7 +2,7 @@ import { Handle, Position } from 'reactflow';
 import { MapNodeData } from './types';
 
 export function FoldedNode({ data, selected }: { data: MapNodeData; selected: boolean }) {
-  const { folder, onOpen, isActive, hasSelection } = data;
+  const { folder, onOpen, isActive, hasSelection, isDimmed, matchCount } = data;
   
   // Height carries fan-in. Base height is 24px, plus 2px per fan-in, capped.
   const height = 28 + Math.min(folder.fanIn * 2, 120);
@@ -15,6 +15,7 @@ export function FoldedNode({ data, selected }: { data: MapNodeData; selected: bo
       className={`
         relative flex flex-col items-center justify-center border transition-all cursor-pointer group rounded-sm
         ${selected ? 'border-accent bg-accent/20 shadow-[0_0_15px_rgba(var(--color-accent-rgb),0.4)] border-2' : isActuallyActive ? 'border-white/80 border-2 bg-background/90' : 'border-white/10 bg-background/90'}
+        ${isDimmed ? 'opacity-20 grayscale-[0.5]' : 'opacity-100'}
       `}
       style={{ height: `${height}px`, minWidth: '70px' }}
     >
@@ -30,6 +31,9 @@ export function FoldedNode({ data, selected }: { data: MapNodeData; selected: bo
         </span>
         <div className={`flex items-center gap-1.5 text-[8px] font-mono ${isActuallyActive ? 'text-muted/80' : 'text-muted/40'}`}>
           <span>{folder.files.length}</span>
+          {matchCount !== undefined && matchCount > 0 && (
+            <span className="text-accent font-bold">({matchCount})</span>
+          )}
           <span className="text-[7px] opacity-50">←{folder.fanIn} {folder.fanOut}→</span>
         </div>
       </div>

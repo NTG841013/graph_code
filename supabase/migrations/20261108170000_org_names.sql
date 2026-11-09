@@ -28,18 +28,7 @@ begin
     return;
   end if;
 
-  -- Sync organizations table
-  if p_event_type = 'organization.created' then
-    insert into public.organizations (id, name)
-    values (p_organization_id, p_name)
-    on conflict (id) do update set name = excluded.name;
-  elsif p_event_type = 'organization.updated' then
-    update public.organizations
-    set name = p_name
-    where id = p_organization_id;
-  end if;
-
-  -- Handle organization deletion event
+  -- Handle organization deletion event immediately
   if p_event_type = 'organization.deleted' then
     insert into public.deleted_organizations (
       organization_id,
@@ -61,7 +50,7 @@ begin
     return;
   end if;
 
-  -- Record audit event
+  -- Record audit event first to ensure event-ID idempotency
   insert into public.organization_audit_events (
     event_id,
     organization_id,
@@ -87,6 +76,24 @@ begin
     p_role
   )
   on conflict (event_id) do nothing;
+
+  -- Stop if the event was already processed (duplicate event_id)
+  if not found then
+    return;
+  end if;
+
+  -- Only sync name if this is the most recent event we have seen for this organization
+  if p_event_type in ('organization.created', 'organization.updated') then
+    insert into public.organizations (id, name)
+    values (p_organization_id, p_name)
+    on conflict (id) do update 
+    set name = excluded.name
+    where not exists (
+      select 1 from public.organization_audit_events
+      where organization_id = p_organization_id
+        and occurred_at > p_occurred_at
+    );
+  end if;
 end;
 $$;
 
