@@ -1,5 +1,6 @@
 import { getAnalyses, type AnalysisResponse } from "@/app/lib/data/analyses";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; page?: number }) {
   let response: AnalysisResponse;
@@ -16,6 +17,10 @@ export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; pa
   }
 
   const { data: analyses, totalCount, totalPages } = response;
+
+  if (totalCount > 0 && analyses.length === 0 && page > 1) {
+    redirect(`/?page=${totalPages}`);
+  }
 
   if (!analyses || analyses.length === 0) {
     return (

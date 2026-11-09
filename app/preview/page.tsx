@@ -55,9 +55,11 @@ export default function PreviewPage() {
             <ul className="space-y-0.5">
               {categories.map((cat) => (
                 <li key={cat.name}>
-                  <div 
+                  <button 
+                    type="button"
                     onClick={() => setSelectedCategory(prev => prev === cat.name ? null : cat.name)}
-                    className={`flex items-center gap-2.5 rounded-sm px-2 py-1 text-[11px] cursor-default group transition-colors ${selectedCategory === cat.name ? 'bg-surface ring-1 ring-white/10' : 'hover:bg-surface/50'}`}
+                    aria-pressed={selectedCategory === cat.name}
+                    className={`w-full text-left flex items-center gap-2.5 rounded-sm px-2 py-1 text-[11px] group transition-colors focus-visible:outline-accent ${selectedCategory === cat.name ? 'bg-surface ring-1 ring-white/10' : 'hover:bg-surface/50'}`}
                   >
                     <span 
                       className={`h-2 w-2 shrink-0 rounded-[1px] transition-opacity ${selectedCategory && selectedCategory !== cat.name ? 'opacity-30' : 'opacity-100'}`} 
@@ -69,7 +71,7 @@ export default function PreviewPage() {
                     <span className="font-mono text-[10px] text-muted group-hover:text-foreground/60 transition-colors">
                       {cat.count}
                     </span>
-                  </div>
+                  </button>
                 </li>
               ))}
             </ul>

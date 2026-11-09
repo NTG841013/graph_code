@@ -1,25 +1,33 @@
 import "server-only";
 import { createSupabaseServerClient } from "@/app/lib/supabase/server";
 import { Database } from "@/app/lib/supabase/database.types";
+import { QueryData, SupabaseClient } from "@supabase/supabase-js";
 
 type DB = Database["public"]["Tables"];
 
 /**
  * Shape derived from the Supabase query in getAnalyses.
  * This ensures that changes to the database schema are reflected in the type system.
+ * This is wrapped in a function to avoid execution at runtime while preserving type inference.
  */
-export interface Analysis {
-  id: DB["analyses"]["Row"]["id"];
-  status: DB["analyses"]["Row"]["status"];
-  created_at: DB["analyses"]["Row"]["created_at"];
-  finished_at: DB["analyses"]["Row"]["finished_at"];
-  commit_hash: DB["analyses"]["Row"]["commit_hash"];
-  error_message: DB["analyses"]["Row"]["error_message"];
-  projects: {
-    name: DB["projects"]["Row"]["name"];
-    repo_url: DB["projects"]["Row"]["repo_url"];
-  } | null;
+function queryForType() {
+  return ({} as SupabaseClient<Database>)
+    .from("analyses")
+    .select(`
+      id,
+      status,
+      created_at,
+      finished_at,
+      commit_hash,
+      error_message,
+      projects (
+        name,
+        repo_url
+      )
+    `);
 }
+
+export type Analysis = QueryData<ReturnType<typeof queryForType>>[number];
 
 export interface AnalysisResponse {
   data: Analysis[];
@@ -64,7 +72,7 @@ export async function getAnalyses(
   const totalCount = count || 0;
 
   return {
-    data: (data as unknown as Analysis[]) || [],
+    data: data || [],
     totalCount,
     page,
     pageSize,

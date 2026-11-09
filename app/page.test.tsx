@@ -19,6 +19,10 @@ vi.mock("@/app/components/app-header", () => ({
     }),
 }));
 
+vi.mock("@/app/components/analysis-list", () => ({
+  AnalysisList: () => createElement("div", { "data-testid": "analysis-list" }),
+}));
+
 import Home from "./page";
 
 describe("Home", () => {
@@ -31,14 +35,17 @@ describe("Home", () => {
   });
 
   it("AC-2, AC-6: requires an active organization before showing its workspace", async () => {
-    const markup = await renderServerComponent(createElement(Home));
+    const searchParams = Promise.resolve({ page: "1" });
+    const markup = await renderServerComponent(
+      createElement(Home, { searchParams }),
+    );
     const { container } = render(
       <div dangerouslySetInnerHTML={{ __html: markup }} />,
     );
 
     expect(mocks.requireOrganization).toHaveBeenCalledWith("/");
-    expect(screen.getByText("Active organization ID:")).toBeInTheDocument();
-    expect(screen.getByText("org-1")).toBeInTheDocument();
+    expect(screen.getByText(/Organization ID:/)).toBeInTheDocument();
+    expect(screen.getByText(/org-1/)).toBeInTheDocument();
     expect(container.querySelector("[data-testid='app-header']")).toHaveAttribute(
       "data-return-to",
       "/",

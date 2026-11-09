@@ -56,20 +56,9 @@ export function findInsights(analysis: AnalysisResult): GraphInsight[] {
   const insights: GraphInsight[] = [];
   
   // 1. Files nothing imports (Orphans, excluding framework files)
-  const frameworkPatterns = [
-    /^app\/.*\/page\.(tsx|ts|js|jsx)$/,
-    /^app\/.*\/layout\.(tsx|ts|js|jsx)$/,
-    /^app\/.*\/route\.(tsx|ts|js|jsx)$/,
-    /^app\/.*\/loading\.(tsx|ts|js|jsx)$/,
-    /^app\/.*\/error\.(tsx|ts|js|jsx)$/,
-    /^app\/.*\/not-found\.(tsx|ts|js|jsx)$/,
-    /^middleware\.(ts|js)$/,
-    /.*\.config\.(ts|js|mjs|cjs)$/,
-  ];
-
   const orphans = analysis.nodes.filter(node => {
     if (node.fanIn > 0) return false;
-    return !frameworkPatterns.some(pattern => pattern.test(node.path));
+    return !node.isEntry;
   });
 
   orphans.forEach(node => {
@@ -136,45 +125,136 @@ export function findInsights(analysis: AnalysisResult): GraphInsight[] {
 
 function findCycles(edges: Edge[]): string[][] {
   const adjacency = new Map<string, string[]>();
+  const nodesSet = new Set<string>();
   for (const edge of edges) {
     if (!adjacency.has(edge.from)) adjacency.set(edge.from, []);
     adjacency.get(edge.from)!.push(edge.to);
+    nodesSet.add(edge.from);
+    nodesSet.add(edge.to);
   }
 
+  const nodes = Array.from(nodesSet);
+  const sccs = findSCCs(nodes, adjacency);
+  
+  const sccMap = new Map<string, Set<string>>();
+  const sccIdMap = new Map<string, number>();
+  sccs.forEach((scc, id) => {
+    const set = new Set(scc);
+    scc.forEach(node => {
+      sccMap.set(node, set);
+      sccIdMap.set(node, id);
+    });
+  });
+
   const cycles: string[][] = [];
-  const visited = new Set<string>();
-  const nodes = Array.from(new Set([...edges.map(e => e.from), ...edges.map(e => e.to)]));
+  const cycleKeys = new Set<string>();
 
-  for (const startNode of nodes) {
-    if (visited.has(startNode)) continue;
+  for (const edge of edges) {
+    const sccIdFrom = sccIdMap.get(edge.from);
+    const sccIdTo = sccIdMap.get(edge.to);
 
-    // Iterative DFS to find cycles
-    const stack: { node: string; path: string[] }[] = [{ node: startNode, path: [startNode] }];
-    const localVisited = new Set<string>();
-
-    while (stack.length > 0) {
-      const { node, path } = stack.pop()!;
-      
-      if (localVisited.has(node)) continue;
-      localVisited.add(node);
-      visited.add(node);
-
-      const neighbors = adjacency.get(node) || [];
-      for (const neighbor of neighbors) {
-        const cycleIndex = path.indexOf(neighbor);
-        if (cycleIndex !== -1) {
-          const cycle = path.slice(cycleIndex);
-          // Check if we already found this cycle (or a rotation of it)
-          const sortedCycle = [...cycle].sort().join(',');
-          if (!cycles.some(c => [...c].sort().join(',') === sortedCycle)) {
+    if (sccIdFrom !== undefined && sccIdFrom === sccIdTo) {
+      const scc = sccMap.get(edge.from)!;
+      if (edge.from === edge.to || scc.size > 1) {
+        const path = findShortestPath(edge.to, edge.from, adjacency, scc);
+        if (path) {
+          const cycle = [edge.from, ...path.slice(0, -1)];
+          const key = getCycleKey(cycle);
+          if (!cycleKeys.has(key)) {
             cycles.push(cycle);
+            cycleKeys.add(key);
           }
-        } else {
-          stack.push({ node: neighbor, path: [...path, neighbor] });
         }
       }
     }
   }
 
   return cycles;
+}
+
+function findSCCs(nodes: string[], adjacency: Map<string, string[]>): string[][] {
+  let index = 0;
+  const stack: string[] = [];
+  const onStack = new Set<string>();
+  const indices = new Map<string, number>();
+  const lowlink = new Map<string, number>();
+  const sccs: string[][] = [];
+
+  function strongconnect(u: string) {
+    indices.set(u, index);
+    lowlink.set(u, index);
+    index++;
+    stack.push(u);
+    onStack.add(u);
+
+    for (const v of (adjacency.get(u) || [])) {
+      if (!indices.has(v)) {
+        strongconnect(v);
+        lowlink.set(u, Math.min(lowlink.get(u)!, lowlink.get(v)!));
+      } else if (onStack.has(v)) {
+        lowlink.set(u, Math.min(lowlink.get(u)!, indices.get(v)!));
+      }
+    }
+
+    if (lowlink.get(u) === indices.get(u)) {
+      const scc: string[] = [];
+      let v;
+      do {
+        v = stack.pop()!;
+        onStack.delete(v);
+        scc.push(v);
+      } while (u !== v);
+      sccs.push(scc);
+    }
+  }
+
+  for (const node of nodes) {
+    if (!indices.has(node)) {
+      strongconnect(node);
+    }
+  }
+  return sccs;
+}
+
+function findShortestPath(
+  start: string,
+  end: string,
+  adjacency: Map<string, string[]>,
+  sccNodes: Set<string>
+): string[] | null {
+  const queue: string[] = [start];
+  const parent = new Map<string, string>();
+  const visited = new Set<string>([start]);
+
+  while (queue.length > 0) {
+    const node = queue.shift()!;
+    if (node === end) {
+      const path = [];
+      let curr: string | undefined = node;
+      while (curr) {
+        path.push(curr);
+        curr = parent.get(curr);
+      }
+      return path.reverse();
+    }
+
+    for (const neighbor of adjacency.get(node) || []) {
+      if (sccNodes.has(neighbor) && !visited.has(neighbor)) {
+        visited.add(neighbor);
+        parent.set(neighbor, node);
+        queue.push(neighbor);
+      }
+    }
+  }
+  return null;
+}
+
+function getCycleKey(cycle: string[]): string {
+  if (cycle.length === 0) return '';
+  let minIndex = 0;
+  for (let i = 1; i < cycle.length; i++) {
+    if (cycle[i] < cycle[minIndex]) minIndex = i;
+  }
+  const rotated = [...cycle.slice(minIndex), ...cycle.slice(0, minIndex)];
+  return rotated.join(',');
 }

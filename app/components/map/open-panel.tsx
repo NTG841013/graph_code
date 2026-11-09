@@ -38,7 +38,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
     <div className={`
       border shadow-2xl min-w-[180px] max-w-[300px] overflow-hidden group transition-all rounded-sm bg-background/95
       ${data.isSelected ? 'border-accent ring-2 ring-accent/30 border-2' : isActuallyActive ? 'border-white/80 border-2' : 'border-white/10'}
-      ${isDimmed ? 'opacity-20 grayscale-[0.5]' : 'opacity-100'}
+      ${isDimmed ? 'grayscale-[0.5]' : ''}
     `}>
       <header 
         onClick={(e) => {
@@ -47,17 +47,17 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
         }}
         className={`flex flex-col border-b px-2 py-1.5 cursor-pointer transition-colors ${isActuallyActive ? 'border-white/20 bg-surface/50 hover:bg-surface/70' : 'border-white/10 bg-surface/30'}`}
       >
-        <span className={`font-mono text-[8px] truncate uppercase tracking-tighter ${isActuallyActive ? 'text-muted/70' : 'text-muted/30'}`}>
+        <span className={`font-mono text-[8px] truncate uppercase tracking-tighter text-muted/70`}>
           {folder.id === '.' ? 'root' : folder.id}
         </span>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className={`font-mono text-[10px] font-medium ${isActuallyActive ? 'text-foreground/90' : 'text-foreground/40'}`}>
+            <span className={`font-mono text-[10px] font-medium text-foreground/90`}>
               {folder.files.length} files {matchCount !== undefined && matchCount > 0 && (
                 <span className="text-accent ml-1">({matchCount} match)</span>
               )}
             </span>
-            <div className={`flex items-center gap-1.5 text-[9px] font-mono ${isActuallyActive ? 'text-accent' : 'text-accent/30'}`}>
+            <div className={`flex items-center gap-1.5 text-[9px] font-mono text-accent`}>
               <span>←{folder.fanIn}</span>
               <span>{folder.fanOut}→</span>
             </div>
@@ -70,7 +70,6 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
         className="py-1 max-h-[300px] overflow-y-auto nodrag nowheel custom-scrollbar"
       >
         {displayedFiles.map((file, index) => {
-          const isActiveFile = !hasSelection || connectedFilePaths.has(file.path);
           const isDimmedFile = hasSelection && !connectedFilePaths.has(file.path);
           const color = getFileColor(file.path);
           
@@ -87,8 +86,8 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
               }}
               className={`
                 relative group flex items-center px-2 py-0.5 text-[10px] font-mono cursor-pointer transition-colors
-                ${selectedFile === file.path ? 'bg-accent/30 text-accent font-bold' : isActuallyActive ? 'text-foreground/90 hover:bg-surface/70' : 'text-foreground/40'}
-                ${isDimmedFile ? 'opacity-10' : 'opacity-100'}
+                ${selectedFile === file.path ? 'bg-accent/30 text-accent font-bold' : 'text-foreground/90 hover:bg-surface/70'}
+                ${(isDimmedFile && isActuallyActive) ? 'opacity-20' : ''}
               `}
             >
               {isVisible && (
@@ -96,13 +95,13 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
                   type="target" 
                   position={Position.Left} 
                   id={file.path}
-                  className={`!-left-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${isActiveFile ? '!bg-white/80' : '!bg-muted/20'}`}
+                  className={`!-left-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${(isDimmedFile && isActuallyActive) ? '!bg-muted/40' : '!bg-white/80'}`}
                 />
               )}
               
               <div className="flex items-center gap-2 flex-1 min-w-0">
                 <span 
-                  className={`h-2 w-2 shrink-0 rounded-[1px] transition-opacity ${isActiveFile ? 'opacity-100' : 'opacity-30'}`} 
+                  className={`h-2 w-2 shrink-0 rounded-[1px] transition-opacity ${(isDimmedFile && isActuallyActive) ? 'opacity-30' : ''}`} 
                   style={{ backgroundColor: color }}
                 />
                 <span className="truncate flex-1">
@@ -110,7 +109,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
                     ? file.path.split('/').pop() 
                     : file.path.replace(folder.id + '/', '')}
                 </span>
-                <div className={`flex items-center gap-1.5 text-[8px] font-mono tabular-nums ${isActiveFile ? 'text-muted/80' : 'text-muted/30'}`}>
+                <div className={`flex items-center gap-1.5 text-[8px] font-mono tabular-nums ${(isDimmedFile && isActuallyActive) ? 'text-muted/30' : 'text-muted/80'}`}>
                   <span>←{file.fanIn}</span>
                   <span>{file.fanOut}→</span>
                 </div>
@@ -121,7 +120,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
                   type="source" 
                   position={Position.Right} 
                   id={file.path}
-                  className={`!-right-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${isActiveFile ? '!bg-white/80' : '!bg-muted/20'}`}
+                  className={`!-right-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${(isDimmedFile && isActuallyActive) ? '!bg-muted/40' : '!bg-white/80'}`}
                 />
               )}
             </div>

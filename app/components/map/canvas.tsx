@@ -222,10 +222,16 @@ function MapCanvasInner({
       if (selectedNodeId) {
         activeNodeIds.add(selectedNodeId);
         const folder = folders.find(f => f.id === selectedNodeId);
-        folder?.files.forEach(f => activeFilePaths.add(f.path));
+        folder?.files.forEach(f => {
+          if (!hasCategorySelection || matchesCategory(f.path)) {
+            activeFilePaths.add(f.path);
+          }
+        });
       }
       if (selectedFilePath) {
-        activeFilePaths.add(selectedFilePath);
+        if (!hasCategorySelection || matchesCategory(selectedFilePath)) {
+          activeFilePaths.add(selectedFilePath);
+        }
         const folder = folders.find(f => f.files.some(file => file.path === selectedFilePath));
         if (folder) activeNodeIds.add(folder.id);
       }
@@ -248,6 +254,11 @@ function MapCanvasInner({
         // Spec says "dims everything that isn't in it".
         if (hasCategorySelection && matchesCategory(from) && matchesCategory(to)) {
           isEdgeConnected = true;
+        }
+
+        // Priority: category filter dims anything that doesn't match
+        if (hasCategorySelection && (!matchesCategory(from) || !matchesCategory(to))) {
+          isEdgeConnected = false;
         }
 
         if (isEdgeConnected) {

@@ -109,9 +109,8 @@ export async function POST(req: Request) {
     return new Response("Missing organization ID", { status: 400 });
   }
 
-  const supabase = createSupabaseAdminClient() as SupabaseClient<Database>;
+  const supabase = createSupabaseAdminClient();
 
-  // @ts-expect-error - RPC parameters are not correctly picked up from Database type
   const { error } = await supabase.rpc("record_clerk_org_event", {
     p_event_id: eventId,
     p_organization_id: organizationId,
