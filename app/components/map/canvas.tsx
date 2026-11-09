@@ -31,6 +31,7 @@ interface MapCanvasProps {
   analysis: AnalysisResult;
   selectedFilePath?: string | null;
   selectedFolderId?: string | null;
+  selectedCategory?: string | null;
   onFileSelect?: (file: FileNode | null) => void;
   onFolderSelect?: (folder: FolderNode | null) => void;
 }
@@ -39,6 +40,7 @@ function MapCanvasInner({
   analysis, 
   selectedFilePath: externalSelectedFilePath,
   selectedFolderId: externalSelectedFolderId,
+  selectedCategory,
   onFileSelect,
   onFolderSelect,
 }: MapCanvasProps) {
@@ -189,17 +191,47 @@ function MapCanvasInner({
     const activeNodeIds = new Set<string>();
     const activeEdgeIds = new Set<string>();
     const activeFilePaths = new Set<string>();
+    const folderMatchCounts = new Map<string, number>();
 
-    const hasSelection = Boolean(selectedNodeId || selectedFilePath);
+    const hasCategorySelection = Boolean(selectedCategory);
+    const hasSelection = Boolean(selectedNodeId || selectedFilePath || hasCategorySelection);
+
+    const matchesCategory = (filePath: string) => {
+      if (!selectedCategory) return true;
+      if (selectedCategory === 'other') {
+        const parts = filePath.split('.');
+        return parts.length <= 1;
+      }
+      return filePath.endsWith(selectedCategory);
+    };
+
+    if (hasCategorySelection) {
+      folders.forEach(folder => {
+        const count = folder.files.filter(f => matchesCategory(f.path)).length;
+        if (count > 0) {
+          folderMatchCounts.set(folder.id, count);
+          activeNodeIds.add(folder.id);
+          folder.files.forEach(f => {
+            if (matchesCategory(f.path)) activeFilePaths.add(f.path);
+          });
+        }
+      });
+    }
 
     if (hasSelection) {
       if (selectedNodeId) {
         activeNodeIds.add(selectedNodeId);
         const folder = folders.find(f => f.id === selectedNodeId);
-        folder?.files.forEach(f => activeFilePaths.add(f.path));
+        folder?.files.forEach(f => {
+          if (!hasCategorySelection || matchesCategory(f.path)) {
+            activeFilePaths.add(f.path);
+          }
+        });
       }
       if (selectedFilePath) {
-        activeFilePaths.add(selectedFilePath);
+        if (!hasCategorySelection || matchesCategory(selectedFilePath)) {
+          activeFilePaths.add(selectedFilePath);
+        }
         const folder = folders.find(f => f.files.some(file => file.path === selectedFilePath));
         if (folder) activeNodeIds.add(folder.id);
       }
@@ -216,6 +248,17 @@ function MapCanvasInner({
         
         if (selectedNodeId && (edge.source === selectedNodeId || edge.target === selectedNodeId)) {
           isEdgeConnected = true;
+        }
+
+        // If category selection is active, edges between matching files should be active?
+        // Spec says "dims everything that isn't in it".
+        if (hasCategorySelection && matchesCategory(from) && matchesCategory(to)) {
+          isEdgeConnected = true;
+        }
+
+        // Priority: category filter dims anything that doesn't match
+        if (hasCategorySelection && (!matchesCategory(from) || !matchesCategory(to))) {
+          isEdgeConnected = false;
         }
 
         if (isEdgeConnected) {
@@ -240,6 +283,8 @@ function MapCanvasInner({
           connectedFilePaths: activeFilePaths,
           hasSelection,
           isActive,
+          isDimmed,
+          matchCount: folderMatchCounts.get(node.id) || 0,
         },
         style: { ...node.style, opacity: isDimmed ? 0.15 : 1 },
       };
@@ -270,7 +315,7 @@ function MapCanvasInner({
     });
 
     return { nodes: finalNodes, edges: finalEdges };
-  }, [folders, analysis.edges, onOpen, onClose, onSelectFile, selectedNodeId, selectedFilePath]);
+  }, [folders, analysis.edges, onOpen, onClose, onSelectFile, selectedNodeId, selectedFilePath, selectedCategory]);
 
   const [rfNodes, setRfNodes, onNodesChange] = useNodesState(nodes);
   const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState(edges);

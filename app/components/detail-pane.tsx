@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { AnalysisResult, FileNode } from '@/lib/parser/types';
 import { FolderNode } from '@/lib/parser/folding';
+import { getBlastRadius, getDependencyChain, findInsights } from '@/lib/parser/graph';
 
 interface DetailPaneProps {
   analysis: AnalysisResult;
@@ -18,24 +19,18 @@ export function DetailPane({
   onFileSelect,
 }: DetailPaneProps) {
   const [activeTab, setActiveTab] = useState<'structure' | 'explanation'>('structure');
+  const [radiusMode, setRadiusMode] = useState<'blast' | 'chain' | null>(null);
+  const [isInsightsOpen, setIsInsightsOpen] = useState(false);
 
+  const insights = useMemo(() => findInsights(analysis), [analysis]);
 
-  const framework = useMemo(() => {
-    const hasNextConfig = analysis.nodes.some(n => n.path.includes('next.config'));
-    if (hasNextConfig) return 'Next.js';
-    const hasSvelte = analysis.nodes.some(n => n.path.endsWith('.svelte'));
-    if (hasSvelte) return 'Svelte';
-    const hasVue = analysis.nodes.some(n => n.path.endsWith('.vue'));
-    if (hasVue) return 'Vue';
-    return 'TypeScript';
-  }, [analysis.nodes]);
+  const radiusResults = useMemo(() => {
+    if (!selectedFile || !radiusMode) return [];
+    return radiusMode === 'blast' 
+      ? getBlastRadius(analysis.edges, selectedFile.path)
+      : getDependencyChain(analysis.edges, selectedFile.path);
+  }, [analysis.edges, selectedFile, radiusMode]);
 
-  const routes = useMemo(() => {
-    return analysis.nodes.filter(n => 
-      (n.path.includes('/app/') || n.path.includes('/pages/')) && 
-      (n.path.endsWith('page.tsx') || n.path.endsWith('route.ts') || n.path.endsWith('page.js') || n.path.endsWith('route.js'))
-    ).length;
-  }, [analysis.nodes]);
 
   const mostDependedOn = useMemo(() => {
     return [...analysis.nodes].sort((a, b) => b.fanIn - a.fanIn).slice(0, 5);
@@ -110,10 +105,8 @@ export function DetailPane({
                     <h3 className="font-mono text-sm font-medium truncate">graphcode</h3>
                   </div>
                   <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-                    <StatItem label="Framework" value={framework} />
                     <StatItem label="Files" value={analysis.stats.totalFiles} />
                     <StatItem label="Imports" value={analysis.edges.length} />
-                    <StatItem label="Routes" value={routes} />
                   </div>
                 </div>
 
@@ -156,6 +149,44 @@ export function DetailPane({
                     </p>
                   </div>
                 )}
+
+                {/* Insights Panel */}
+                <div className="pt-4 border-t border-border/20">
+                  <button 
+                    onClick={() => setIsInsightsOpen(prev => !prev)}
+                    className="w-full flex items-center justify-between group"
+                  >
+                    <p className="font-mono text-[9px] uppercase text-muted tracking-wider group-hover:text-foreground transition-colors">
+                      Insights {insights.length > 0 && <span className="text-accent ml-1">({insights.length})</span>}
+                    </p>
+                    <span className={`text-[10px] text-muted transition-transform duration-200 ${isInsightsOpen ? 'rotate-90' : ''}`}>▶</span>
+                  </button>
+                  
+                  {isInsightsOpen && (
+                    <div className="mt-3 space-y-4 animate-in slide-in-from-top-1 duration-200">
+                      {insights.length > 0 ? (
+                        insights.map((insight, idx) => (
+                          <div key={`${insight.filePath}-${idx}`} className="space-y-1">
+                            <div className="flex items-center gap-1.5">
+                              <span className={`w-1 h-1 rounded-full ${insight.type === 'orphan' ? 'bg-blue-400' : 'bg-amber-400'}`} />
+                              <button 
+                                onClick={() => onFileSelect(insight.filePath)}
+                                className="font-mono text-[10px] text-foreground/90 hover:text-accent transition-colors truncate text-left"
+                              >
+                                {insight.filePath.split('/').pop()}
+                              </button>
+                            </div>
+                            <p className="font-mono text-[9px] text-muted leading-relaxed pl-2.5">
+                              {insight.message}
+                            </p>
+                          </div>
+                        ))
+                      ) : (
+                        <p className="font-mono text-[9px] text-muted italic">No specific insights found for this graph.</p>
+                      )}
+                    </div>
+                  )}
+                </div>
               </div>
             ) : selectedFile ? (
               // File Selection
@@ -169,6 +200,45 @@ export function DetailPane({
                   <StatItem label="Kind" value={selectedFile.path.split('.').pop()?.toUpperCase() || 'FILE'} />
                   <StatItem label="Lines" value={selectedFile.lineCount} />
                 </div>
+
+                <div className="flex gap-2 pt-1">
+                  <button 
+                    onClick={() => setRadiusMode(prev => prev === 'blast' ? null : 'blast')}
+                    className={`flex-1 font-mono text-[9px] uppercase py-1.5 border transition-colors ${radiusMode === 'blast' ? 'bg-accent text-accent-foreground border-accent' : 'border-border hover:bg-surface'}`}
+                  >
+                    Blast Radius
+                  </button>
+                  <button 
+                    onClick={() => setRadiusMode(prev => prev === 'chain' ? null : 'chain')}
+                    className={`flex-1 font-mono text-[9px] uppercase py-1.5 border transition-colors ${radiusMode === 'chain' ? 'bg-accent text-accent-foreground border-accent' : 'border-border hover:bg-surface'}`}
+                  >
+                    Dep. Chain
+                  </button>
+                </div>
+
+                {radiusMode && (
+                  <div className="space-y-2 pt-3 border-t border-border/20 animate-in fade-in duration-200">
+                    <p className="font-mono text-[9px] uppercase text-accent tracking-wider">
+                      {radiusMode === 'blast' ? 'Blast Radius' : 'Dependency Chain'} (depth 2)
+                    </p>
+                    <ul className="space-y-1 max-h-40 overflow-y-auto custom-scrollbar pr-2">
+                      {radiusResults.length > 0 ? (
+                        radiusResults.map(path => (
+                          <li key={path}>
+                            <button 
+                              onClick={() => onFileSelect(path)}
+                              className="w-full text-left font-mono text-[10px] truncate p-1 rounded-sm hover:bg-surface transition-colors opacity-80"
+                            >
+                              {path}
+                            </button>
+                          </li>
+                        ))
+                      ) : (
+                        <li className="font-mono text-[9px] text-muted italic p-1">No transitive dependencies found.</li>
+                      )}
+                    </ul>
+                  </div>
+                )}
 
                 <div className="space-y-4 pt-3 border-t border-border/20">
                   <div className="space-y-2">

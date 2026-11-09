@@ -1,4 +1,6 @@
 import { createSupabaseAdminClient } from "@/app/lib/supabase/server";
+import { Database } from "@/app/lib/supabase/database.types";
+import { SupabaseClient } from "@supabase/supabase-js";
 import { Webhook } from "svix";
 import { headers } from "next/headers";
 import {

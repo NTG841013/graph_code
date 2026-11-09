@@ -8,7 +8,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "a3598df70237dbd088efafa4f1a7eeefe7864995affb3b8b54c2c644ce0dcfbd",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/playwright.config.ts",
@@ -16,7 +17,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "b75fd8b208d674b8dbbb3e8918c5502c551fd3c1daa9ddb028927f4af2276271",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/api/auth/[...nextauth]/route.ts",
@@ -24,7 +26,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 4,
       "hash": "18cb437c9b079f769511595a39c640f82beb2e89f9582c7915ca6110def4e0a8",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/api/trpc/revalidate/route.ts",
@@ -32,7 +35,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "5f31b89aa42d6199e1fb4cd57a9184baafb7cc2af85783102157839e1e34f027",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/api/trpc/[trpc]/route.ts",
@@ -40,7 +44,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "b6639dfa62b9540111a823caef15b9408e78fff5541280556c100825bf7fac5e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/client/ClientGreeting.tsx",
@@ -48,7 +53,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "436d161005edbcf7947de70f257fec8847b50502f7115ce3801fd48ac78d4835",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/client/page.tsx",
@@ -56,7 +62,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 53,
       "hash": "213417b3c4322b697ecc0cbe00af665a174cf54c6bee9d1bc12a7765fc008a87",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/layout.tsx",
@@ -64,7 +71,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 54,
       "hash": "fe06b8bd0d0aec775ab1ecec3cbd503ad8a5644a29abfdf08b295c09c4b7917f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/page.tsx",
@@ -72,7 +80,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 170,
       "hash": "42dbb16ec9efad743e2554805a4e4688c7ece280591d20ceca4064ec264cc323",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/post-example/page.tsx",
@@ -80,7 +89,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 65,
       "hash": "bb0ef2140426c583b2a84a98e3bdff0e1235d803a7fb380a4fbfa7a2a5d8ecf4",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/AddPostForm.tsx",
@@ -88,7 +98,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "57649dc0684718304b7d7082bb81182a69fd5c4a74f6cf6bbb9d9bb84f38a27f",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/layout.tsx",
@@ -96,7 +107,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "17a6d93691afb666ab5fc4143db0202519a743b602416d6b04d50e5ad3668204",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/page.tsx",
@@ -104,7 +116,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "f19bbe7531b933d481c49c9a6685c9a9dbd77b4694609dba731c7777718ee662",
       "fanIn": 0,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/[id]/page.tsx",
@@ -112,7 +125,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 47,
       "hash": "39aec0fe477ee5041038d455eaf5aea441e05e32be6e5502ee9029b24851b7b1",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/_data.schema.ts",
@@ -120,7 +134,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "7fa8eff1ace711fd192135315217295a4d8b9051118744efa14edbbc0a775b18",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/_data.ts",
@@ -128,7 +143,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 54,
       "hash": "14d83bc9a8b3b15f837691a195118507346a45eaa6002ba847153d9ec096c3ba",
       "fanIn": 3,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/_lib/db.ts",
@@ -136,7 +152,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "94e9dc42c603458bc3fc5881798ee908585c1a8d02d3fb5b49353b3158f390a7",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/_lib/Form.tsx",
@@ -144,7 +161,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 51,
       "hash": "f843a7ac7ed1c792b45dd0e509a37466bb2bcfaf623f8b6ff1b77370b34fb072",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/posts/_lib/trpc.ts",
@@ -152,7 +170,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "4597c0bcdced7ae26e2d1b5708ab6d5831b66557243baf8db64cab2688e25ccc",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/rsc-links/page.tsx",
@@ -160,7 +179,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 82,
       "hash": "ebc44b44a610ecb8901b328bf155c7deb9fbb0b4e512943e690bdfb4585b05d4",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/rsc-links/ServerInvokedGreeting.tsx",
@@ -168,7 +188,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 112,
       "hash": "86c3537590b6d415555f639e5a4b4d4db2151c351e740d8a8283dbb9cbd79d35",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/rsc-rq-prefetch/layout.tsx",
@@ -176,7 +197,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "bb2550a4b184d2f2294f2eb242faf2efea3a501ec6655ae1707ebb388650c51d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/rsc-rq-prefetch/page.tsx",
@@ -184,7 +206,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "59d4a28ee4c5c01022fb00f63c7cc337cb86a26cde2548bbca0dfde1ea3f05a7",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/rsc-rq-prefetch/post.tsx",
@@ -192,7 +215,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 89,
       "hash": "a865344e46a770ec618cd59df67cee5b18f35b244ed0b565629ca7afcb545b94",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/FormWithUseActionExample.tsx",
@@ -200,7 +224,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "27a06e3578b38c05c5260e23ad616d5aa3c3c4bf00383fbc65d69b2da7f3f50b",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/page.tsx",
@@ -208,7 +233,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 94,
       "hash": "1b987fe79d5b36a0c4d8e2e31e5689b93d6a6ce123b2ef75715a663f821143c7",
       "fanIn": 0,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": true
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/RawExample.tsx",
@@ -216,7 +242,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 50,
       "hash": "ba2d945c0826c7e1bef201aedb611b83ba9845b367f0c45b95e621bbee8cebef",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/RawFormExample.tsx",
@@ -224,7 +251,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "135cea3a42a0d0ac2d8fd9400d8e085b049e94e23894df35cc4bfa949964c343",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/ReactHookFormExample.action.tsx",
@@ -232,7 +260,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "99cccd3a8de176b7ed754f1e99a00302551271eb881d55b8726462bd064cd701",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/ReactHookFormExample.schema.tsx",
@@ -240,7 +269,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "8dcd1cb49044bd488067e3d7a091f5dd7fe438db2242d2d24454d7968074254a",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/ReactHookFormExample.tsx",
@@ -248,7 +278,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 91,
       "hash": "5381c4d25ace54b0fd70d602ce4a317398a6f1464b611e23f229ab1e728eaee4",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/UseActionExample.tsx",
@@ -256,7 +287,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 79,
       "hash": "d3e3e923f81d3201f49385a07d0feb0a52f7d0517b6392f5182b3cf93a5d3c42",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/server-action/_actions.tsx",
@@ -264,7 +296,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "27e6dda50c7c73574fd0fc7fffae7e0942399e1a3b61d67fc9673b66b6199474",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/_components/client-ui.ts",
@@ -272,7 +305,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "962fe23d0573f672d7736607764281958700d52b42d0843e0123802f329830a7",
       "fanIn": 8,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/_components/json-block.tsx",
@@ -280,7 +314,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "d829f5bd4bc0d29dcfa427dc8e31fe722b40af4526cb214d78030c9f9fd38764",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/_components/latest-post.tsx",
@@ -288,7 +323,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 69,
       "hash": "0cd8fc7d70aa2d514d649b7200e50f707c9d576844d7b3780681603c4ed42ee7",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/_components/link-item.tsx",
@@ -296,7 +332,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "c621800f3d6b02357d00840606d7c594db9ad326e295b3d18637ee102227db9c",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/app/_components/page-header.tsx",
@@ -304,7 +341,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 45,
       "hash": "2522105429496c40f8c890cb64a35ef99199ecb64722699e434278957f5feef6",
       "fanIn": 7,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/auth.ts",
@@ -312,7 +350,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 38,
       "hash": "fcd5a7661e0dd6aa06514fafce17f1ded01a535d724eeee15bedd92a4ac118a8",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/server/context.ts",
@@ -320,7 +359,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "4d068e47f54ef0ae82c6fd27b6a6d0e1754980ecf68a28fae4909e1072ecdeac",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/server/routers/_app.ts",
@@ -328,7 +368,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 60,
       "hash": "195ea302465acd5961f992a1aa5b7597061718aa4bc40b8a6db365f26cfd6806",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/server/trpc.ts",
@@ -336,7 +377,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 60,
       "hash": "8d4ef1e2517b519293a28d87673394a7f80462b8f74872ceb477189191f4b305",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/trpc/client.ts",
@@ -344,7 +386,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 43,
       "hash": "2ae729405ac959c6510cb1c65ca662bd009eb47c4f5ebb32e4c566a392f0729c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/trpc/rq-client.tsx",
@@ -352,7 +395,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "3bff0b54e68266901b164f358383f33236d79a68098af06221210d26f1ea14ad",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/trpc/rq-server.tsx",
@@ -360,7 +404,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 54,
       "hash": "8506da6c7828f5445eb71adcc393ec91e867846cdee7c0df3f926b256fad2bbb",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/trpc/server-invoker.ts",
@@ -368,7 +413,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 38,
       "hash": "77f6696835faf48b84602249af8ea879aa30fd714d3d4d808e14a65c8771bf34",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/src/trpc/shared.ts",
@@ -376,7 +422,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 62,
       "hash": "301c2758ba9a5f3528261f3bc6a9b934c49bd9af239f0471de174944efd97591",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/test/client.test.ts",
@@ -384,7 +431,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "88867b2531973ecd731c4a217d46c24bab907f4d9bc96eebdf09220d556fd1ce",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.experimental/next-app-dir/test/server-cache.test.ts",
@@ -392,7 +440,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "94b373ef3408baeb831c0b3efb13e13ed38850a59f061386fca0f09d7475cc51",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/diagnostics-big-router/next-env.d.ts",
@@ -400,7 +449,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "8964d295a9047c3a222af813b7d37deb57b835fd0942d89222e7def0aed136cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/diagnostics-big-router/next.config.ts",
@@ -408,7 +458,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "a63caaeea7c02537f581cd18a77aedd045a32d3ab0159d81178550788118497d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.test/diagnostics-big-router/scripts/codegen-base.ts",
@@ -416,7 +467,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 46,
       "hash": "688cb93f5f62b63c86867dbd8ebbd77fb32671a89836586c6c046d9efdd78218",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/diagnostics-big-router/scripts/codegen.ts",
@@ -424,7 +476,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 43,
       "hash": "90bc3cef7b6724d0aa9a888e7cb6a76272b94120f9af6297bd70b01ddc626a38",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/diagnostics-big-router/src/server/context.ts",
@@ -432,7 +485,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "e0747fb8bd340f41e9e059725ff00f32cab1924df376830a2a741b9f09d62572",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/diagnostics-big-router/src/server/trpc.ts",
@@ -440,7 +494,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "2a902f51e04f3f4a314358f1e1cedb1ef4fc9f548af22af7c9120244772b6bd0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/diagnostics-big-router/src/utils/trpc.ts",
@@ -448,7 +503,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "f7aa0c08b60d170f3ca385e24d708f6d538375d407c25e64437f7942de980587",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/internal-types-export/src/client.ts",
@@ -456,7 +512,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "319da3d1892c5800cd5227d7dd26b9fbd14a5e615fbf736c18a74940bab02381",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.test/internal-types-export/src/middleware-factory.ts",
@@ -464,7 +521,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 21,
       "hash": "454e3be5f207aa1e7958c6d9f5bbdc96c9dadaed05ec764b4e3d231d1e9a9ca3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/internal-types-export/src/server-only-inferred-types.ts",
@@ -472,7 +530,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "351617a6e7a0a59492505a1358fec3867ce598b517bbb6aba80801be8de07a54",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/internal-types-export/src/server.ts",
@@ -480,7 +539,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 52,
       "hash": "cba984e94dd75390648b8d098877ea753a7b1cea7027c306af0d068618f0a342",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/internal-types-export/tsdown.config.ts",
@@ -488,7 +548,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "6b5237e25346c2d481488596e3a4a4f77075ac2ade7fc0f72a0f56157a4ded15",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.test/monotest-api/src/index.ts",
@@ -496,7 +557,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "04bc6763a347ab8bbf1240d74b99a052dbaf24e43071e46078e8c8df262fa8ab",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/monotest-api-router01/src/index.ts",
@@ -504,7 +566,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "f27341b4850d8f8cb064872f0ac3d171d3c352c7409c900e29b72b468a93b553",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/monotest-app/src/App.tsx",
@@ -512,7 +575,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "b7d7c0f18224b185ea2ba20a8b0ad7c33c84fa267b423b8d8b3c3103316147fe",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.test/monotest-app/src/react-setup.tsx",
@@ -520,7 +584,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 31,
       "hash": "62957e40d77ae06b22622833ef622e969c85e946d5f5f57fcf5f38e404c24dbf",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/monotest-app/src/vanilla-client.ts",
@@ -528,7 +593,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 24,
       "hash": "7e3b5e1d159da3605e1cbeb5a443e4469a438c290783c12cf91f8bc4620aef78",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/monotest-trpc/src/index.ts",
@@ -536,7 +602,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "441fe660149ae5ffcb5e86b93a00a39dbe1d96389e8cc36e9efcab5c3a7777b6",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.test/monotest-trpc/src/trpc.ts",
@@ -544,7 +611,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "022b00920e79dfa8488f977aea8fef94b691ee4edf960a866aa8610817fe7d0c",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/next-env.d.ts",
@@ -552,7 +620,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "8964d295a9047c3a222af813b7d37deb57b835fd0942d89222e7def0aed136cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/next.config.ts",
@@ -560,7 +629,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "3ed5133de00a29203adc309e114aded96350f2c60b5aa1569025741db67428cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.test/ssg/playwright.config.ts",
@@ -568,7 +638,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 24,
       "hash": "04f7cc709d67ca8cc45a00dc83768081e478a667f088c4f69a16b67e66e505ed",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.test/ssg/src/pages/api/trpc/[trpc].ts",
@@ -576,7 +647,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "b62180283231375360e1341abb49a2e9ee221c57ccfdce200c986a01e0607bc1",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/src/pages/index.tsx",
@@ -584,7 +656,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 54,
       "hash": "00aba0ce1bffcc2b97dae9546daf351638585d57c2dc2d6804d621009389a619",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/src/pages/_app.tsx",
@@ -592,7 +665,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "7d753bf63cc5a14ee948759b62972ec522c0bae0e37bf50d51ff54b011106045",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/src/server/routers/_app.ts",
@@ -600,7 +674,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "9b6e56e7f04022f50a7eac927b2445ace8f33e2a7e8d8f9693a29c9b61bbb60b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/src/server/trpc.ts",
@@ -608,7 +683,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 31,
       "hash": "726287aeaf56d3df3df94bd1912e23cbc690e7b9c384a03e91458f96513e0580",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/src/utils/trpc.ts",
@@ -616,7 +692,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "a0cf14ddf406b75a13a6bba16536a21b873a448328666b4b3539c7ada329770a",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg/test/smoke.test.ts",
@@ -624,7 +701,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "a1a52de01649b3c3202656b10e92ce0fd5172c0f38cf99f331dfa9688246ae5f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/next-env.d.ts",
@@ -632,7 +710,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "8964d295a9047c3a222af813b7d37deb57b835fd0942d89222e7def0aed136cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/next.config.ts",
@@ -640,7 +719,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "3ed5133de00a29203adc309e114aded96350f2c60b5aa1569025741db67428cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/playwright.config.ts",
@@ -648,7 +728,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 21,
       "hash": "55aac144ef7ca7e1aaab541f1ef76c18cd4f7a5ba1d220f400ac143dd5811304",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/src/pages/api/trpc/[trpc].ts",
@@ -656,7 +737,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "b62180283231375360e1341abb49a2e9ee221c57ccfdce200c986a01e0607bc1",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/src/pages/index.tsx",
@@ -664,7 +746,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 72,
       "hash": "40bbede2676cad906ac2def470eaf28fe435b8c5275fc1cfc593cfa0e323072b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/src/pages/_app.tsx",
@@ -672,7 +755,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "e48c64b2c9bccc3ef28771641892134417cf55d5e72f48121cd12a9091de85d7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/src/server/routers/_app.ts",
@@ -680,7 +764,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "c5651b742f1fb2ff0c701b7368010e7d194c589a7d20c7583fe5029d9b9116d9",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/src/server/trpc.ts",
@@ -688,7 +773,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "779a01c3b5fcc49f6188b61223fb545eb6df057b4fce23ae132bb9ccfa8e25fd",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/src/utils/trpc.ts",
@@ -696,7 +782,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "c41b4d8fd16826fd5842bd82a67fd41830d8a5af464f6279e9560c29b86406a7",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/.test/ssg-infinite-serialization/test/smoke.test.ts",
@@ -704,7 +791,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "dffc299f5b317d651b14a89417ba7880217bbd9125e834080d39faffdafbbca2",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/bun/src/client.ts",
@@ -712,7 +800,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "cec332fe5b716f2c051fe4da3ab427da35d1522e871256ec44fb53361e92f01f",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/bun/src/index.ts",
@@ -720,7 +809,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "00454b1c0819be4a0bc9cbc7ac3b39c5683c33ba58a0c8812723138dcb570e12",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/bun/src/router.ts",
@@ -728,7 +818,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "4d99683fe46258c42984909b651cca1e12034940340e340d9fe6c3ce542989c3",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/cloudflare-workers/src/client.ts",
@@ -736,7 +827,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 37,
       "hash": "b0e61ae1e82e664a0403180ba453e14a6bd65f19b83a1882664d51c4feca032b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/cloudflare-workers/src/index.ts",
@@ -744,7 +836,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "32c24424a2550ce7322eed98b19487c2e14293163d582124e6cd799261f79fd7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/cloudflare-workers/src/router.ts",
@@ -752,7 +845,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "4d99683fe46258c42984909b651cca1e12034940340e340d9fe6c3ce542989c3",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/deno-deploy/src/client.ts",
@@ -760,7 +854,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "8fc28e84e959efff12bf4b60d34f7b76bf0166d613afc2fc86ca98b27f62a897",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/deno-deploy/src/index.ts",
@@ -768,7 +863,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "7465fefe6c9a3f0d3b105be8d049855d9cda03fae3700c98d69bc805f4b3654b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/deno-deploy/src/router.ts",
@@ -776,7 +872,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "4d99683fe46258c42984909b651cca1e12034940340e340d9fe6c3ce542989c3",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/express-minimal/src/client.ts",
@@ -784,7 +881,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "cf925c903bb207f38d4932f1e1fd948f9519be3ca6c73967e8d9a1792d35ef02",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/express-minimal/src/router.ts",
@@ -792,7 +890,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "8c29b4196140f94ce5259533b076036f8b209f5bddfd9ebbd2fdda7bb874d265",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/express-minimal/src/server.ts",
@@ -800,7 +899,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 24,
       "hash": "a00449f87bedaa11ff1e6d433bf607e51220f481fbf453e572f8f30a7227dd65",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/express-server/src/client.ts",
@@ -808,7 +908,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 75,
       "hash": "30d02b3a71a0ac4719e7f579ef9dcef3c88e8b612f0e63c72cadf0fd11f32943",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/express-server/src/server.ts",
@@ -816,7 +917,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 136,
       "hash": "4bb55edfac2be92320c4e3f1ae261c409db8e00819ecfd5250b66dda2a0c9042",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/client/index.ts",
@@ -824,7 +926,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 70,
       "hash": "88bcb84201bfd1a38e302bf5400d9bdb9d5d2f8083fe77aea5a39c8a7675538a",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/client/polyfill.ts",
@@ -832,7 +935,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 4,
       "hash": "e24926e7f096c5711920bfd77394aee869efbb33ff1879e82a883f4000959ad5",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/config.ts",
@@ -840,7 +944,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "397739f2c72076e115c2896581490b5bad6f03653a00020337440c540795556d",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/index.ts",
@@ -848,7 +953,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "293d9451a0a577a714a5e0f852d76ee96399bd3d951abcc738e173074079cf8c",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/router/context.ts",
@@ -856,7 +962,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "1a433c27fa2d697165821d0eae1ec99e5891c037583a5aee7b167733286c054c",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/router/index.ts",
@@ -864,7 +971,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "165b4a6023c6d6f7e6589b0218a19fa1da954f4c52341fca62bedfc1c64c020f",
       "fanIn": 2,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/router/routers/api.ts",
@@ -872,7 +980,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "16595145b3a3507d2a981b5c1f2636b9cb893e2b2137b7aa3bde2433fa5476a4",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/router/routers/posts.ts",
@@ -880,7 +989,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "7feb35a92eb05e7993b0e58c4f8c6d64ba3694509e4a993862cf65ae94c74085",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/router/routers/sub.ts",
@@ -888,7 +998,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "5089920c08c7d3065ef19ca42a5c7a4a147866e35b7713449b5f2bbe7e1d814e",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/router/trpc.ts",
@@ -896,7 +1007,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "8016f80e6c2fc601ea40f03d27c155bcb994b27901097aa46a25b4ec4a51513a",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/fastify-server/src/server/server.ts",
@@ -904,7 +1016,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 57,
       "hash": "054b4778429cdfe43bdf427ba97cedf74eb5fa9474348402e06167b063757d76",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/lambda-api-gateway/src/client.ts",
@@ -912,7 +1025,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "3a52b81c43a7912cd8784824ff080d6a320311187bd2d0cffc173fca0f3a8277",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/lambda-api-gateway/src/payloadFormatVersionClient.ts",
@@ -920,7 +1034,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "4a4bd26d61802466e640949ae396fcf67465b6d772aa143c3df0a876a4d787b7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/lambda-api-gateway/src/server.ts",
@@ -928,7 +1043,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "92ef09f67fa7f9ed445c611fcff84e8eca25b9337528bde7fb8cdfd17cd722c9",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/lambda-api-gateway-streaming/src/client.ts",
@@ -936,7 +1052,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "a0b2c0f20a25cfe0b8a3a8826071d8159b5f9db86e12ec297ae4b048a1ad7e35",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/lambda-api-gateway-streaming/src/server.ts",
@@ -944,7 +1061,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "a2470a37ff29d611190ab301e04c89593a3c20a88ab98f29a748e2aa3e6469bc",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/lambda-url/src/client.ts",
@@ -952,7 +1070,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "cde62c7ea7a8e94258e51a5da5848f2c2bf9d360053a007db269aeecf1b8a620",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/lambda-url/src/server.ts",
@@ -960,7 +1079,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 57,
       "hash": "5f1a3d2f592c10db50118ea3755988d1605dbd091e5e979de50d2c56b8ace116",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/lazy-load/src/client/index.ts",
@@ -968,7 +1088,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 41,
       "hash": "c735dba0d1182f18af01371064e61e03c0a8103b7575f47cc340cd9702f1cadc",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/lazy-load/src/server/db.ts",
@@ -976,7 +1097,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "6b9a34c53038a51d368acaa3a492fc3136982635752b9bb5077c248b97ed5c4d",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/lazy-load/src/server/index.ts",
@@ -984,7 +1106,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "1c2627287d52c6f2427722cce97dd22752a1def1a2eefd91ffcaf251d80a87cf",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/lazy-load/src/server/routers/slow.ts",
@@ -992,7 +1115,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 10,
       "hash": "f2b1e3010f7aaa8929b247fa494fbbf7c416fcac38ecfa5b3b3b6ddb82f12849",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/lazy-load/src/server/routers/user.ts",
@@ -1000,7 +1124,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "44dbf245f30af9a9064c6b8040acd3bf7897169d84e29ff66934220cf16342bd",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/lazy-load/src/server/routers/_app.ts",
@@ -1008,7 +1133,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "ecfca79a786231324b5473a708c16feee40afe54828f8142e630464a14baeae2",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/lazy-load/src/server/trpc.ts",
@@ -1016,7 +1142,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "0429ee7d4534a0cd7f12a4afd9f7b1723c9489cf8d9ca040bff4b59b03d437bc",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal/src/client/index.ts",
@@ -1024,7 +1151,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 61,
       "hash": "5b5a3be8c76fb77e8633b1e973ecee58046960d8a728d49699249f46078bfcbf",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/minimal/src/server/db.ts",
@@ -1032,7 +1160,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "6b9a34c53038a51d368acaa3a492fc3136982635752b9bb5077c248b97ed5c4d",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal/src/server/index.ts",
@@ -1040,7 +1169,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 53,
       "hash": "ffc48391dfd8cda08adf96f9bc2e457c134f5c26ce46f28f05e1dd1cd6787874",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/minimal/src/server/trpc.ts",
@@ -1048,7 +1178,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "7a10839584f211745e6c5e41eb04fe5ba51d8fc94647adb6dbd88dd4cf91f0be",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal/src/shared/transformer.ts",
@@ -1056,7 +1187,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "54cef08e1efb9bc5f33fcb09acb3e2cd485964142bcb6c3c48965fece73b50c8",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/client/src/App.tsx",
@@ -1064,7 +1196,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 38,
       "hash": "fdb57c8264c912c8729e6ef5d36b5f0621481db49ec3cdf7a0ce9a5b1db1064e",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/client/src/main.tsx",
@@ -1072,7 +1205,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "5a7ba74baed3e95ec8010cb3a5914f7eae7370c6c5b8f61675a5f38d35e9c89a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/client/src/SendFileButton.tsx",
@@ -1080,7 +1214,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "1cc0006640622f5f6ef7f9d3a2d03ef83d3009b0479c5243febecf31bbc2c8b5",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/client/src/SendMultipartFormDataButton.tsx",
@@ -1088,7 +1223,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "2e8849dbca3d6c348413cbfdb8079d5784ce012177f4b728c8409aaa70b83234",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/client/src/utils/trpc.ts",
@@ -1096,7 +1232,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "b2e5ec07018ed995c3d0fda8dfa1aa7dc070d1e98526cc91c3ff4277a5f7b747",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/client/src/vite-env.d.ts",
@@ -1104,7 +1241,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/client/vite.config.ts",
@@ -1112,7 +1250,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "eddb8f3d5e9fdb769d27a7c7bea8ee6e0d9c1c8212f36c253463f8336780419f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/minimal-content-types/playwright.config.ts",
@@ -1120,7 +1259,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "531b4689f80d50321ecd4152fe9a9f13d39b1d8b13eebae3f20ba844328ecea0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/minimal-content-types/server/index.ts",
@@ -1128,7 +1268,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 79,
       "hash": "b394a25d7bf42dd802c42c45fe5e72dab33b8349efa7f306e8028b099c6c6efb",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-content-types/test/smoke.test.ts",
@@ -1136,7 +1277,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 10,
       "hash": "2575c5ca45cdaf449be63238275e255e0e898acead19af7a7e01b4c6ef15ca87",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/App.tsx",
@@ -1144,7 +1286,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 21,
       "hash": "5f4c97b8490491c2962f98e5102417782765def796a40449afd3438fb2378849",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/Checkout.tsx",
@@ -1152,7 +1295,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 73,
       "hash": "27d646f408474a8ab81842f07705da4e4b8e391f1a610b3692b40015db9988eb",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/Greeting.tsx",
@@ -1160,7 +1304,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "82d0c33bd47654af3d5468ab5c73e2a178b25fcd4f6490ffe7de294cdab776f9",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/main.tsx",
@@ -1168,7 +1313,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "5a7ba74baed3e95ec8010cb3a5914f7eae7370c6c5b8f61675a5f38d35e9c89a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/Maintenance.tsx",
@@ -1176,7 +1322,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 41,
       "hash": "d248cdc29933b32002585d998e023efb7be094576964bf857eff13d6006f8150",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/SafeCheckout.tsx",
@@ -1184,7 +1331,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "edfb7dcc22f0c06a038b05d5e82d802690dfb887281fa59fe99b234ec9961307",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/utils/trpc.ts",
@@ -1192,7 +1340,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "8ff56a8eb7f9fd24475cd94af7cf587f7841cd6d86965e17a671157ceb2761bd",
       "fanIn": 5,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/src/vite-env.d.ts",
@@ -1200,7 +1349,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/client/vite.config.ts",
@@ -1208,7 +1358,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "338ffa6438265c30aee45691b23b59a56faa65e4acd102afa77c9dd9b0d72be6",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/minimal-per-procedure-errors/playwright.config.ts",
@@ -1216,7 +1367,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "95f51dc265a8bce1283059149c8ca1ee7d30fe742ea945a45e950d799cb00db8",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/minimal-per-procedure-errors/server/index.ts",
@@ -1224,7 +1376,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 198,
       "hash": "4c748a798acbf5a6567d82f4af9f55aa2d242b9264c889cd19ed97309a80f0fc",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-per-procedure-errors/test/smoke.test.ts",
@@ -1232,7 +1385,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 63,
       "hash": "6d4b38b2dac6df5b749b3c8e11add0cdccb0b45f56b24a999fea7f80d40c1f55",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-react/client/src/App.tsx",
@@ -1240,7 +1394,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "73f207f6c545a5e0cffb452f6c526b6ce29ad944426324947e5e99f16bcdbc39",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-react/client/src/Greeting.tsx",
@@ -1248,7 +1403,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "ad20083a2a6270e96002c1fb102b420f674f96337cc2e0707ef52ac117a2deca",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-react/client/src/main.tsx",
@@ -1256,7 +1412,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "5a7ba74baed3e95ec8010cb3a5914f7eae7370c6c5b8f61675a5f38d35e9c89a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-react/client/src/utils/trpc.ts",
@@ -1264,7 +1421,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "7f0451c5048170cee07d50710fb0cf2767370aad7c2455c32b99aafa4d434afb",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-react/client/src/vite-env.d.ts",
@@ -1272,7 +1430,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-react/client/vite.config.ts",
@@ -1280,7 +1439,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "eddb8f3d5e9fdb769d27a7c7bea8ee6e0d9c1c8212f36c253463f8336780419f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/minimal-react/playwright.config.ts",
@@ -1288,7 +1448,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "51d2404a164e590b3d7c198303b6dc2d800d73eeda9c20f307f9c4192a1a5f2e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/minimal-react/server/index.ts",
@@ -1296,7 +1457,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "a52e3386e47b329d67b63794d63be683f3bd1ee60a6d352e2e4d2d06a7354aea",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/minimal-react/test/smoke.test.ts",
@@ -1304,7 +1466,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 10,
       "hash": "2575c5ca45cdaf449be63238275e255e0e898acead19af7a7e01b4c6ef15ca87",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/next-env.d.ts",
@@ -1312,7 +1475,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "8964d295a9047c3a222af813b7d37deb57b835fd0942d89222e7def0aed136cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/next.config.ts",
@@ -1320,7 +1484,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "3ed5133de00a29203adc309e114aded96350f2c60b5aa1569025741db67428cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-big-router/scripts/codegen-base.ts",
@@ -1328,7 +1493,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 45,
       "hash": "d84c270ff63075a57f695bfa40a1484fe7579f5c318a5cf049fc79d4c1da183b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/scripts/codegen.ts",
@@ -1336,7 +1502,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 43,
       "hash": "90bc3cef7b6724d0aa9a888e7cb6a76272b94120f9af6297bd70b01ddc626a38",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/src/pages/api/trpc/[trpc].ts",
@@ -1344,7 +1511,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "32132e9af257962ea02bc26bc0e23c93e48e49b6ce77952b58bcfcf36857ce3c",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/src/pages/index.tsx",
@@ -1352,7 +1520,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 31,
       "hash": "ef651f230d5271b7d6a2443018b5ce4a3bf48112951fbea63a4a1c7d22c6f1f7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/src/pages/_app.tsx",
@@ -1360,7 +1529,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "e48c64b2c9bccc3ef28771641892134417cf55d5e72f48121cd12a9091de85d7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/src/server/context.ts",
@@ -1368,7 +1538,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "e0747fb8bd340f41e9e059725ff00f32cab1924df376830a2a741b9f09d62572",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/src/server/trpc.ts",
@@ -1376,7 +1547,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "3fac04292e8fa9e9bcf5934f7bc0adf80d7d97eef0927bffc2195ca1fc5c6fb7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-big-router/src/utils/trpc.ts",
@@ -1384,7 +1556,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "3ccaebf6ca1c56380ad978116116f5a0337e6c9af357512eb02c03dd47873653",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-edge-runtime/next-env.d.ts",
@@ -1392,7 +1565,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "8964d295a9047c3a222af813b7d37deb57b835fd0942d89222e7def0aed136cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-edge-runtime/next.config.ts",
@@ -1400,7 +1574,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "3ed5133de00a29203adc309e114aded96350f2c60b5aa1569025741db67428cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-edge-runtime/src/pages/api/trpc/[trpc].ts",
@@ -1408,7 +1583,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 50,
       "hash": "7bd19d22bcec781c2ae3f506d9453e759f0d3648363a3442eae443f8260c1c14",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-edge-runtime/src/pages/index.tsx",
@@ -1416,7 +1592,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 37,
       "hash": "ad65809f0508491e28a2d48ac099d1a72aa24735bea6cb561d73f4dbfe622d6f",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-edge-runtime/src/pages/_app.tsx",
@@ -1424,7 +1601,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "e48c64b2c9bccc3ef28771641892134417cf55d5e72f48121cd12a9091de85d7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-edge-runtime/src/server/trpc.ts",
@@ -1432,7 +1610,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "1684e3a9adc74f9dab40d3b1d27a6d1e27ba411e01ff7ebdcab400adc2ac5f37",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-edge-runtime/src/utils/trpc.ts",
@@ -1440,7 +1619,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "faff9e07a19ce705251caf9de567bebd3c06a97a85445c2c067f1ad00b9fb675",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/next-env.d.ts",
@@ -1448,7 +1628,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "8964d295a9047c3a222af813b7d37deb57b835fd0942d89222e7def0aed136cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/next.config.ts",
@@ -1456,7 +1637,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "3ed5133de00a29203adc309e114aded96350f2c60b5aa1569025741db67428cc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-formdata/src/pages/api/trpc/[trpc].ts",
@@ -1464,7 +1646,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "ce9e105b05c2d68486a77c49ba406ccb78b2f124b2b956c0f1223c38d938cea8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/pages/index.tsx",
@@ -1472,7 +1655,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "9b000ac10edb092e305e73f97633fc290da86aba07bc50666fb918ced5ad9ea3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/pages/react-hook-form.tsx",
@@ -1480,7 +1664,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 134,
       "hash": "3cb46922f9f0aa104c0a6c4df5ab012c24f26858dacf0b2285e40ad5f55f16c3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/pages/vanilla.tsx",
@@ -1488,7 +1673,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 76,
       "hash": "2ac0619da4a2d96c7267ac515a5ad5115a6d0617f840789803f9c3b15d693bc8",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/pages/_app.tsx",
@@ -1496,7 +1682,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "e48c64b2c9bccc3ef28771641892134417cf55d5e72f48121cd12a9091de85d7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/server/routers/room.ts",
@@ -1504,7 +1691,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "b94918d129c15aea147a28e1a43bc3aa7d794aeeec4449343b60d91d536a77b1",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/server/routers/viewer.ts",
@@ -1512,7 +1700,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "47c97f1e5ebb676f5fb5fc325936c6b8a35001244844b5aaa11e1d4bc7c04e44",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/server/trpc.ts",
@@ -1520,7 +1709,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 47,
       "hash": "e464865279b656e29c8fe79f71a882a7956c32ea51cbd81db340381be544e001",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/utils/schemas.ts",
@@ -1528,7 +1718,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "48ad19a8990a16b8c509eb616e2ca4501d00639bec76ee41df6edf0aa7079da1",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/utils/trpc.ts",
@@ -1536,7 +1727,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 75,
       "hash": "013efbcc9a52ef75abc2488ec953c2b763ed313921934c49e928e80578beed3e",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-formdata/src/utils/writeFileToDisk.ts",
@@ -1544,7 +1736,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 31,
       "hash": "346dac5a0734ec875762eb55dc13369836be92562bda499657ca7e898065fa58",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/next-env.d.ts",
@@ -1552,7 +1745,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "9a964c445118d72402f630b029a9f48cb1b5682c49df14ec08e66513096929ec",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/next.config.ts",
@@ -1560,7 +1754,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "a7101b380471fb13d3211a78ab79ad0c6b4f0e9808b5bb566833a25aa583d969",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-minimal-starter/playwright.config.ts",
@@ -1568,7 +1763,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "883e4521ef200ec009526b2da44b07bc8a7a8310569fb9c333d3a8fe68edcd37",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-minimal-starter/src/app/api/trpc/[trpc]/route.ts",
@@ -1576,7 +1772,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "bf6033f5439608478fe47667c2d455a140bc37debf242aa33b0f5e24c561036a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-minimal-starter/src/app/error.tsx",
@@ -1584,7 +1781,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 21,
       "hash": "07de791073c976c30c8153a66c29bbdf977a769bb147f9b31c1af1201b841720",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-minimal-starter/src/app/greeting.tsx",
@@ -1592,7 +1790,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "4cbc3d6eefc0f51c7d15598783633fc9572e12fb78d7341815aad1d58c017152",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/src/app/layout.tsx",
@@ -1600,7 +1799,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "369c695979abedf44385373a12b5e73d73b5f5a2a93596462777b3f6eab96114",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-minimal-starter/src/app/loop-data.tsx",
@@ -1608,7 +1808,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 57,
       "hash": "34c8ad86aab26e73e5780c374b20a9a95a538135867b1cb0575f5cc0763a4331",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/src/app/page.tsx",
@@ -1616,7 +1817,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 66,
       "hash": "a4c4410e395e6c2561fd5b5a50c92f9e1ac4f845b536f375e219686b33620501",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": true
     },
     {
       "path": "examples/next-minimal-starter/src/trpc/client.tsx",
@@ -1624,7 +1826,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 67,
       "hash": "d73a14b0e3b40df4c45c0082fe12a4f19db429107425deeee8815211636201e0",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/src/trpc/init.ts",
@@ -1632,7 +1835,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "d88828f42a143c1886324aede4012405f3b1526cd7464a310e520a5a1d81a8e8",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/src/trpc/query-client.ts",
@@ -1640,7 +1844,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "5b725857627bbe38fc181993d3f3640a98ed15b1c2dc9ff13ba1f013b7ca679d",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/src/trpc/routers/_app.ts",
@@ -1648,7 +1853,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 63,
       "hash": "1bfc15f210aa1380ee6a580cdcb2db434522f790d6ca320a9b586a25c7ab2b57",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/src/trpc/server.tsx",
@@ -1656,7 +1862,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "0e4cbe62b37207f3033673bade17de8a626fa0ded57f158f74aea135f11eda3d",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/next-minimal-starter/test/smoke.test.ts",
@@ -1664,7 +1871,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 24,
       "hash": "0bf4777125ddc3654df6a96232b923aacd7740c1ee44c3eefade4141f7464639",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/next-env.d.ts",
@@ -1672,7 +1880,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "771e5cc3833ef3d79e01fbd1f4daed9cf7a250f08974395c50567ddefab5dcd7",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/next.config.ts",
@@ -1680,7 +1889,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "ff5bb33c369d2c1a9295f53e60ab82d24306bf58cd1ea4996610655da78aee5b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-starter/playwright/smoke.test.ts",
@@ -1688,7 +1898,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "0f294bba8fe8e65076bde2ee06b368017482e3f06b8778a88dbe81edf0244dac",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/playwright.config.ts",
@@ -1696,7 +1907,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "b26781ffd604027cf56fde64517ec382987736009062e69fbcc6a7cb0bc2556b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-starter/postcss.config.js",
@@ -1704,7 +1916,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "b0d45b7a9780869ad3628672c145ab67fca91ad4c110808131aeb1f7d863343b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-starter/prisma/seed.ts",
@@ -1712,7 +1925,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "6030bae92f5b3be936a6eebe8ecd24e37fae996ee32ebb7f0678d17bf3894368",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/components/DefaultLayout.tsx",
@@ -1720,7 +1934,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 44,
       "hash": "fa60cd32edfa8699f03bb4bc95b0941629ecc2e7827ff62c184fa851676e1547",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/pages/404.tsx",
@@ -1728,7 +1943,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "ebdbefe7144e3ba9e8683356db7511a4c92733b98d111becd0dbbc38c5269438",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/pages/api/trpc/[trpc].ts",
@@ -1736,7 +1952,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "ad134236e35d692e798af35323cacb301126587d50e6e3cbbf8e486ee0befe84",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/pages/index.tsx",
@@ -1744,7 +1961,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 336,
       "hash": "3a4f84b0cdb3d0514d2ecedd22a400075a283dbc9911ab2d8acc5bbdc2a88bf0",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/pages/post/[id].tsx",
@@ -1752,7 +1970,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 137,
       "hash": "1651149867f874d905c4cc92e469a1e452c483f3139e047db10d528574510dfc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/pages/_app.tsx",
@@ -1760,7 +1979,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "42d4acc629141ce051aee918ea1ae29c04381967799b4a9ce876963a51d86cde",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/server/context.ts",
@@ -1768,7 +1988,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "47e41e8b4a13cef1e6438196a0eb08c4a2df9a0ffa5e38fbf4ad216771e2ef94",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/server/env.ts",
@@ -1776,7 +1997,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "bd00a2e01b5ae62ba9ffa8300917a17d9261d66f1c4ef32f4cb44a6b9909ecc1",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/server/prisma.ts",
@@ -1784,7 +2006,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "9111d895172168ddf40059712cea45560b35a889529771b79545bf79a10436e8",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/server/routers/post.test.ts",
@@ -1792,7 +2015,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "a3b5fda6326c0622e793fa171be7e7cdc6cf5129ae1f5b3b59fcf9cce65d7bf1",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/server/routers/post.ts",
@@ -1800,7 +2024,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 105,
       "hash": "a36e7abc3a8a793bc423a01fb56f146f61b50852673034a547fbb34713219c45",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/server/routers/_app.ts",
@@ -1808,7 +2033,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "a7b45b705614f267ffd819f3db97ab5fe14f89435d13197343fc2ba8a9fe2b0f",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/server/trpc.ts",
@@ -1816,7 +2042,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 51,
       "hash": "f5cbc31995ab1a6cd9dac880f64d17d9ef0ac261a51783cc784f63fd96ea54e5",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/utils/transformer.ts",
@@ -1824,7 +2051,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "54cef08e1efb9bc5f33fcb09acb3e2cd485964142bcb6c3c48965fece73b50c8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-starter/src/utils/trpc.ts",
@@ -1832,7 +2060,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 109,
       "hash": "b5d7bdec17223ca757ae17bb231ed13eb5b3641c9d3d1f7397e6b0932648ca02",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/next.config.js",
@@ -1840,7 +2069,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "ded8cfa1939d3fffc144ca1cd0205519d84c20a83f0fe0dd265daccbf971a987",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-todomvc/playwright.config.ts",
@@ -1848,7 +2078,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "b75fd8b208d674b8dbbb3e8918c5502c551fd3c1daa9ddb028927f4af2276271",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-todomvc/src/components/footer.tsx",
@@ -1856,7 +2087,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "43f620572453ebc6d048113805fb10d243255d3e5568f73863e5712df8ddf7b9",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/pages/api/trpc/[trpc].ts",
@@ -1864,7 +2096,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "92652d80956e329f0c265a9175a64d2812e1869752f26cd1815a908fbf2eac02",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/pages/[filter].tsx",
@@ -1872,7 +2105,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 321,
       "hash": "d07a22ff8ddaa0723a79ee4dbec56b160a753994847ba83f4fc153d7db0344d5",
       "fanIn": 0,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/pages/_app.tsx",
@@ -1880,7 +2114,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "5e7ce2cb832baae3b11dc64177baf7f4f760ffcfe62d51ac11c278dd49474ba7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/server/context.ts",
@@ -1888,7 +2123,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "98a5a5646f2a8163cf115bc8880fe6dccd6ce2587095249031d1d56be15ed509",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/server/prisma.ts",
@@ -1896,7 +2132,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "edd678b869d6373bf62f4c99898564db6acf73f9bcbdc0b711df3af40ef4a074",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/server/routers/todo.ts",
@@ -1904,7 +2141,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 63,
       "hash": "d39097453aba607b0c494f7490f9cdc18c4a76bd3845763358030d081d526cd4",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/server/routers/_app.ts",
@@ -1912,7 +2150,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "637755faa2f9ed26c25e36ff16a9fa5f112e6f9a6d2d6ffaa38dbc13b11aa4f6",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/server/ssg-init.ts",
@@ -1920,7 +2159,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "1382ae66a8fbce7a5147d2a81ace5be49e3a92561f16002e55e56467d06f55a5",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/server/trpc.ts",
@@ -1928,7 +2168,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "255ec218bee87e7a8006b373ef55b55e3fb2a65838c41dea2d9a2368c1a74156",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/utils/trpc.ts",
@@ -1936,7 +2177,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 68,
       "hash": "1df3246147312dfca6b02c02c6a78614a495991f0e4d3587b4d2e25126e8fbb6",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/src/utils/use-click-outside.tsx",
@@ -1944,7 +2186,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 38,
       "hash": "31f1f2bc46309240cf7e2f06afcc96995ec586cf33a090ea17ab218ab27dbd17",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-todomvc/test/playwright.test.ts",
@@ -1952,7 +2195,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 19,
       "hash": "29b67080e11365213918b9c94538e1950891d518cdd10f5f88be135526ef69ca",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/next-env.d.ts",
@@ -1960,7 +2204,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "93764845bca0b13fac8fb730960f4b0078a3107a9ff3cb27efa99a1b9e96910f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/next.config.ts",
@@ -1968,7 +2213,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "5733202a5e6e926dabe16cceb6ab30f99314b04ed173cfd0c88f339b5121e57e",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-websockets-starter/playwright.config.ts",
@@ -1976,7 +2222,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "25bc22f8fda9ba2d52a097a1de0da3a740619e758c59dfe29d3a4801bb297a8e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-websockets-starter/postcss.config.js",
@@ -1984,7 +2231,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "b0d45b7a9780869ad3628672c145ab67fca91ad4c110808131aeb1f7d863343b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-websockets-starter/prisma/seed.ts",
@@ -1992,7 +2240,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "295a4f3f1902d6be94e1e4eff3b032b668d6f51744d7c21a80401bbf7436238f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/app/api/trpc-ws/route.ts",
@@ -2000,7 +2249,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "c4a48174dd3f3e7893a93c46bdccb956cd4f7365462ae5613f098018ed5dc052",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/instrumentation.ts",
@@ -2008,7 +2258,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "99c5692bf938700257f3d563a14f12d6c91c5558c0ba2f17804084e46e1c602c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/pages/about.tsx",
@@ -2016,7 +2267,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 87,
       "hash": "81750531f559c75683b43fd6fd406ff3af4c57254c416380647d5ebe4285db96",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/pages/api/auth/[...nextauth].ts",
@@ -2024,7 +2276,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 64,
       "hash": "45fabbf5f1c2123d0f8ea10d3ea2d16f3e9ca7b834a41122b626f59b1243df9e",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/pages/api/trpc/[trpc].ts",
@@ -2032,7 +2285,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "16e501913e71410e77add9e57bc57e6c59d42a8d041c8ffeccc31bb2bd199a08",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/pages/index.tsx",
@@ -2040,7 +2294,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 513,
       "hash": "2df440031e8926ab07bafbb9faa524d31b8d2c9aca30209537234126e02d9f4d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/pages/_app.tsx",
@@ -2048,7 +2303,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "f3f10ea8a699118cf8210d94d4da2d1f67ecc51317b240384e581ffe71c04190",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/auth.ts",
@@ -2056,7 +2312,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "9d272701aba50ad9f367dc0426d65458b15acb4654707f32e66759ec0b092deb",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/context.ts",
@@ -2064,7 +2321,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "f258944eda741297057d2b8e5fcac30d0a5e77176599c1c60a44dca45e89dd02",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/prisma.ts",
@@ -2072,7 +2330,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "0a6e7238f2e18f369ac94a4693745b2e9ce6a7efe39e39174c48d780819dceaa",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/prodServer.ts",
@@ -2080,7 +2339,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 55,
       "hash": "d0078b5971864964288c460c4dcf8ace39271a2c48cd6b6c285d836352fc4c17",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/pubsub.ts",
@@ -2088,7 +2348,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 50,
       "hash": "78559c1f1925cbccad6abd378ab48a94531786d0161bf17a285cd1b402229d8e",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/routers/post.ts",
@@ -2096,7 +2357,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 194,
       "hash": "9e7bdf9b90af4ff0f8309bb55b82b4011275e5327a9e5c73ffedcf8b593af658",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/routers/_app.ts",
@@ -2104,7 +2366,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "fd98167f436978a9fa6c58f9415971e0f7d2c43ad603f6f779155400e9e7987e",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/trpc.ts",
@@ -2112,7 +2375,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 64,
       "hash": "a6ec67a6e7fdce53f21b9b5753717d2f3bc9195a472e5008799c6af11f83c9bb",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/wsOrigin.ts",
@@ -2120,7 +2384,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 19,
       "hash": "a4319cc8dd58c66a00350c802a4fd1e653ea309760e279a10dc281b264a1a651",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/server/wssDevServer.ts",
@@ -2128,7 +2393,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "4aef041a58e963078b9310d1dd54ea8f06771890aff139ebf3661bd7785cd7fb",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/utils/trpc.ts",
@@ -2136,7 +2402,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "5422fe7402ae92fba55a8a98d874241cdb07e6ae9787277bd27395c3dae642c1",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/src/utils/vercelHost.ts",
@@ -2144,7 +2411,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "3061a9033de41463289ad02ae6181869068abccd28d6ea82cfd8387f2b68bbcb",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-prisma-websockets-starter/test/playwright.test.ts",
@@ -2152,7 +2420,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "5724400f67b1f035b875b43a9e88b42b0f96c9e5b7647b9df510331821886957",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/next-env.d.ts",
@@ -2160,7 +2429,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "436f05ed55f050e50115198def9cdf1026dc4990c5fcb522622f947172bd455a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/next.config.ts",
@@ -2168,7 +2438,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "fe31af886f93d200b0e3386afe57e98eb542cff622f4c67dc305e5958e2df4a2",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-websockets-encoder/postcss.config.js",
@@ -2176,7 +2447,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "b78f5d0a0a449ecf58b6b6252e26cd2216c7aa41235e2d6d01a26b9a065cd439",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/next-websockets-encoder/src/pages/api/trpc/[trpc].ts",
@@ -2184,7 +2456,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "0ee040b46d4eef45c190816e8e64a873fcc600112adbe6434267e0b007bc5554",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/pages/index.tsx",
@@ -2192,7 +2465,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 113,
       "hash": "6a5708658b7cbd0a453b63951713f3b988985e1bc55c1cea490ce9b5b394420b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/pages/_app.tsx",
@@ -2200,7 +2474,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 10,
       "hash": "34d17eda5c62fabb077a6adec4745b224c635b500876374da7a4547ca00487d0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/server/prodServer.ts",
@@ -2208,7 +2483,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "494bcda90981272f96f12ed44cade754430ca59eb2a33b40aab252e088a9b9d4",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/server/routers/_app.ts",
@@ -2216,7 +2492,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "90da0d32796b756634bc42c86f0605c7a57c627e4601eceef9289ab1c28c366f",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/server/trpc.ts",
@@ -2224,7 +2501,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 21,
       "hash": "0129bc4eb94ebb9f5ebf74413391e1838ec843604934ce691a880bed6e6efe37",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/server/wsOrigin.ts",
@@ -2232,7 +2510,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "5b1ea8b9ba99fb06dea81910f2885d376fa53e27aa99a24c8376f957f1c76654",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/server/wssDevServer.ts",
@@ -2240,7 +2519,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "2b496e9724565db641b71b7779245fd445266dc8d3def98ca6c57f21a471b11c",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/utils/encoder.ts",
@@ -2248,7 +2528,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "77496949fdd0745b9a6db9b1b99d7eda8f1cb5b96f34f6d1bb9626270b8de765",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/src/utils/trpc.ts",
@@ -2256,7 +2537,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 47,
       "hash": "ffe6addf4781da4e50f525870f6ee1e4c65ef48bf929334ea2cc02d21c5b5197",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/next-websockets-encoder/tailwind.config.ts",
@@ -2264,7 +2546,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "ec57b2ab1a056d7d522af9535a43d01c415a4b791a7440e75cf63e75e0fa1933",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/nuxt/nuxt.config.ts",
@@ -2272,7 +2555,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "b56496aa36ff8934fa863c225c38605aa20e2a6fcf58b7e3d403cdd2e5473e2d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/nuxt/playwright.config.ts",
@@ -2280,7 +2564,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 51,
       "hash": "3861e70c747da2fdc03fc0bbfbe248287338266940675afddf0c0041ae84e03a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/nuxt/plugins/trpc.ts",
@@ -2288,7 +2573,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "9b62e9a57f00421e4a8557596e3ed668bf581a2f3a5792340466d085f69c2545",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/nuxt/server/api/trpc/[trpc].ts",
@@ -2296,7 +2582,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 41,
       "hash": "e7a455cb1da2f6a81a7600da4343e3ea85e896f32dc5fd4f31492c3b9cd7692c",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/nuxt/server/trpc/init.ts",
@@ -2304,7 +2591,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "1684e3a9adc74f9dab40d3b1d27a6d1e27ba411e01ff7ebdcab400adc2ac5f37",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/nuxt/test/smoke.test.ts",
@@ -2312,7 +2600,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "a03c8fec1da2c5ad61649cd0498482c992c4ad05c9a50d6964aa9c62e66eb0a6",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/client/client.gen.ts",
@@ -2320,7 +2609,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/client/index.ts",
@@ -2328,7 +2618,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/client/types.gen.ts",
@@ -2336,7 +2627,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/client/utils.gen.ts",
@@ -2344,7 +2636,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/client.gen.ts",
@@ -2352,7 +2645,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/auth.gen.ts",
@@ -2360,7 +2654,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/bodySerializer.gen.ts",
@@ -2368,7 +2663,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/params.gen.ts",
@@ -2376,7 +2672,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/pathSerializer.gen.ts",
@@ -2384,7 +2681,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/queryKeySerializer.gen.ts",
@@ -2392,7 +2690,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/serverSentEvents.gen.ts",
@@ -2400,7 +2699,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/types.gen.ts",
@@ -2408,7 +2708,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/core/utils.gen.ts",
@@ -2416,7 +2717,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/index.ts",
@@ -2424,7 +2726,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "f4311a595864f7f77809b7b3bfffcd09d556abe03136bf4e3e95de7a2a706e7d",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/sdk.gen.ts",
@@ -2432,7 +2735,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 86,
       "hash": "a4484406dfe52b9912184bd03ca0e2b6f84255de3d8b927168aa7ef9d44c1aef",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/generated/types.gen.ts",
@@ -2440,7 +2744,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 132,
       "hash": "3568050b81f6cfae49404d87aad2f6f96e1a860f2fcd33b09b900132c3c2a0cc",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/client/index.ts",
@@ -2448,7 +2753,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 60,
       "hash": "819bfa70023872bd8da74dc8d1644db5a211c3364c59c8cd07ad24d5d5dd7934",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/scripts/codegen.ts",
@@ -2456,7 +2762,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 60,
       "hash": "bf66a0aa04a11e3a650f7d305159702faf5ae08ab5b33fcfb82ca76c524e72ee",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/server/db.ts",
@@ -2464,7 +2771,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "97c1d20b1629606f0d1287b2e4fe8db8e818a9b7215afb9a84f1f447289918e0",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/server/index.ts",
@@ -2472,7 +2780,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "5846f2f54e2112370e8881d9de97494b427a5562da745fdbd6d6a0ca547f16e6",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/server/trpc.ts",
@@ -2480,7 +2789,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "7a10839584f211745e6c5e41eb04fe5ba51d8fc94647adb6dbd88dd4cf91f0be",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/openapi-codegen/src/shared/transformer.ts",
@@ -2488,7 +2798,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "54cef08e1efb9bc5f33fcb09acb3e2cd485964142bcb6c3c48965fece73b50c8",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/soa/client/client.ts",
@@ -2496,7 +2807,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "c0cc18992c1e0339857d18301b3c51f67212cd88f895fa89be3a0e48d122065c",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/soa/client/index.ts",
@@ -2504,7 +2816,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "9e6d4653170e6ffeae02c5fc13df5ac12743881b2c775d90db80c7250b3345e9",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/soa/faux-gateway/index.ts",
@@ -2512,7 +2825,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "63f6553b43210ae1f2733195d066349c9965bb239614f4a643aff1ee8a8a5558",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/soa/server-a/index.ts",
@@ -2520,7 +2834,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "b486bfeb9690579e6d530bc5c2306de59b2aa0cdf32ce548fadec0c8489ea18c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/soa/server-a/router.ts",
@@ -2528,7 +2843,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "3b966fe79484983d2f8c2a85127df708a38bce82b10ec03ea013ef5e4746bb98",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/soa/server-b/index.ts",
@@ -2536,7 +2852,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "01768751036e3e6bc4227ebd190f6673e2b3fc0181c85f74f19e940c46810ca7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/soa/server-b/router.ts",
@@ -2544,7 +2861,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "6c6988cbbfae2e81476cd0dcc9187f5f4ac1ad2a7ad789ae1c2c7f98e9f1f70c",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/soa/server-lib/index.ts",
@@ -2552,7 +2870,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "3a8da3509374c600664d6e4a8275faf8cd0f6432e5e9e4b895bbc3fe755de6c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/standalone-server/src/client.ts",
@@ -2560,7 +2879,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 68,
       "hash": "4bb13394ab665a156a3c167b6e15122c5c4b78d2f3b1a08438db09b1c4cc9e66",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/standalone-server/src/server.ts",
@@ -2568,7 +2888,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 92,
       "hash": "fafa8ed31d6f71f2557698da5ed902ea68c47e1baadd5bd85d4cc8af940ced60",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/drizzle.config.ts",
@@ -2576,7 +2897,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "5bc228b0fa3985ce313824ad07d58cf9a177b44dbb2ac6ea43f1db87fa3c4290",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/components/auth.tsx",
@@ -2584,7 +2906,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "789714b569b90b64f0639e98a3fcecd3796f7b3991a58a7f506bf47c24cff16c",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/components/create-channel.tsx",
@@ -2592,7 +2915,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 112,
       "hash": "659fd9139a516c360f943eeaa26fdd9834770308603c7772670af7ce835d7d24",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/lib/query-client.ts",
@@ -2600,7 +2924,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "7b5d6f93831720d0ac1124e51a250f71fb239bd02826fdb55d486029a0df8a21",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/lib/trpc.ts",
@@ -2608,7 +2933,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 67,
       "hash": "e5693623c3e50e7463d326ab976d47b03ce210ce0492eb2b4c23f23d23214469",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/queries.ts",
@@ -2616,7 +2942,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "e8b3b1ea863cbcbf0e8f7a67c9b5bd00c802137b850fdbf483446506ae2aaddb",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/router.tsx",
@@ -2624,7 +2951,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "b1167a5bc092def295499ed71a35545bede8fbc842f2785cdb5515c2a3bf7af6",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/api/auth.$.ts",
@@ -2632,7 +2960,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "e733ccf1c6f7e4c0547cefd2fe26782897739da57000a5e427df59c321c8d451",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/api/trpc.$.ts",
@@ -2640,7 +2969,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "f131e234336add30b68e9db9a187d19e769cbf8aee0d2c294399bc73abf08e33",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/channels/$channelId.tsx",
@@ -2648,7 +2978,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 171,
       "hash": "2494b96f17c4358caac4a74d37ab02492fcf6d4c6c03c45c38aa2bb77e86f589",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/channels/-components/chat.tsx",
@@ -2656,7 +2987,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 319,
       "hash": "5a9fd8070c43133021934be7c57b58abb6d652fdccfe8281e1e0debe5c92baab",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/channels/-components/hooks.ts",
@@ -2664,7 +2996,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 127,
       "hash": "bcdd72dc2b9a757485c176da0364bb4c72ab891e61ebe95cb7590cb4145e48ea",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/channels/-components/utils.ts",
@@ -2672,7 +3005,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "7d0194b75a4c73dda3a746d11b0fd452174a083abb7fa007a143f9876e619d51",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/index.tsx",
@@ -2680,7 +3014,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 188,
       "hash": "eb52bc043563f5ed89347ed8689d6cae357c3edfd762557cab3aef4be60ef654",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routes/__root.tsx",
@@ -2688,7 +3023,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 109,
       "hash": "1caa9703b64298cc0237bf74564066e9d439493bd5f08f5ad708f795e5aa8907",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/routeTree.gen.ts",
@@ -2696,7 +3032,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 123,
       "hash": "b77a502cf35eb234c1624caeb73d3511d13eae7bb49a7f9ddd708d7bc17717cd",
       "fanIn": 1,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/auth.ts",
@@ -2704,7 +3041,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 85,
       "hash": "4530fcf50c909c36067818b82fdb2dd7a779d20485a8951a7a45fdccc8d9b1b4",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/context.ts",
@@ -2712,7 +3050,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "8b472fe50f7091a61d8c1bf1ff5abce7320e40190295bdbbd627fa9e8fb51349",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/db/client.ts",
@@ -2720,7 +3059,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "b184157482347010c3c29f7f60ebcf940c9e9d129d2c4bc56026ca8a27ffe12a",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/db/schema.ts",
@@ -2728,7 +3068,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 67,
       "hash": "038173683619cbfa16218d272cc419c606ac0b92f33b3d7a33f167130d00fca8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/pubsub.ts",
@@ -2736,7 +3077,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "f3279271857b3aeaca6157d7f48f74b39b3bd913284a8eabb2cbb8fa492e8b2a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/routers/channel.ts",
@@ -2744,7 +3086,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 163,
       "hash": "2c60c1159502e542eefd83f225e26b4ac3e7d29ee3d2297714854da6ef8d8654",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/routers/post.ts",
@@ -2752,7 +3095,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 144,
       "hash": "90060af7f4033e3ce755fde8e448a1ddbdb7a5c73c4f012d4599b82a65c53188",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/routers/_app.ts",
@@ -2760,7 +3104,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "7c163c8d57c85e965e20ca9e7020e84846e4ff857a23f0a042bb99cbc30417fd",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/src/server/trpc.ts",
@@ -2768,7 +3113,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 97,
       "hash": "1f1b866912c5af12d2ef3f6a9d9953011540056850d1ed3a599e9b074ad8a57e",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/tanstack-start-sse-chat/vite.config.ts",
@@ -2776,7 +3122,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "f17484ce6361e937ca6cf7b887cb13b12b46ebff53cb1710ea75e6b625463ace",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "examples/vercel-edge-runtime/src/client.ts",
@@ -2784,7 +3131,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 37,
       "hash": "c4ade23c16596dc1b30f5ad977c2afc625593830f5880536e0012d86842e6221",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/vercel-edge-runtime/src/index.ts",
@@ -2792,7 +3140,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "4791ef1914a2cbf9703aa76c29a33a4d2cbf89536090a919e01fc617c70a3dda",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "examples/vercel-edge-runtime/src/router.ts",
@@ -2800,7 +3149,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "4d99683fe46258c42984909b651cca1e12034940340e340d9fe6c3ce542989c3",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/createTRPCClient.ts",
@@ -2808,7 +3158,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 226,
       "hash": "2954eaccc6abeedb978089456a48826f15402684d928a7536d1fd7d93424ee02",
       "fanIn": 5,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/createTRPCUntypedClient.ts",
@@ -2816,7 +3167,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "d6f39b8b674e9e9b2f1b39c8f066ce4400efb8ce56d87a4a35f2b203cb186d2f",
       "fanIn": 3,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/getFetch.ts",
@@ -2824,7 +3176,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "9f5d266ae04926951855481f1506e8ac2c8edac9e606c5bccfa3f7eb12d19a82",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/index.ts",
@@ -2832,7 +3185,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "feef550620f8aeb3dbe95898dba786d4e660b2ff23955cb255257a0a16965ec6",
       "fanIn": 2,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/dataLoader.ts",
@@ -2840,7 +3194,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 168,
       "hash": "b9160fd1fcaa4df07e9792ff9f6636a58e094fc3f0e888c03d6d79da8fae6f8b",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/inputWithTrackedEventId.ts",
@@ -2848,7 +3203,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "cb9624d5fdba4d58f8e067769b03bd8f0db36012331521f151fac203ef483214",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/signals.test.ts",
@@ -2856,7 +3212,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "2e02bbb558df1ea819eb58d7c59766aef866188f7d821bba05f3f35220719533",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/signals.ts",
@@ -2864,7 +3221,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 85,
       "hash": "b953723dcbdf6a23bb2347c8249aa35067e8b5b9afae92e2541a9b3cbd2f674a",
       "fanIn": 6,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/transformer.ts",
@@ -2872,7 +3230,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 77,
       "hash": "606579e5b4e4cb808a0b73c058b2cb57245d554997a4505344796cd6d0426145",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/TRPCUntypedClient.ts",
@@ -2880,7 +3239,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 290,
       "hash": "1cab1d59f1d014e95e136ea4c3e4371eb9818defe0a777295a713844ab48f615",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/types.test.ts",
@@ -2888,7 +3248,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "08b45b3c753608855fdbd7ae31239dac0d1d7ef1a769fe917b4b47c61e1c724e",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/internals/types.ts",
@@ -2896,7 +3257,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "1bcdbd3e3f60a15064aa9f88c9e052efc1a6126d9026ec3d69f26942ac300595",
       "fanIn": 9,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/httpAbortCleanup.test.ts",
@@ -2904,7 +3266,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 239,
       "hash": "5031228b6cd989612b80c306e9669112e9a58b2e7af5f8202e3a438d995b9d72",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/httpBatchLink.ts",
@@ -2912,7 +3275,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 162,
       "hash": "3ace4cbe43c7c87bcb6007232da7a2d360e13481544a89f5f5b0331601c39455",
       "fanIn": 2,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/HTTPBatchLinkOptions.ts",
@@ -2920,7 +3284,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "12e0e488b6b748d7f4112ea5aef850243115fa3f537c58bd1b9059ccc8f7b2a1",
       "fanIn": 3,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/httpBatchStreamLink.ts",
@@ -2928,7 +3293,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 245,
       "hash": "85e2c347cd15cda7babce8ef14b9d5955fad8b3fa682be3aeb003821151458a1",
       "fanIn": 1,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/httpLink.ts",
@@ -2936,7 +3302,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 168,
       "hash": "f6a05e8e2a0d36cee414db888a11835b1a6e2f557782bf99e9c0a411fb401e9f",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/httpSubscriptionLink.ts",
@@ -2944,7 +3311,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 255,
       "hash": "bdccfe3209efa1ea45c72b175d89f2cbba5886639f28f8056573381f03f74f86",
       "fanIn": 1,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/contentTypes.ts",
@@ -2952,7 +3320,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "e4451cc36f30f5c1cf71e09f7c7d21f79749c361107694595a03081e97271a0b",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/createChain.test.ts",
@@ -2960,7 +3329,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 120,
       "hash": "8e2f347e9d2448958bb99216290fbd9cae5b015974524d34fbb0e10ad21e471d",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/createChain.ts",
@@ -2968,7 +3338,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 41,
       "hash": "fb5af95ee8b897ff4f26dcc9f7fe23144066b652da9a0281c9f85bd2d0fccdfc",
       "fanIn": 5,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/dedupeLink.test.ts",
@@ -2976,7 +3347,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 136,
       "hash": "affe6f16d73322c1437197834478e614ec25b5c857873db31062de08bd7e3485",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/dedupeLink.ts",
@@ -2984,7 +3356,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 57,
       "hash": "86b1fb70b4efafc36db608552a85e8ef2f0accede6e5c221ab476af7d682a153",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/httpUtils.ts",
@@ -2992,7 +3365,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 265,
       "hash": "271612ac53c3c1d1a97839f360ac2d0aff9c3e0f8af5f3d69440091f4691d305",
       "fanIn": 5,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/subscriptions.ts",
@@ -3000,7 +3374,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "e40367ad147a2405820ef92dd275b37308be88718ca8a00d8adbd795357ef179",
       "fanIn": 5,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/internals/urlWithConnectionParams.ts",
@@ -3008,7 +3383,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "cc7a87b4ae96518c8706b653ba5a2709ca9f611f32634070640089371d3b4435",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/localLink.procedureErrors.test.ts",
@@ -3016,7 +3392,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 202,
       "hash": "ad9c17c7bf8ae4a024e51a70d57c96204040cf01f05436192de78a8899148eaa",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/localLink.test.ts",
@@ -3024,7 +3401,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 564,
       "hash": "ca436b48b7a92f36b0e9086e6eefab63d2ccc93a34c2279f8147c39c97356425",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/localLink.ts",
@@ -3032,7 +3410,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 319,
       "hash": "e1452f219c03710f22c013816417c0dcd627e4d4a9582e3f67e5d0457cd6487b",
       "fanIn": 4,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/loggerLink.ts",
@@ -3040,7 +3419,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 285,
       "hash": "986c58092fcba92771b9e0fef1e3a1aba219a9e0b3dd767ad5b1349c04ceb525",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/retryLink.test.ts",
@@ -3048,7 +3428,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 222,
       "hash": "3d2763a7f7bdbf41b4f2fbae44d3bcb80f87affd5a58a3adc516ce6f47d5e0da",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/retryLink.ts",
@@ -3056,7 +3437,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "f18cf04063563116d95103de64fbb8dfad5181f17609607c119168adc4db64b6",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/splitLink.test.ts",
@@ -3064,7 +3446,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "0bc22a8505dd979c99436161afc73cd99a44493b0c724348bdb99a3515e592e6",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/splitLink.ts",
@@ -3072,7 +3455,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "904525fceaff9c8a30992a5738ebdfc43ee192d927dca964275a8479fc1cfd15",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/types.ts",
@@ -3080,7 +3464,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 127,
       "hash": "541e7fdff78a339d002c337b903ce509339fb15f0845e5b22ce88bdf80082e86",
       "fanIn": 17,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/createWsClient.ts",
@@ -3088,7 +3473,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "d24bb579bdacc32d9e8e460414e6854ae922828c5461b96391b316e6400ab644",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsClient/encoder.ts",
@@ -3096,7 +3482,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "3ae947527b151fbff469e6d8713ca70d592ab69893db017530f7ac69a80c479c",
       "fanIn": 5,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsClient/options.ts",
@@ -3104,7 +3491,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "adb9bba886ef18b79db1a92a172ec2aedda7d91dd6fd2fa13cc886329574ab5a",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsClient/requestManager.test.ts",
@@ -3112,7 +3500,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "001f90f59ba8ebb6dd570e8013868897032c19f80ff711da78f6cb9bc02186c8",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsClient/requestManager.ts",
@@ -3120,7 +3509,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 291,
       "hash": "6a927016c1bd96a866cb82df1ac8e135de295860c93cf0df1363abc16adef0b4",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsClient/utils.ts",
@@ -3128,7 +3518,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 113,
       "hash": "27e44e3278eaebf1862f26d478c8883edc71ceb5b84ae6f1bac23ec3e6396e8f",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsClient/wsClient.ts",
@@ -3136,7 +3527,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 869,
       "hash": "961d2c2bcd559985c040088aecd440ff8a008e246909e7152f018d7e70dfb19d",
       "fanIn": 1,
-      "fanOut": 8
+      "fanOut": 8,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsClient/wsConnection.ts",
@@ -3144,7 +3536,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 277,
       "hash": "317c5087e4d8411c53dd3281e0a9c67b1c893d675a12c520f92dc78f15ce9f71",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links/wsLink/wsLink.ts",
@@ -3152,7 +3545,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 89,
       "hash": "2b2777d625ed739ffd7909683d644462391b8dd7019c778dda4f9ef7925fa80e",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/links.ts",
@@ -3160,7 +3554,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "660bf36b759aa6b50254dcc98d963f681258edc8da34b76758f49f6a970e9b10",
       "fanIn": 1,
-      "fanOut": 11
+      "fanOut": 11,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/safe.test.ts",
@@ -3168,7 +3563,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 157,
       "hash": "2f412051ff983157ab33f7a5e2cd06e34ba9b106802ce1094f47ca95bc68dbef",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/safe.ts",
@@ -3176,7 +3572,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "708e9125ae13db881aa8afdc5be02159557d0c738827e040eae9b931614616f4",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/TRPCClientError.ts",
@@ -3184,7 +3581,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 144,
       "hash": "9295d575c6cbb502ec80275b0c02447f18a61a6f716f0e602e2ba3d15a09ced7",
       "fanIn": 19,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/unstable-internals.ts",
@@ -3192,7 +3590,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 3,
       "hash": "542dc1a0b860dfff79b90d65e9aecb4841191fb8a3eebd3147748ba5202cef83",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/src/__tests__/testClientResource.ts",
@@ -3200,7 +3599,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 193,
       "hash": "9f400b706738b87694cf110bfde923b41d7a8b17d79ce63965d09fa6e9d5625f",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/client/tsdown.config.ts",
@@ -3208,7 +3608,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "2fafc6be359d66b8310cdc0ad4d7d66c19d26d469d403cb41656541a3f94eee5",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/client/vitest.config.ts",
@@ -3216,7 +3617,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "b5e0f7f504e3ca63a700587bbac05c5fab7ded895ff4903a15ee4bcf6ad31672",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/next/src/app-dir/cacheTags.test.ts",
@@ -3224,7 +3626,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 217,
       "hash": "00bbebfd3643363ba81199d2104bd05c8098c9ffc0127f46245c37632ea68564",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/client.test.tsx",
@@ -3232,7 +3635,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 426,
       "hash": "156f60a1a721bf8e87b9738cdffbe172c0e9571fc5969eb5787b3099059686f0",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/client.ts",
@@ -3240,7 +3644,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 74,
       "hash": "cd1a34a9c905b45bad814c238eb5c1df670b705c15a2e67ef4a983f427138605",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/create-action-hook.tsx",
@@ -3248,7 +3653,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 269,
       "hash": "4f75e96380ab70346cc5806d0ef74ce2af0345b353da9fe5d2b66818417bf5e1",
       "fanIn": 3,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/links/nextCache.ts",
@@ -3256,7 +3662,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "4ef8b620d201f1ac4b8ba92c0ae1a93ccc897973f7aad0299f91e52a7d579081",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/links/nextHttp.ts",
@@ -3264,7 +3671,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 90,
       "hash": "d5cff158a3a08789602924eafa0f823c4f680d064986c9679e343e14b173b833",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/procedureErrors.test.tsx",
@@ -3272,7 +3680,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 177,
       "hash": "34a768690cba42afc2b3e24069f091c633502df534641ba986ad3d4b9cb83f31",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/server.ts",
@@ -3280,7 +3689,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 241,
       "hash": "3c59759a028c7177af7e697c165a8098e1136b36176f5f244feea70f8afd6b83",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/shared.ts",
@@ -3288,7 +3698,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 159,
       "hash": "874540af96732fef6cb4e582ec0d6804717c8597423305dc713fc1ddcadedeb8",
       "fanIn": 7,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/app-dir/types.ts",
@@ -3296,7 +3707,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 65,
       "hash": "c24724de1dc6a030fd1f2b6fdb9f7f1f0489687d064912289d2066ad17e3d305",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/createTRPCNext.tsx",
@@ -3304,7 +3716,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 129,
       "hash": "facdc0758a01e467e81f7afa407d94eaaf1eb55612d021f988e624fb082208cc",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/index.ts",
@@ -3312,7 +3725,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 3,
       "hash": "ba046ca3741057fa55b775166c870853511bf78e2ab6dc5305ba50a2570abc9c",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/ssrPrepass.ts",
@@ -3320,7 +3734,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 197,
       "hash": "97445be06fc5296dda0f410bca85602296b8cd59a040ee8e7ad6feb0c1611c79",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/next/src/withTRPC.tsx",
@@ -3328,7 +3743,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 268,
       "hash": "28ef3ce963794efa7a74af99797daec7dacee2a229da5cb0d0fad55d24cb1e63",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/next/test/issue-4130-ssr-different-transformers.test.tsx",
@@ -3336,7 +3752,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 101,
       "hash": "7871ae13b41ad9428217c2b81f8ea79cac2aada59192446c38f6d9c28a6c4451",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/next/tsdown.config.ts",
@@ -3344,7 +3761,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "821029fadc4ac7975630cb6a2d55e17537b3cd674432429f92a7c21071479e2d",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/next/vitest.config.ts",
@@ -3352,7 +3770,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "b5e0f7f504e3ca63a700587bbac05c5fab7ded895ff4903a15ee4bcf6ad31672",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/openapi/src/cli.ts",
@@ -3360,7 +3779,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 142,
       "hash": "c1662b736ac3111d81d49d2b7df70fe00dc25944084288a977ce6a8f7cc4c866",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/src/generate.ts",
@@ -3368,7 +3788,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1822,
       "hash": "d70a8ea1515ddbd82d1563e4e083a01e8af6538dafe8449f83b73668fdf017dd",
       "fanIn": 8,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/src/heyapi/index.ts",
@@ -3376,7 +3797,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 193,
       "hash": "fec099e3101c2b83e0723fef184b64001f59bbe8e8605f6d919e81058d87e77b",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/src/index.ts",
@@ -3384,7 +3806,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "9688e4c02e104c7479a0855cfca79f31acd22daa768b1c18fc0053384520d57e",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/src/schemaExtraction.ts",
@@ -3392,7 +3815,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 454,
       "hash": "abc7f4c13189be18e52f0ba4e2716e727963d0fe57b882abed8c3003eaa04ace",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/src/types.ts",
@@ -3400,7 +3824,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 152,
       "hash": "bb360e969472ecdf34c7cbeafa97efec9e72a35abad43cd9df6b6ab8a20f85cb",
       "fanIn": 11,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/amazonIon.test.ts",
@@ -3408,7 +3833,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 69,
       "hash": "f7d0591a795946ae962ec081ac94a872aeaf15af095ebb84fafc53ffae5a675f",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/cli.test.ts",
@@ -3416,7 +3842,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 207,
       "hash": "9d4353143ee829b66e5ca81feafbe87b2e958e6c06a623c6aee233356979dba2",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/cyclicTypes.test.ts",
@@ -3424,7 +3851,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 423,
       "hash": "6c2e9650b71f698e3e8308f58b07c69bb134145a0ba8e547eccec710ca8ed537",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/edgeCases.test.ts",
@@ -3432,7 +3860,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 407,
       "hash": "c2ca035fda71ec64f2a1f0f277d77b60ad2ed01e86176c62181c2fe80d5ab935",
       "fanIn": 0,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/generate.test.ts",
@@ -3440,7 +3869,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1074,
       "hash": "cb4dba4bb33cdba15641ce6331276f3257245e132cd17f002af9d7ee6dc3e06a",
       "fanIn": 0,
-      "fanOut": 12
+      "fanOut": 12,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/heyapi.test.ts",
@@ -3448,7 +3878,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 403,
       "hash": "b61c51549dc7e1ec7130d99dd10bd3bd0294ee50d6d0154d3609fe42569d5de7",
       "fanIn": 0,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/mongoEjson.test.ts",
@@ -3456,7 +3887,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 69,
       "hash": "5fcc37fc1c9aef33dda5e2818008ce5e51a567b343df7a39b9112d6e0b0ff59f",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/nodeModulesJsDoc.test.ts",
@@ -3464,7 +3896,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 99,
       "hash": "f0a00b6f7cf5114388df804dde82725a5f354e8b8b71771b0fe02493340b45ad",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/openApiCompat.test.ts",
@@ -3472,7 +3905,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "58e4bb40868b820de6e329a751752df656d80bc3fbaa01ef0b8488f586bab6cc",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/procedureErrors.test.ts",
@@ -3480,7 +3914,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 390,
       "hash": "b663cb281eb0c6d3cbacd563e198287afe15b5e75d5a21b58eac8298ba9d96f8",
       "fanIn": 0,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/client/client.gen.ts",
@@ -3488,7 +3923,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/client/index.ts",
@@ -3496,7 +3932,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/client/types.gen.ts",
@@ -3504,7 +3941,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/client/utils.gen.ts",
@@ -3512,7 +3950,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/client.gen.ts",
@@ -3520,7 +3959,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/auth.gen.ts",
@@ -3528,7 +3968,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/bodySerializer.gen.ts",
@@ -3536,7 +3977,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/params.gen.ts",
@@ -3544,7 +3986,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/pathSerializer.gen.ts",
@@ -3552,7 +3995,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -3560,7 +4004,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -3568,7 +4013,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/types.gen.ts",
@@ -3576,7 +4022,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/core/utils.gen.ts",
@@ -3584,7 +4031,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/index.ts",
@@ -3592,7 +4040,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "2ff20d99502fe67539e6c50e1b1aeb6790846ce7d6ef8a8344695cddc8e739af",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/sdk.gen.ts",
@@ -3600,7 +4049,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 86,
       "hash": "5165f1c2910e68e5d1b73000470edf63e1655c9020aab8414f9cbab686584eba",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter-heyapi/types.gen.ts",
@@ -3608,7 +4058,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 187,
       "hash": "ac970c11b230b926a1eaa84d4ccf71086208e37664d5bc229eedf5c2f89731d7",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/amazonIonRouter.router.ts",
@@ -3616,7 +4067,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 143,
       "hash": "403cb5c1944a7a17e1f5e64ef58bc21e172894afcb47fdc37866264d97d0777b",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/client/client.gen.ts",
@@ -3624,7 +4076,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/client/index.ts",
@@ -3632,7 +4085,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/client/types.gen.ts",
@@ -3640,7 +4094,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/client/utils.gen.ts",
@@ -3648,7 +4103,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/client.gen.ts",
@@ -3656,7 +4112,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/auth.gen.ts",
@@ -3664,7 +4121,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/bodySerializer.gen.ts",
@@ -3672,7 +4130,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/params.gen.ts",
@@ -3680,7 +4139,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/pathSerializer.gen.ts",
@@ -3688,7 +4148,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -3696,7 +4157,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -3704,7 +4166,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/types.gen.ts",
@@ -3712,7 +4175,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/core/utils.gen.ts",
@@ -3720,7 +4184,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/index.ts",
@@ -3728,7 +4193,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "aa70c797faa175c94a4291db4c9288e8d761ea30cce0ef4b6c7927d6dfca4fcd",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/sdk.gen.ts",
@@ -3736,7 +4202,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 424,
       "hash": "350a570aacb59074a26a1929885a2c2bc013640eb0b09ab39003f4e6b4a20858",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter-heyapi/types.gen.ts",
@@ -3744,7 +4211,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2623,
       "hash": "5ea0dcd47840c508c324852afce7fedb277f5fc0948ebbbf64d2065502428e33",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/appRouter.router.ts",
@@ -3752,7 +4220,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 677,
       "hash": "44102a9c76c6ed6a26a101011610ed1d622ca2855bfa5b419dc1898063bb997f",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/client/client.gen.ts",
@@ -3760,7 +4229,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/client/index.ts",
@@ -3768,7 +4238,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/client/types.gen.ts",
@@ -3776,7 +4247,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/client/utils.gen.ts",
@@ -3784,7 +4256,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/client.gen.ts",
@@ -3792,7 +4265,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/auth.gen.ts",
@@ -3800,7 +4274,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/bodySerializer.gen.ts",
@@ -3808,7 +4283,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/params.gen.ts",
@@ -3816,7 +4292,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/pathSerializer.gen.ts",
@@ -3824,7 +4301,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -3832,7 +4310,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -3840,7 +4319,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/types.gen.ts",
@@ -3848,7 +4328,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/core/utils.gen.ts",
@@ -3856,7 +4337,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/index.ts",
@@ -3864,7 +4346,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "9d0c23d793106b63e1c58543d7f361211bcff3a55eb424ba6b2be3a4554a5556",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/sdk.gen.ts",
@@ -3872,7 +4355,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "0ac9dbbe65f434a32f059f56ea0fb6c33dd1d33a137f48081d55b0669c4f339c",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter-heyapi/types.gen.ts",
@@ -3880,7 +4364,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 570,
       "hash": "d2b799b344e0be55718d8c8a0a061078eba91bea51dc26b7a35a73bb7af0ee5b",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/cyclicTypesRouter.router.ts",
@@ -3888,7 +4373,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 249,
       "hash": "ce50b51ba8a1bb227c7b1c4c87b73e1c169e90502f679f970b197a9a7d1cbc21",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/client/client.gen.ts",
@@ -3896,7 +4382,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/client/index.ts",
@@ -3904,7 +4391,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/client/types.gen.ts",
@@ -3912,7 +4400,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/client/utils.gen.ts",
@@ -3920,7 +4409,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/client.gen.ts",
@@ -3928,7 +4418,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/auth.gen.ts",
@@ -3936,7 +4427,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/bodySerializer.gen.ts",
@@ -3944,7 +4436,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/params.gen.ts",
@@ -3952,7 +4445,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/pathSerializer.gen.ts",
@@ -3960,7 +4454,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -3968,7 +4463,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -3976,7 +4472,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/types.gen.ts",
@@ -3984,7 +4481,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/core/utils.gen.ts",
@@ -3992,7 +4490,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/index.ts",
@@ -4000,7 +4499,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "627674b76058b947aef0b58207632e9867d7a31765893caf2fa7a6ea3756d527",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/sdk.gen.ts",
@@ -4008,7 +4508,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 95,
       "hash": "f442316766880e63fb0759a53027fbd92e82eee5e873d9cfae2e3e0d9d9f620e",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter-heyapi/types.gen.ts",
@@ -4016,7 +4517,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 155,
       "hash": "8f7185e337464177791497eccd140202d9bb9bb555775dbe746c56297a430fd6",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/defaultErrorFormatterRouter.router.ts",
@@ -4024,7 +4526,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 51,
       "hash": "1f17263532886713115d537aac979278e5e4fa3a55be7945886edc89d78424b6",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/client/client.gen.ts",
@@ -4032,7 +4535,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/client/index.ts",
@@ -4040,7 +4544,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/client/types.gen.ts",
@@ -4048,7 +4553,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/client/utils.gen.ts",
@@ -4056,7 +4562,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/client.gen.ts",
@@ -4064,7 +4571,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/auth.gen.ts",
@@ -4072,7 +4580,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/bodySerializer.gen.ts",
@@ -4080,7 +4589,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/params.gen.ts",
@@ -4088,7 +4598,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/pathSerializer.gen.ts",
@@ -4096,7 +4607,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -4104,7 +4616,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -4112,7 +4625,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/types.gen.ts",
@@ -4120,7 +4634,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/core/utils.gen.ts",
@@ -4128,7 +4643,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/index.ts",
@@ -4136,7 +4652,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "27c63da05ba41759380540dbd5c5623dd181468e5185632bb4498e531c9357a7",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/sdk.gen.ts",
@@ -4144,7 +4661,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 144,
       "hash": "6d173b239dfa7b582bae409b9574baddad31f4b4d42d3f10a6fb8cb0f73984c9",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter-heyapi/types.gen.ts",
@@ -4152,7 +4670,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 538,
       "hash": "e160cec7587b6e88515f1c3c4763e5a5e2f97aa6617f086646a5331598de60e4",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/descriptionsRouter.router.ts",
@@ -4160,7 +4679,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 224,
       "hash": "ba8dc3acf134f01004a2ead8c349a3d8b370e79f64af1b355939435597c7333f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/client/client.gen.ts",
@@ -4168,7 +4688,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/client/index.ts",
@@ -4176,7 +4697,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/client/types.gen.ts",
@@ -4184,7 +4706,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/client/utils.gen.ts",
@@ -4192,7 +4715,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/client.gen.ts",
@@ -4200,7 +4724,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/auth.gen.ts",
@@ -4208,7 +4733,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/bodySerializer.gen.ts",
@@ -4216,7 +4742,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/params.gen.ts",
@@ -4224,7 +4751,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/pathSerializer.gen.ts",
@@ -4232,7 +4760,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -4240,7 +4769,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -4248,7 +4778,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/types.gen.ts",
@@ -4256,7 +4787,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/core/utils.gen.ts",
@@ -4264,7 +4796,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/index.ts",
@@ -4272,7 +4805,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "0b7b7edcc82d6da375161f49c95a571bed747b8596d34eb9b873a9181bec2ac8",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/sdk.gen.ts",
@@ -4280,7 +4814,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 177,
       "hash": "fcbeecefd2b2a8339bdecc6f6a62fb808541701e64e89594aa0097f9fd4300bb",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter-heyapi/types.gen.ts",
@@ -4288,7 +4823,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 833,
       "hash": "93a3bddb69c36a71763e2376b5651eeaffc0cfd8d057f9213471fb6eeff3fa90",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/edgeCaseRouter.router.ts",
@@ -4296,7 +4832,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 209,
       "hash": "aaf3d6fce974974fd457a06319d9cd34cf9a2c1bb06c7e4322917f60d47171ec",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/client/client.gen.ts",
@@ -4304,7 +4841,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/client/index.ts",
@@ -4312,7 +4850,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/client/types.gen.ts",
@@ -4320,7 +4859,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/client/utils.gen.ts",
@@ -4328,7 +4868,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/client.gen.ts",
@@ -4336,7 +4877,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/auth.gen.ts",
@@ -4344,7 +4886,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/bodySerializer.gen.ts",
@@ -4352,7 +4895,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/params.gen.ts",
@@ -4360,7 +4904,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/pathSerializer.gen.ts",
@@ -4368,7 +4913,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -4376,7 +4922,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -4384,7 +4931,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/types.gen.ts",
@@ -4392,7 +4940,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/core/utils.gen.ts",
@@ -4400,7 +4949,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/index.ts",
@@ -4408,7 +4958,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "ad62ef15d6174dcd66c0f684e07b181061a6b9f24909033d5123b22876fdc0a8",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/sdk.gen.ts",
@@ -4416,7 +4967,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 64,
       "hash": "7476007ffe3ae20d92404aec374495ce2a8a6907ed7df84e9342b70cdc974fbd",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter-heyapi/types.gen.ts",
@@ -4424,7 +4976,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 63,
       "hash": "584e7e13a1a0fbb9971bb90037411f158f8a413a6bffddd277845d128a02f632",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/errorFormatterRouter.router.ts",
@@ -4432,7 +4985,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "3aefd2b49435cfa690f65e49e220b5bb1a24a1964044b699fa7e0ba46e9542af",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/client/client.gen.ts",
@@ -4440,7 +4994,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/client/index.ts",
@@ -4448,7 +5003,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/client/types.gen.ts",
@@ -4456,7 +5012,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/client/utils.gen.ts",
@@ -4464,7 +5021,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/client.gen.ts",
@@ -4472,7 +5030,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/auth.gen.ts",
@@ -4480,7 +5039,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/bodySerializer.gen.ts",
@@ -4488,7 +5048,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/params.gen.ts",
@@ -4496,7 +5057,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/pathSerializer.gen.ts",
@@ -4504,7 +5066,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -4512,7 +5075,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -4520,7 +5084,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/types.gen.ts",
@@ -4528,7 +5093,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/core/utils.gen.ts",
@@ -4536,7 +5102,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/index.ts",
@@ -4544,7 +5111,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "2ff20d99502fe67539e6c50e1b1aeb6790846ce7d6ef8a8344695cddc8e739af",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/sdk.gen.ts",
@@ -4552,7 +5120,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 86,
       "hash": "5165f1c2910e68e5d1b73000470edf63e1655c9020aab8414f9cbab686584eba",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter-heyapi/types.gen.ts",
@@ -4560,7 +5129,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 187,
       "hash": "ac970c11b230b926a1eaa84d4ccf71086208e37664d5bc229eedf5c2f89731d7",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/mongoEjsonRouter.router.ts",
@@ -4568,7 +5138,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "ade7ab6dcefd8f99b3a19714676ffc921438b331f11033c25d503977c157a00e",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/client/client.gen.ts",
@@ -4576,7 +5147,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/client/index.ts",
@@ -4584,7 +5156,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/client/types.gen.ts",
@@ -4592,7 +5165,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/client/utils.gen.ts",
@@ -4600,7 +5174,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/client.gen.ts",
@@ -4608,7 +5183,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/auth.gen.ts",
@@ -4616,7 +5192,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/bodySerializer.gen.ts",
@@ -4624,7 +5201,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/params.gen.ts",
@@ -4632,7 +5210,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/pathSerializer.gen.ts",
@@ -4640,7 +5219,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -4648,7 +5228,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -4656,7 +5237,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/types.gen.ts",
@@ -4664,7 +5246,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/core/utils.gen.ts",
@@ -4672,7 +5255,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/index.ts",
@@ -4680,7 +5264,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "b768545ad0a9b4c27a3ca5c4aee888de289bf865d05188962e70ffa235052e41",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/sdk.gen.ts",
@@ -4688,7 +5273,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 72,
       "hash": "f880f377f4975303c9006d0a8a3563c55c8250cd25323fdd3142b06bdbe2c9fc",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter-heyapi/types.gen.ts",
@@ -4696,7 +5282,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 257,
       "hash": "f29f2ab89fe26cc5d365a5c4c638ece01daefbd385799f88d15e835730ecd7ff",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/nodeModulesJsDocRouter.router.ts",
@@ -4704,7 +5291,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "cf6daa92f9beaba5a2ac07cfbb5a757ad6f91add8f0da2ac133ac9ee85f91748",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/pathSeparatorRouter.ts",
@@ -4712,7 +5300,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "7af924cf02e7fba9cc63cf31a6f0658ac5a488fc28ac4eb4cd5855131553eaca",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/client/client.gen.ts",
@@ -4720,7 +5309,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/client/index.ts",
@@ -4728,7 +5318,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/client/types.gen.ts",
@@ -4736,7 +5327,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/client/utils.gen.ts",
@@ -4744,7 +5336,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/client.gen.ts",
@@ -4752,7 +5345,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/auth.gen.ts",
@@ -4760,7 +5354,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/bodySerializer.gen.ts",
@@ -4768,7 +5363,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/params.gen.ts",
@@ -4776,7 +5372,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/pathSerializer.gen.ts",
@@ -4784,7 +5381,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -4792,7 +5390,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -4800,7 +5399,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/types.gen.ts",
@@ -4808,7 +5408,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/core/utils.gen.ts",
@@ -4816,7 +5417,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/index.ts",
@@ -4824,7 +5426,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "d4e39ad263bc763adb92b15b1ea4db12814290456d13166069f0b5c0d17f45c4",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/sdk.gen.ts",
@@ -4832,7 +5435,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 137,
       "hash": "dce9443fbcbf5bb3f727d0efa97f4f200fba5005fce37e5a8a4f4faf4ddae852",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter-heyapi/types.gen.ts",
@@ -4840,7 +5444,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 356,
       "hash": "ef7e4e7ef9d9397526bc7f4d74fc857a722500b5293d7992f0bf85a383eb6ce0",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/procedureErrorsRouter.router.ts",
@@ -4848,7 +5453,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 123,
       "hash": "f84970bca53725dbbb00c03517b316be2c93b543b94f032adcdbd7f5743867ab",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/client/client.gen.ts",
@@ -4856,7 +5462,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 278,
       "hash": "ca22e61e81eec69420fc7e4acf50aab8736a986609ba5aba9cdf875e8493c9f3",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/client/index.ts",
@@ -4864,7 +5471,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c0a7080961f174a226e201253788c3c60ecbaee5a89a8605595d32338009c73a",
       "fanIn": 2,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/client/types.gen.ts",
@@ -4872,7 +5480,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 219,
       "hash": "98c4d450f627e649db9104578b08861bf7a5534332c4bee75234ef875827a251",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/client/utils.gen.ts",
@@ -4880,7 +5489,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 317,
       "hash": "1d39b5f1290413f1c799ce8e9d8af93fc000d4a21589b5a7af578096c629f622",
       "fanIn": 3,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/client.gen.ts",
@@ -4888,7 +5498,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "705933b7671dac18891654516b46820e78aa35aa12ee8c0f8e5e43993cc499a7",
       "fanIn": 3,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/auth.gen.ts",
@@ -4896,7 +5507,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "943b5a25266c3c9a9cd32b168df2c77f074789750c56d13245e3cd4dcaaa72be",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/bodySerializer.gen.ts",
@@ -4904,7 +5516,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "124cc958d7e1ba1c47e4fd9aed3b844fb916c2ed62d9944fbe614a02f9631d3f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/params.gen.ts",
@@ -4912,7 +5525,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "b710c1bdb322c30335664961368ab7176cbda26d19c2102588999860891a47a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/pathSerializer.gen.ts",
@@ -4920,7 +5534,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "c1b7474d21f0c9281f7e0a2afb4a316e278e7779e0e16a1d5969a89717be47c9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/queryKeySerializer.gen.ts",
@@ -4928,7 +5543,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "4ac0e54f3ddb0625c71e5027f7c17e070a7ea0025a890269178272b0455527e2",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/serverSentEvents.gen.ts",
@@ -4936,7 +5552,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 243,
       "hash": "595dee6d5410d500769a4792c1740b6fd9bb83c6deca9c49222d560893c1e07e",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/types.gen.ts",
@@ -4944,7 +5561,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "3194b5386e1d8cbde0dd266df193a07da4b278626013c327aaba2bfc516c84b5",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/core/utils.gen.ts",
@@ -4952,7 +5570,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "20c47dc768c5f7158730aa66aa462afe41a3871ba8a133cac3dfce3919d6c866",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/index.ts",
@@ -4960,7 +5579,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "133b499e53a4694ba54134ba84426e501ac539099a56c9ec5191bc0bfd4be113",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/sdk.gen.ts",
@@ -4968,7 +5588,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 79,
       "hash": "76e204cfca474cf429da92a2c5371999e159419061d3290d73f5414fe7bd7d50",
       "fanIn": 3,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter-heyapi/types.gen.ts",
@@ -4976,7 +5597,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 143,
       "hash": "3c7a088d2796d6504712c110fd53d0ab1d6eafe06f09fe80a3f3b533a454966f",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/routers/superjsonRouter.router.ts",
@@ -4984,7 +5606,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "25116c20222c6fffd7295f0dcccf2f0736561df6de00f544a43e4c5ba2556da1",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/schemaExtraction.test.ts",
@@ -4992,7 +5615,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 425,
       "hash": "fe35a892ecee82f39fe8fd697c68c094880670dfcebfa28c8ec59fdfddf946c5",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/scripts/codegen.run.ts",
@@ -5000,7 +5624,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "5a7833d0129a700dfedf853bb8016281bf0f51c57ad7052c8f33d44d145fc313",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/scripts/codegen.ts",
@@ -5008,7 +5633,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 170,
       "hash": "b12a91e15d67fbc9029ba4d5d77efd5e978e4457e1d055bfe39a34703a5a8034",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/scripts/globalSetup.ts",
@@ -5016,7 +5642,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 4,
       "hash": "1793fde9dc4fe9895b064723b6fcbc5c1dfadb3f2c5f9c33ee9dec9ec08bb5b0",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/types.ts",
@@ -5024,7 +5651,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 343,
       "hash": "c0ddd973a00145f875097f5c2e6f516cbfc386af41f7cc37740ee1a66f2839e7",
       "fanIn": 6,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/test/validateOpenApi.ts",
@@ -5032,7 +5660,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "755b75edea7a7321ee72e83b0c3d443035842fb0435b319cecf68bcb83f8ab6d",
       "fanIn": 5,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/openapi/tsdown.config.ts",
@@ -5040,7 +5669,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "bb2df835c0c0031772ad20578b253536f482f715b47eeb21d7488687e3fcb2d3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "packages/openapi/vitest.config.ts",
@@ -5048,7 +5678,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 19,
       "hash": "126df8f77be74f441353da59496f542c3b5d6c2a2d78946ba087ca5c9a4a651a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/react-query/src/createTRPCQueryUtils.tsx",
@@ -5056,7 +5687,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 21,
       "hash": "87cf7e5420e6ce6a0ca2b495d1be4e5eaee2e52fed58be27e2ffb7865be7a866",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/createTRPCReact.tsx",
@@ -5064,7 +5696,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 552,
       "hash": "11fb8a918e2a31104c4253162cd3644a998522756b15a8e72758135afe317a56",
       "fanIn": 4,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/index.ts",
@@ -5072,7 +5705,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "62536e8f29f3a3eb4ab39f6e7499ff932ab12bbeab378ecb37e32bde72fbed4f",
       "fanIn": 0,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/internals/context.tsx",
@@ -5080,7 +5714,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 378,
       "hash": "055d15a803daf17e26d476282cff3ed9053271a12c474bcc1ac07c18b69324af",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/internals/getClientArgs.ts",
@@ -5088,7 +5723,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "061113c895e901bf8cb19c198b1a8c73464299dfbbc8d3c0debe3843b584058f",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/internals/getQueryKey.test.ts",
@@ -5096,7 +5732,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 152,
       "hash": "1af4d9056db6b551f314ff691fe4b1d81c59667eeb923ff3919c0c6bdf927c04",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/internals/getQueryKey.ts",
@@ -5104,7 +5741,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 155,
       "hash": "d49f7186ce09c69e7ef5bb1b8e878bb8fe6170f503de7618db91eb4fe81e1c6b",
       "fanIn": 13,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/internals/trpcResult.ts",
@@ -5112,7 +5750,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "bce3d09afce2c9152f7a18662fff31cae6b61375197046503f0333eef4bc774b",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/internals/useQueries.ts",
@@ -5120,7 +5759,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 270,
       "hash": "1e3d200bedfb0ee5e1e23aed4f09646a573a90d0c3c4ae7cf04fa351a703fe06",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/rsc.tsx",
@@ -5128,7 +5768,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 206,
       "hash": "a2ad009743c30941e9e0d59e0d9615eb66e4873932faa86eab6c903be380ceab",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/server/index.ts",
@@ -5136,7 +5777,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "bfe9f0bc2626a3c0927b6e44cb1301f7d42ede8568c3483a8bbcefb928a6101c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/server/ssgProxy.ts",
@@ -5144,7 +5786,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 262,
       "hash": "14bb62aabf4fc430cd151ba8d24a2aa3cc733203fadf65f961f282eb9d5468a5",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/hooks/createHooksInternal.tsx",
@@ -5152,7 +5795,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 807,
       "hash": "c9dab747e1a2b5ce475fd862be002ec1dbd25904c12c06625866f927aa80b875",
       "fanIn": 3,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/hooks/createRootHooks.tsx",
@@ -5160,7 +5804,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "57619c21af4de3b079a9980a39d67172f1fba5e3d737babafac4b7bbc1f8274b",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/hooks/types.ts",
@@ -5168,7 +5813,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 430,
       "hash": "96dd1d71b1681a17c6ba6158dc8378fa4ff767cbc94a8957de671dbdf6a1e9ea",
       "fanIn": 8,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/index.ts",
@@ -5176,7 +5822,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "4450fdd49749799f3696f7dea18eb017b781862120bb9b2783cbaf8b4dd29027",
       "fanIn": 11,
-      "fanOut": 12
+      "fanOut": 12,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/polymorphism/index.ts",
@@ -5184,7 +5831,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "db6d57fdd87c3b4527113cf5a4c5a8e3eb9583c67692a57ec4b1c2f917623fcb",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/polymorphism/mutationLike.ts",
@@ -5192,7 +5840,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 43,
       "hash": "faab000bec59d3d88a2745a4df295cbc24c9723b3ae75df366e885c198dd4506",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/polymorphism/queryLike.ts",
@@ -5200,7 +5849,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "6fc36ba3220607ff49072201e11aae1fed91f114ce902c0f3f3873656c814c94",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/polymorphism/routerLike.ts",
@@ -5208,7 +5858,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 47,
       "hash": "303f3382eed98b6153b9a0f371183d1d16253ef38b0533c7c0a7ab4e0c69e1b0",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/polymorphism/utilsLike.ts",
@@ -5216,7 +5867,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "bdbccb008144d4721fbeec0a40edcd54c8cbe1ab835e252e1be29894e629eed1",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/proxy/decorationProxy.ts",
@@ -5224,7 +5876,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "39b53b5dace9ac8a8308d38bc291e8ec50625e8cd4f63f5cd70f46056ea0acae",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/proxy/useQueriesProxy.ts",
@@ -5232,7 +5885,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 123,
       "hash": "4a1c6620b8c09b9d93fd078254514465a8280947f7d266d370a928e681713305",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/proxy/utilsProxy.ts",
@@ -5240,7 +5894,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 576,
       "hash": "c4d38337cd4991c292d1f900021a53b39a9119d682acc6763eae75718148aad9",
       "fanIn": 2,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/queryClient.ts",
@@ -5248,7 +5903,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "1cfcba23d897189ed167c90b34d17df8586144551a70a64e0698bf4e4daf75ef",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/shared/types.ts",
@@ -5256,7 +5912,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 339,
       "hash": "2584b629cbb2af55dc53b9ec00854f832f34d1e0d66f4376ed1e7b95a0bbf9c1",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/utils/createUtilityFunctions.ts",
@@ -5264,7 +5921,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 276,
       "hash": "7b4f04b15420422ee504e39eb9a31cf55786ea9a8b9c7f7a736b65a3d08e0615",
       "fanIn": 2,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/src/utils/inferReactQueryProcedure.ts",
@@ -5272,7 +5930,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "54717fcb6e6eed65951937b0a8c2ceab88332b9bf1a41b74c866f6776c302734",
       "fanIn": 4,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/abortOnUnmount.test.tsx",
@@ -5280,7 +5939,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 192,
       "hash": "f78603e88678b2a1d496087cb01990c845fdab8fa90908623b14a46d006d4805",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/createClient.test.tsx",
@@ -5288,7 +5948,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 70,
       "hash": "3d0ea62dd3f47bb526eee7e4e9c4aaf937bee3614db1f7f2f538bf44e0dd8bb8",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/createQueryUtils.test.ts",
@@ -5296,7 +5957,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 344,
       "hash": "672ab403d6a158351bdc6dd6a1d7718a6bb37c6811a3c704ea1fd9be7b9d2f03",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/dehydrate.test.tsx",
@@ -5304,7 +5966,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 99,
       "hash": "5526a4d57d44bc26297430e6b5b179c324b8594a9c4d0739a198bd49580d136c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/ensureQueryData.test.tsx",
@@ -5312,7 +5975,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 69,
       "hash": "39ee8f6ec0047642dd3d72b76958df6f4a778dbb2b5c0703b24cdefeec7a4a87",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/errors.test.tsx",
@@ -5320,7 +5984,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 216,
       "hash": "a68162b99a1d94ae45b8fdbfa590d6755531081cf8c48e9634c6336e8181b6ec",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/formatError.test.tsx",
@@ -5328,7 +5993,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "0238954ea87e84be20ca6d9deced9b130b92d808868e5053f790b2d9b8152d0c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/formData.test.tsx",
@@ -5336,7 +6002,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 273,
       "hash": "c9e9efa3ee436a625caffafd0e5a66d2f82e7bbbdc7491c0178566e58af995a2",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/getQueryKey.test.tsx",
@@ -5344,7 +6011,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 381,
       "hash": "ed2802ff9fdecd9e0acdd449e49332d6fed0c09ed16e38c5c9d4a57fd234ae6b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/invalidateQueries.test.tsx",
@@ -5352,7 +6020,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 401,
       "hash": "0afc648caff91cfd8c0175196981ab48cb53ddf31328ddb152ed8fda80abd550",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/invalidateRouters.test.tsx",
@@ -5360,7 +6029,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 412,
       "hash": "8b2e90621a12d05fccaebc346d759ba1ce046d216c1ca289f354eed3d5918032",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/multiple-trpc-providers.test.tsx",
@@ -5368,7 +6038,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 117,
       "hash": "a6fe51124e0f4573c4d8cc85955391120bf10345ee92eb9040fc99881d7b3d02",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/mutationkey.test.tsx",
@@ -5376,7 +6047,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 77,
       "hash": "8dc1da15e34c54f3f07c54c0d4d1d188878fe55d6ce59339cf76c869303321bf",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/next.procedureErrors.test.tsx",
@@ -5384,7 +6056,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 205,
       "hash": "977dee29ad4ad643af17ef5af3f6ad383fa851f5d0dfa00bf4b203395e136449",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/octetStreams.test.tsx",
@@ -5392,7 +6065,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "c4bf4c9acfc46726a10d8ea3d2b07b75fa485994b7ba1171eebd7d81b411cd6f",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/offline.test.tsx",
@@ -5400,7 +6074,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 136,
       "hash": "accb4c251e69dda3c01bfaa6e9124b409d7f2b29a55a695b39b1e5f4094f2435",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/overrides.test.tsx",
@@ -5408,7 +6083,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 156,
       "hash": "f18bd3f7e0a05d1d72d9dcb23c3635bee4c50ae5e166677fd5f1414c4583ae54",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/polymorphism.common.tsx",
@@ -5416,7 +6092,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "818efd48bc71aea55b45e4637cca773bef908e889461a339835111098d2b0108",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/polymorphism.factory.tsx",
@@ -5424,7 +6101,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 107,
       "hash": "a702f5671224109362e6dd8517a5aa19f738ea2c0951714b309e428075f2afda",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/polymorphism.subtyped-factory.tsx",
@@ -5432,7 +6110,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 127,
       "hash": "839ba7d58e0ccb543cee423c146a0149aec71f993787e2c018843adae908a763",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/polymorphism.test.tsx",
@@ -5440,7 +6119,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 502,
       "hash": "41856f6b15b522ad324cbd5ecb7b85c10c4715c0a4033257df5451a294d004c7",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/prefetchQuery.test.tsx",
@@ -5448,7 +6128,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 284,
       "hash": "3cb28e7eda0bda8b92ee426d015fd7d84e12ed382ae4ff240efa61901407c59e",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/procedureErrors.test.tsx",
@@ -5456,7 +6137,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 200,
       "hash": "1e0a68c36938cdc1faca801d1464488c6d674c063029eba8d1c01213cbe7bcf3",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/queryClientDefaults.test.tsx",
@@ -5464,7 +6146,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 151,
       "hash": "c1e194de343272041bb728d8aaedfb81aa8fb6b68a655cc524c5f70d90dabd1b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/queryOptions.test.tsx",
@@ -5472,7 +6155,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 580,
       "hash": "d80d90649f5b23724dd296a8a9b70d5b79cfc0b3cfe6df29f950ff626f23260b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-1645-setErrorStatusSSR.test.tsx",
@@ -5480,7 +6164,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 68,
       "hash": "3b2fa6d298497bbbdacab84ddff4c456d876a721bf114a70040ddcc6bc625847",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-2942-useInfiniteQuery-setData.test.tsx",
@@ -5488,7 +6173,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 205,
       "hash": "5f9a6a96c2023d38360a8e24c000a5187d68fd567fd093d6237510b43a0330a3",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-2996-defined-data.test.tsx",
@@ -5496,7 +6182,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 132,
       "hash": "48ff5c8e64c6e01d2378212b73170db144aa06c3c035b912507f07677de5b61f",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-3455-56-invalidate-queries.test.tsx",
@@ -5504,7 +6191,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 229,
       "hash": "ce6a8706a229f702264756994e48c5e7787af827ca63506e6f21f3c9ff6d5fff",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-3461-reserved-properties.test.tsx",
@@ -5512,7 +6200,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 79,
       "hash": "1bf1dd33328c2172b5c1f1dbb84eb5cf185e97e9c064dee0eba1108bf1900a0d",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-4360-useInfiniteQuery-placeHolderData.test.tsx",
@@ -5520,7 +6209,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "b8a2674ba412a2523dff465a23d8b30c459296093169c92196b92c03e26ea261",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-4486-initialData-types.test.tsx",
@@ -5528,7 +6218,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 221,
       "hash": "627b3e3f571203b009515ac0d7d2dd9573b66ff7b5aa000489e5c7f9cc20785c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-4519-invalid-select-as-transform.test.tsx",
@@ -5536,7 +6227,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 157,
       "hash": "45be4100ccf0a53f505a15c442904cdd10256bbbee5353516e5eb14783c8b9c6",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-5357-input-always-required.test.tsx",
@@ -5544,7 +6236,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 50,
       "hash": "af1befece389d2dfa207c05436386b24d5a4e0d1ea92f8f8b440ff8476487982",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-5808-proxy-in-dep-array.test.tsx",
@@ -5552,7 +6245,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 200,
       "hash": "4e843e47cc4d0b137e224460a51b8666a6f16427d54b57cd680b45ea208ca99c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-6721-anyrouter-intersection.test.tsx",
@@ -5560,7 +6254,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 21,
       "hash": "5b9f82ee513b5a21990a47f895061127b17d96e068f4e7369c6e023499b2ee8e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-6862-infinite-query-cursor-initial-load.test.tsx",
@@ -5568,7 +6263,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 149,
       "hash": "0b50cf6747b9d06c2d4fe3ab00fe0d04371f7bb182a72437bed2492916771c9a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/regression/issue-6862-infinite-query-cursor-utils.test.ts",
@@ -5576,7 +6272,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 87,
       "hash": "c54ea64b364a53c5a6b02a343afc26362cdbb86683c80498f2c655f895734591",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/rsc-prefetch.test.tsx",
@@ -5584,7 +6281,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 136,
       "hash": "02ae9c049e2b8234a870fedd1df9dd1e712425fa4dab55e621e07cb7e3b98fe5",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/setInfiniteQueryData.test.tsx",
@@ -5592,7 +6290,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 104,
       "hash": "722d9c94f1d786cf8eba149bee1e739ea399b9101a31b678952952e895fb8cfd",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/setQueriesData.test.tsx",
@@ -5600,7 +6299,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 72,
       "hash": "c2e21676f12e68fdf51577f9e3aa50baabcdeb3e300ce7779b1cbe7527a8f1b0",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/setQueryData.test.tsx",
@@ -5608,7 +6308,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "7645c06ad9007556b3ce3116e18cf868e58f1a60b52348aea159363b2b228808",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/ssg.test.ts",
@@ -5616,7 +6317,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 202,
       "hash": "33f179ed7d3c9d84f93307a3040476dfa60b4c311dd12a72131293f971533fb2",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/ssgExternal.test.ts",
@@ -5624,7 +6326,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 174,
       "hash": "2ad071c2bed3d54ea6fb6a400b6081455e43049008c058973d03d0ad70930f8b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/trpc-options.test.tsx",
@@ -5632,7 +6335,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 130,
       "hash": "50049541c1323a889d0540baed8aabdea860e84169014633a36f485579f2d870",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useInfiniteQuery.test.tsx",
@@ -5640,7 +6344,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 651,
       "hash": "041a8382a5eeed997e824a08cea85a9b77e97eade58cc71c85299b277f6c9720",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useMutation.test.tsx",
@@ -5648,7 +6353,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 120,
       "hash": "1b1517ba62bc15f6aa2851784f45ed66b3fd2fd62f983ddcbcfc3a64586d37b7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useQueries.test.tsx",
@@ -5656,7 +6362,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 351,
       "hash": "5d5962645829a7a86a956ac66c2f7629e8915d3b3926e565dd7583967f3dd80b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useQuery.test.tsx",
@@ -5664,7 +6371,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 381,
       "hash": "4381c13acd3ccf34dd7f4e5ff10690595c84e8e177edeccc36dae8fc8f1fd50c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useSubscription.test.tsx",
@@ -5672,7 +6380,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 546,
       "hash": "915d93103422c87b2352ca17bf9234916c7d8f680a9b283be508df3e606b8b06",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useSuspenseInfiniteQuery.test.tsx",
@@ -5680,7 +6389,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 146,
       "hash": "82641367dec87f6b55feef1a9e28add342903067e7b20a7f599580bbeb6aeeef",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useSuspenseQueries.test.tsx",
@@ -5688,7 +6398,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 280,
       "hash": "6acde325af8109b6e7d453db977c47c2d3ed06bfe99e7acd6a499c07b51ade63",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useSuspenseQuery.test.tsx",
@@ -5696,7 +6407,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 74,
       "hash": "f85642b472aaa123bfe7f97df347d909ed7bed2947c124447915d442e43acf77",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/useUtils.test.tsx",
@@ -5704,7 +6416,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 895,
       "hash": "ab649104436272c7b5016e3a5a0678b396c4152a5a93e7ecef7ef7cd06d1d04c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/withTRPC.test.tsx",
@@ -5712,7 +6425,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 857,
       "hash": "2d54329d20400ee6f7d18b10d61fcbcee2dabe7a7cec5caaf22793e25c3556ba",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/__queryClient.ts",
@@ -5720,7 +6434,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 31,
       "hash": "7e7d74e0bc4cd2d249c8b6d3e7a9de207bdada4e683469c0902975a0be70c3f2",
       "fanIn": 11,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/__reactHelpers.tsx",
@@ -5728,7 +6443,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 115,
       "hash": "55a0919f7cf45ba4cce94cf5d6fbd849489aa2c4ed81664a47bf34982382ddfe",
       "fanIn": 28,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/__setupTests.ts",
@@ -5736,7 +6452,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "f71ca1cf640eac1977e9a2c151d989dbaebb2eaea41c87bfee752c8734520fc9",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/test/__testHelpers.tsx",
@@ -5744,7 +6461,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 358,
       "hash": "c2a928cf5d44296cc13f4a7469745ab5109472d1a76db4401c493b2d36b47a56",
       "fanIn": 12,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/react-query/tsdown.config.ts",
@@ -5752,7 +6470,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "1d2062884900def74d60cce10ac5b9f2967587fd6dbd80939175f41fd3e20784",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/react-query/vitest.config.ts",
@@ -5760,7 +6479,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "ff725b6ab1e893c7d270399cfcbc3bf285fbbba109fa206ee3cc1da80ec2356e",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/server/src/@trpc/server/http.ts",
@@ -5768,7 +6488,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "c14759e86a27ac8919dcdeafd5970d96122d0d3a6c77ca4440bb351a405f4bde",
       "fanIn": 8,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/@trpc/server/index.ts",
@@ -5776,7 +6497,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 154,
       "hash": "ccd11f35cf4f1397a511e866592b0344be924890d086803733a8fb2fabcfc41b",
       "fanIn": 20,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/@trpc/server/rpc.ts",
@@ -5784,7 +6506,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "d945235cb9fd225e6252b56f309da2bbd2c7c5430d98756f3b5bfaf4db62de52",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/aws-lambda/getPlanner.ts",
@@ -5792,7 +6515,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 255,
       "hash": "7638a43f5e09d7a44d00009a126ca4f0982eaf3887d74e8d1933f6f92158fa72",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/aws-lambda/index.ts",
@@ -5800,7 +6524,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 139,
       "hash": "2c336f2a168285cd68e73334a2487acb33ae45ebcc3b098a85e13512568299f5",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/express.ts",
@@ -5808,7 +6533,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 59,
       "hash": "f8f869a0bfd7804dbafa5ecc3b8d5c621d74a219843ff0eea16a40bed5386e1c",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/fastify/fastifyRequestHandler.ts",
@@ -5816,7 +6542,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 94,
       "hash": "5e662e55b3c23cec59f758439a0a2422236830e70804e1c586f9f35395f148fd",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/fastify/fastifyTRPCPlugin.ts",
@@ -5824,7 +6551,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 121,
       "hash": "dab2aba64501a212e203bb29337a8fa8047187e900149a91ab5f30ff669eba9d",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/fastify/index.ts",
@@ -5832,7 +6560,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 3,
       "hash": "afb72879a9b3accd4329ac754a53b4f6c80e03736c790061ca3bebf8deffb1c2",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/fetch/fetchRequestHandler.ts",
@@ -5840,7 +6569,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 92,
       "hash": "d8adfd465574ac43e4e2db7d37c4121e9cb881d781888aaa9938ad1f9c256472",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/fetch/index.ts",
@@ -5848,7 +6578,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 3,
       "hash": "acee4c713d4631b5dd6992fc7f9550d0b21948050fb299bb18ebd6352f82889b",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/fetch/types.ts",
@@ -5856,7 +6587,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 68,
       "hash": "4c7ffb413abb8a8fd2d1e92dce9fd110787be4e87beb38dc4d7b1d7a3b6cbf25",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/next-app-dir/nextAppDirCaller.ts",
@@ -5864,7 +6596,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 140,
       "hash": "5c29ae573be29986069d1dbe9ae9f3aa1863c8a10d587a86a05b26e891efa343",
       "fanIn": 2,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/next-app-dir/notFound.ts",
@@ -5872,7 +6605,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "bcdcde296985853fb8b11488d4e5d7ad3f6d65d3f1aa56fd8a57f708ba1e0792",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/next-app-dir/redirect.ts",
@@ -5880,7 +6614,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "d1ac4b71788edfa668b001c09bf13e81151c88c1d46858cded2ef15edb17a7d8",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/next-app-dir/rethrowNextErrors.ts",
@@ -5888,7 +6623,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 73,
       "hash": "a56166e8b2497ad6a376019582207f041176b9ff12c236b8b7ee3854e854ea74",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/next-app-dir.test.ts",
@@ -5896,7 +6632,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 94,
       "hash": "f332acacc8215e9586b5f4988b8214c0bb128e4882fb7de4e4df1886619eed5b",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/next-app-dir.ts",
@@ -5904,7 +6641,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "dfaf7cc9725bdadaa1617786a4eec3f0649ebeff01539aaa3ebfa2f5c545d080",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/next.ts",
@@ -5912,7 +6650,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 82,
       "hash": "896858b0732fa9a730f513b96891e58ac11f1ddd81725f17a3f0eb336c95c695",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/node-http/incomingMessageToRequest.test.ts",
@@ -5920,7 +6659,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 373,
       "hash": "bc2223629cc762aaa76c21c8ddd3d6e2ace3087cb0fbc21c58546a7318f879a6",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/node-http/incomingMessageToRequest.ts",
@@ -5928,7 +6668,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 204,
       "hash": "047309f4596687cafdf188da12e91b3a57179e26ad0869df6c99238df9c04987",
       "fanIn": 5,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/node-http/index.ts",
@@ -5936,7 +6677,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 4,
       "hash": "8aaa49589a9a2f74721d4448ac9c82434a4083ccd33e1c51419a21648af1ad2a",
       "fanIn": 6,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/node-http/nodeHTTPRequestHandler.ts",
@@ -5944,7 +6686,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 153,
       "hash": "421d0eb9a59624f74a85dcbc796470418a64eecdc6d6b5789d6ca0dff5db8ec1",
       "fanIn": 1,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/node-http/types.ts",
@@ -5952,7 +6695,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 141,
       "hash": "3c3eb1ed495f8223d70f7cf93b6fbb64dc2ff2732da7032fc88913fb257c7c8e",
       "fanIn": 4,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/node-http/writeResponse.test.ts",
@@ -5960,7 +6704,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 87,
       "hash": "eebcca9e58a503dc9280b5c421f45da3a42c691e0d5c80e250f669c9a75cf4e8",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/node-http/writeResponse.ts",
@@ -5968,7 +6713,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 102,
       "hash": "8c648bd06e311ba9b62f9c01bbe8c74f7f12e62854b368ea94867ef44c6d873d",
       "fanIn": 3,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/standalone.ts",
@@ -5976,7 +6722,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 154,
       "hash": "676db3fe9edcf85c6c2e79f429d6cd10449776a7deb11017a7294d34a7dcd3aa",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/ws.ts",
@@ -5984,7 +6731,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 966,
       "hash": "371ce0ed0d07e122aa7c83412ded99fa5a74a3a93f6d78617c1dc135ebc0ccce",
       "fanIn": 1,
-      "fanOut": 11
+      "fanOut": 11,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/adapters/wsEncoder.ts",
@@ -5992,7 +6740,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "a05cfb37ad34a5d2887a47031a4ee7c655417171671bb30315389bd40c4d1566",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/http.ts",
@@ -6000,7 +6749,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "cc368637cd339b44a39b96139d1073bfb6c7968e7e0c984c1020d9d8c03333ce",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/index.ts",
@@ -6008,7 +6758,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "5479626fcaba5cbc54925c1a76b6c787bc54a9b7a43dde41d0e40df8d5cd11c7",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/behaviorSubject.test.ts",
@@ -6016,7 +6767,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 123,
       "hash": "364d7fddf8291258e4ee6e07bf8653eb03a83f6de975c4c99bb259d1443e3d20",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/behaviorSubject.ts",
@@ -6024,7 +6776,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 84,
       "hash": "fa6fefd52de1b62f77baf65be2eb69e6e9349847442418c55cfc816ade9dbcc1",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/index.ts",
@@ -6032,7 +6785,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "4117bcc2a56fac2734f65957ffbfbbea81611d04eb62fde33e0ea7065588f396",
       "fanIn": 5,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/observable.test.ts",
@@ -6040,7 +6794,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 498,
       "hash": "6b2992b8bc3a5e72be7c1b97c3ea64685ef516301491d7c891f37ef0d76fd8c2",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/observable.ts",
@@ -6048,7 +6803,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 286,
       "hash": "6d9e78cf893e1da24c1d8b6c113aec771cfc9f4eb2444115e4851b01822f0b66",
       "fanIn": 6,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/operators.test.ts",
@@ -6056,7 +6812,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 647,
       "hash": "501f68243e833cade6af5c15e309c2c25b105e2ae79f2c2838a0c3d3a0ac5894",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/operators.ts",
@@ -6064,7 +6821,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 215,
       "hash": "eb5c94e91b2ed86cd177d715e3cc20952f9da6feb009743183934913b7add106",
       "fanIn": 3,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/observable/types.ts",
@@ -6072,7 +6830,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 97,
       "hash": "22eaaf6617814195ee10abd8d8807519aa539ef4a0a07fc355c28d8ac352a4ac",
       "fanIn": 6,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/rpc.ts",
@@ -6080,7 +6839,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "99535a8194a23c128e8585463fcf3dc3be53de28096c85dccd27ed9c2b37fab2",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/shared.ts",
@@ -6088,7 +6848,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "5a4bed02b6741d1c1c18bab8d130e8a52c7329bf32e71b926d13d6efc3e1a041",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/clientish/inference.test.ts",
@@ -6096,7 +6857,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 37,
       "hash": "d59079ed62ae27bc31388abac0d4e1a9a60cc48c4a20876ca7450c191a3555bf",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/clientish/inference.ts",
@@ -6104,7 +6866,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 93,
       "hash": "fc0261276432d05956e81e39cac404419108064b1d273c5693d289c48f4678f1",
       "fanIn": 2,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/clientish/inferrable.ts",
@@ -6112,7 +6875,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 57,
       "hash": "45dc5a7dadc0c5169ffd0fb12d9cd80d3a8e8551b559c8bc2427eb8b056155a9",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/clientish/serialize.test.ts",
@@ -6120,7 +6884,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 356,
       "hash": "b4a708e34bf9f58ccb21b863596acb9c861c6f44bcc3e950d5c2083c02d47c8e",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/clientish/serialize.ts",
@@ -6128,7 +6893,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 146,
       "hash": "76e5247e30e161912915162f10ee7288473d4687941783b5ea844d6956239226",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/createProxy.test.ts",
@@ -6136,7 +6902,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 77,
       "hash": "d4e7fad17088bb2528e563ad74d5db5b9d45054da3c34de7558e9e7f1404c99e",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/createProxy.ts",
@@ -6144,7 +6911,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 102,
       "hash": "7aae826c6f95cb4199d491d759d7983d2b4540787ca155ebd71fa083da23e1db",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/error/formatter.ts",
@@ -6152,7 +6920,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 148,
       "hash": "d2efd00452bb87377bd84fa61535bffb7c360a191a219072eaf3ff3d9a4d2e7c",
       "fanIn": 7,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/error/getErrorShape.ts",
@@ -6160,7 +6929,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "a46271a52da38a7a84bd3354946f3c76ea2ad910d3fa7337ef81d3288dc2921d",
       "fanIn": 2,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/error/TRPCError.ts",
@@ -6168,7 +6938,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 123,
       "hash": "ac537627cf133d80ded7ad1eece7be4aeb74aa61c22d93c201be8bd7d83b7f71",
       "fanIn": 14,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/abortError.ts",
@@ -6176,7 +6947,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "a5a2d374005fd5f44a1f45b9b1c4fc027e6c51f43017de92feb3109a1c263e8c",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/contentType.ts",
@@ -6184,7 +6956,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 341,
       "hash": "758d9939c3e502d994d8d0f3629abea28d2c46d6729179cfd90afcd8ad2c9ae7",
       "fanIn": 2,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/contentTypeParsers.ts",
@@ -6192,7 +6965,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 52,
       "hash": "c5e4f9757a1d1a29adc8215f8bfc18454d958526f9f178a78fcc047fff3cd476",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/formDataToObject.test.ts",
@@ -6200,7 +6974,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "275ee5ceb80b2f1483efd94c40702a93ccf4278dd447ff817251afb80c3ea1b5",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/formDataToObject.ts",
@@ -6208,7 +6983,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "fa9ec868f9b6e7c3b3f6721077660d30a3abe3b34bcd4eff8d86cf96f2b8ca0f",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/getHTTPStatusCode.ts",
@@ -6216,7 +6992,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 120,
       "hash": "aed14f92b3c2caf388de1a0ce3ef6a7783da268e51aa16b3a387ce1da0fe9cb7",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/parseConnectionParams.ts",
@@ -6224,7 +7001,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "e550b134b15e298ead775c16341c2ed23a05fbbfe5c8f726241d903046c6fade",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/pathSeparator.ts",
@@ -6232,7 +7010,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 52,
       "hash": "c39fe0541e91eb30acec201b5615cfb3c7e0266a0af5a07ab50f09104bcca86b",
       "fanIn": 5,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/resolveResponse.ts",
@@ -6240,7 +7019,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 859,
       "hash": "5ecaf3da664f5d5f1de643f989cc8fda91451d8652b5065507b30e30578f7383",
       "fanIn": 1,
-      "fanOut": 14
+      "fanOut": 14,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/http/types.ts",
@@ -6248,7 +7028,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 201,
       "hash": "de076022fd141d79aff3a615fa5a2e12dd80a8b77a2d15bb091b35a90c9b1f08",
       "fanIn": 5,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/initTRPC.test.ts",
@@ -6256,7 +7037,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 115,
       "hash": "78b5880681a813f739b945f3e2c12981a8f3907884c550ce4fc25e55199d8373",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/initTRPC.ts",
@@ -6264,7 +7046,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 252,
       "hash": "5503120af6fccb40a594dbbdeb04b0e1c01a381023cef369650bf37b981b64f2",
       "fanIn": 5,
-      "fanOut": 9
+      "fanOut": 9,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/middleware.ts",
@@ -6272,7 +7055,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 356,
       "hash": "099e206d9a61326b630e639c1b0e26eec230646c3790435d47dab9c46ad842a9",
       "fanIn": 3,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": true
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/parser.ts",
@@ -6280,7 +7064,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 161,
       "hash": "edb6a9c43ab8388c6fc549244a9e94fb111f1ca6da6e5349898f6734ce147d30",
       "fanIn": 5,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/procedure.ts",
@@ -6288,7 +7073,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 147,
       "hash": "28e1e5936d60e09c01e17267762cb7e64a14838bd564d315ae6ead4499711ba2",
       "fanIn": 13,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/procedureBuilder.test.ts",
@@ -6296,7 +7082,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 532,
       "hash": "36ae4463e41455b841e6dfa92f035e83f8643e8ed0c8ce1a88e7b0712f0e21c5",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/procedureBuilder.ts",
@@ -6304,7 +7091,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 793,
       "hash": "28d1ac720deb78652f3ecb505868cb07ee1edaf7dc07a039ab3cfa47bca7c60d",
       "fanIn": 6,
-      "fanOut": 11
+      "fanOut": 11,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/rootConfig.ts",
@@ -6312,7 +7100,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 174,
       "hash": "9ffc95e108bb57722d7614ab868056515e8fbf70aef34cb1a28ca66b402ed5c8",
       "fanIn": 7,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/router.mergeRouters.test.ts",
@@ -6320,7 +7109,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 145,
       "hash": "e605d18345af3a7b937b1100fb15ed8983f0c93466232e576fd49c090adb069f",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/router.test.ts",
@@ -6328,7 +7118,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 222,
       "hash": "94c32387dbd5d4686ae7a10408478bc94339ed73fd48b774e51c95b9467eff5a",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/router.ts",
@@ -6336,7 +7127,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 658,
       "hash": "08e0fbe088f1e56cfaf88242d45a6a3a69a6c31c5605464cacd49de3accda62e",
       "fanIn": 8,
-      "fanOut": 11
+      "fanOut": 11,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/rpc/codes.ts",
@@ -6344,7 +7136,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 90,
       "hash": "b26db49bad3e9d18077015237bb4792bcf53302b5816011d1e4d961d499de5d9",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/rpc/envelopes.ts",
@@ -6352,7 +7145,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 190,
       "hash": "3c4d144317ac0c797fc33a489457a4fb7456b24ae4c76ca626a4b13b1720fb76",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/rpc/index.ts",
@@ -6360,7 +7154,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "2f38554eb3f0713ba624c6e41ea872a52999e93e919f21f421d975a7e22a4980",
       "fanIn": 7,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/rpc/parseTRPCMessage.ts",
@@ -6368,7 +7163,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 93,
       "hash": "6eed6eb8fb64667538725493d8150735e405b990c1d94444e857dd36bf169051",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/jsonl.test.ts",
@@ -6376,7 +7172,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 988,
       "hash": "69ac27be5a3086ec55bb3c4bbd97f8f9f08a9139604ea7ea1ce39fba4f8e862e",
       "fanIn": 0,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/jsonl.ts",
@@ -6384,7 +7181,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 686,
       "hash": "f6bb69a02e808492f1bb35704e9e69240bbf9c18a444ede014973f6cc0837679",
       "fanIn": 4,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/sse.test.ts",
@@ -6392,7 +7190,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 474,
       "hash": "c1934f518e92d8920a1d608cfbb5b1fdc26017728675ca160d66fe2c67321838",
       "fanIn": 0,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/sse.ts",
@@ -6400,7 +7199,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 496,
       "hash": "cbf3cf42e0401e601eef229af73c545a82b3039c70cc62496b18a3ac77ea63a1",
       "fanIn": 4,
-      "fanOut": 12
+      "fanOut": 12,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/sse.types.ts",
@@ -6408,7 +7208,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 45,
       "hash": "ef231c8d7aa177cba6649ddaef41b47ec602d40c54af0404b0f64be02df6d083",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/tracked.ts",
@@ -6416,7 +7217,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 67,
       "hash": "46ddf93d1d1dbf37c102303dc8604b640b1ad13e352bdac262dad04b40611854",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/asyncIterable.ts",
@@ -6424,7 +7226,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 63,
       "hash": "d7df650143fa49d8349a36f0e0c09c4cd140520ec80fff5be449f0984e221a56",
       "fanIn": 5,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/createDeferred.ts",
@@ -6432,7 +7235,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "65e5009ffa94b636cd3494a4730004ab3fb7429abbc27ccf2f02be2a5658b98f",
       "fanIn": 5,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/disposable.test.ts",
@@ -6440,7 +7244,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 73,
       "hash": "3e538e3f08cf49ca2d68bc0b6ad5aa88313de88d0e3106f156c422266a0cba7c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/disposable.ts",
@@ -6448,7 +7253,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 55,
       "hash": "71f7a2424ed9f1649da7604cafaefac9486d1bf7686c3685a720968adb1ae39c",
       "fanIn": 11,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/mergeAsyncIterables.test.ts",
@@ -6456,7 +7262,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 163,
       "hash": "f81e119614aa8232cbcdfd8e527f51bc446a1f1d4efe2bc02f0b365aa47edb51",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/mergeAsyncIterables.ts",
@@ -6464,7 +7271,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 197,
       "hash": "fa6b857d07981bf247b648b942ab9ec9994110247a91bfc001e1475e1c55026c",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/readableStreamFrom.test.ts",
@@ -6472,7 +7280,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 51,
       "hash": "b63da10c12d13a3b3644dbe0abf97f668b94cf2c899ade1ac7a6942419a48d29",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/readableStreamFrom.ts",
@@ -6480,7 +7289,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "1457ca34753dd514d80338163ecfc722d5833b8806cbff6301c0cbb78ae1d7c8",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/timerResource.ts",
@@ -6488,7 +7298,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "2b5ff9dd265b9fa939c50f94588c9187b145d972b5ce7df96b9e3596c6f5001f",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/withPing.test.ts",
@@ -6496,7 +7307,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 112,
       "hash": "4495df1e125923c9f7d2109c3fcdefb1b2fb0c2b3c434bee0bf0704bf311e3ad",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/stream/utils/withPing.ts",
@@ -6504,7 +7316,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "da57821a791ee5e1a2150644ef1397065b5dfbce628ea5729ea158abed6ad920",
       "fanIn": 3,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/transformer.ts",
@@ -6512,7 +7325,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 206,
       "hash": "819eb415fa7ada9387d68d29b8eb32dd35050c2dd15e442ae964768db9e372c6",
       "fanIn": 6,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/types.ts",
@@ -6520,7 +7334,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 194,
       "hash": "e05ad3487e4668ae0d18224109e2dd513af30e015f3d1d2e36ee93ab821b8e4e",
       "fanIn": 14,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import/utils.ts",
@@ -6528,7 +7343,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 125,
       "hash": "dbea9eab51b60df0af3e149aebdf89b433758fb922412612f19525e8e1fc68ea",
       "fanIn": 22,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/unstable-core-do-not-import.ts",
@@ -6536,7 +7352,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 49,
       "hash": "d0165c70e34cafc630fc7979d67ffcaa94afb5337e3cf2bb27f04c40f1a38708",
       "fanIn": 14,
-      "fanOut": 38
+      "fanOut": 38,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/vendor/cookie-es/set-cookie/split.ts",
@@ -6544,7 +7361,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 91,
       "hash": "d2264795a405ca5027eb82d551313e87d596ddad431ceb9675280d1ad675d3d8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/vendor/is-plain-object.ts",
@@ -6552,7 +7370,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "21adad3db1360a0b1c2cfca8503164537e455d0fd47989470f5247656f96162b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/vendor/standard-schema-v1/error.ts",
@@ -6560,7 +7379,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "54c75d30dcee361a09b9ac8a4f0184d42664b2058140b369f55301bc7d4baf11",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/vendor/standard-schema-v1/spec.ts",
@@ -6568,7 +7388,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 81,
       "hash": "e802ca4457d46392efc9dff8427347efea9929e890ef926908ee1a520e97f207",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/vendor/unpromise/index.ts",
@@ -6576,7 +7397,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "cb0a6b5a68fc5d88c1d15cd32502e5d7d861d10a4e5a946d80ece59368cd94b5",
       "fanIn": 5,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/vendor/unpromise/types.ts",
@@ -6584,7 +7406,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "7fa3336d8031a8f69fb7b8664320cfa891c7ec0c88af8f78304c859628cc293a",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/vendor/unpromise/unpromise.ts",
@@ -6592,7 +7415,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 381,
       "hash": "da63f25a160e7230669fe1dd8dbdb7fd2e64f618a90516242690ae1a5f5776ee",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/__tests__/fakeTimersResource.ts",
@@ -6600,7 +7424,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "c8cd61c7749c9b355dd744130cf4ef16ccff88ac81e0b72d9eabad45cf538e19",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/__tests__/fetchServerResource.ts",
@@ -6608,7 +7433,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 84,
       "hash": "26455064be0ad4e4b1262ccebdcca5462a4df1063a9cd5122dbfc341bbc15742",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/__tests__/iterableEventEmitter.ts",
@@ -6616,7 +7442,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "75f38bc078d35c2683b1b9f6cfb4a3b056c4185b118e7a8edc9341d6da11eaeb",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/__tests__/suppressLogs.ts",
@@ -6624,7 +7451,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 41,
       "hash": "963b8f6d050a63f16ab81252cbeebeb351a517c9bfda0b9a16e975247b9feafa",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/__tests__/trpcServerResource.ts",
@@ -6632,7 +7460,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 152,
       "hash": "0e240b64e5377e7df16f437a987383c4d722a13dd3762098f6b1405e5c90caa7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/server/src/__tests__/waitError.ts",
@@ -6640,7 +7469,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 41,
       "hash": "82200a7c451a761d7a78f1e3b3d86f4af3ffbdf09c543f2242596a1b11047203",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/server/tsdown.config.ts",
@@ -6648,7 +7478,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 68,
       "hash": "e624464d461d59203b0638469f03ac7f77a16fee87c9a154f258e6722b98a449",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/server/vitest.config.ts",
@@ -6656,7 +7487,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "b5e0f7f504e3ca63a700587bbac05c5fab7ded895ff4903a15ee4bcf6ad31672",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/tanstack-react-query/src/index.react-server.ts",
@@ -6664,7 +7496,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 3,
       "hash": "bbcfaa776784c11cda516d412ff290db7374c174e34ba71402923d2a0f70e9dd",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/index.ts",
@@ -6672,7 +7505,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "3ccea5c6387c8dcfc4bb8c23b6a19d2ba4ddddc7a2194c7c01c4cc4ce326a2b1",
       "fanIn": 12,
-      "fanOut": 8
+      "fanOut": 8,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/Context.tsx",
@@ -6680,7 +7514,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 112,
       "hash": "fa10cbfd0212fb5ec344b9e09b0ba79b5509e9ccb45e4584e64a0cc15848d294",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/createOptionsProxy.ts",
@@ -6688,7 +7523,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 581,
       "hash": "575bade31ad89227f3d0b6937fb8575d399d8a31eefa6e7c608d613b2ce0404d",
       "fanIn": 3,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/HydrateClient.tsx",
@@ -6696,7 +7532,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 52,
       "hash": "563a55c8eee77a0e3468343819db1f39fe80eafd97deef164b24e02f8d3e3759",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/hydration.ts",
@@ -6704,7 +7541,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 115,
       "hash": "e8819273d68e8305cd6cb2c66951e9c3742a62f138c34349edade1577d0183c3",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/infiniteQueryOptions.ts",
@@ -6712,7 +7550,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 315,
       "hash": "3332a666173d62a057def5741b5c932164d58290a7132d25d207f918f4a82a65",
       "fanIn": 3,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/mutationOptions.ts",
@@ -6720,7 +7559,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 154,
       "hash": "f49f11e126e862019848876cbb6c0f35e7674df65019ed9280763a4fdabebf40",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/queryOptions.ts",
@@ -6728,7 +7568,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 282,
       "hash": "e8e0ca88aa0fa6864ddfa67acf1616bcf262ff9e6972480874bc1d3fdc8341d9",
       "fanIn": 3,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/subscriptionOptions.ts",
@@ -6736,7 +7577,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 423,
       "hash": "5d621a729a3adb61850adb89405c139b91f028533a9a69f1f9902cf19a4be8bd",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/types.ts",
@@ -6744,7 +7586,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 208,
       "hash": "962b6042c9f6e9ef65160f4554002bcddea89a3b488db875cde7d1e07f95b77a",
       "fanIn": 10,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/internals/utils.ts",
@@ -6752,7 +7595,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 204,
       "hash": "6e4f3c5f733a5dadcce571f77a66e8d9bf865e921c485dc2bd971a872240548b",
       "fanIn": 8,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/entryError.ts",
@@ -6760,7 +7604,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 61,
       "hash": "e17354d00cea1f9df3201e3fd5333d8b3fd7735202016522b878a23bc893f705",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/handles.awaited.test.tsx",
@@ -6768,7 +7613,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 339,
       "hash": "7e9a3bc8b9c47566edfe3828c68ca2e590ff34992dce43cc2d6bc04014fbe24e",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/handles.hydration.test.tsx",
@@ -6776,7 +7622,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 196,
       "hash": "7b6a04eb8ed38e5e54e8d5f13db86ac068f1093aa7f564bba69c6396f62e6c3d",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/handles.render.test.tsx",
@@ -6784,7 +7631,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 142,
       "hash": "3447b3b86a5a304b7b7246d7e478ddc91b829d947623975fa2ec1f23e35402c4",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/handles.ssr.test.tsx",
@@ -6792,7 +7640,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 210,
       "hash": "567d2d9e28da971cd3af7dd8d061fbd2b8836b97038118a05569d26eb926946f",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/handles.test.tsx",
@@ -6800,7 +7649,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1284,
       "hash": "bde7a7c39a332585f8326300128a90090e6031ff76ec7a68cb436dc3e5611199",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/handles.ts",
@@ -6808,7 +7658,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 900,
       "hash": "a4806d20ccd414522e9935a4db06a2d5185e233572360ffff63ba4cd6e77a47e",
       "fanIn": 1,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/src/unstable-handles/index.ts",
@@ -6816,7 +7667,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "d30d986cd03f2bfb0b15784112138852e34412bd3aedf3fdda368950f74aaa1f",
       "fanIn": 5,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/client.test.tsx",
@@ -6824,7 +7676,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 70,
       "hash": "e9999664c9f6890253a88eff0c4570c89d13d97332e39abf83265e6257a5c159",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/hydration.test.tsx",
@@ -6832,7 +7685,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 300,
       "hash": "5437a6821f216e0de31a5705a63adad2e5a6aa60268b342d9191d5ff83502720",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/infiniteQueryOptions.test.tsx",
@@ -6840,7 +7694,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 586,
       "hash": "479645c2e68316c17a17d41d7f8ace16e8d61e282e53eb0ebc0aead5946ee78f",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/multipleTrpcProviders.test.tsx",
@@ -6848,7 +7703,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 127,
       "hash": "fe4377874081fed5bdc5df0ad4f044bda3c93edb23999beb52de0a49e6e0cd90",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/mutationOptions.test.tsx",
@@ -6856,7 +7712,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 269,
       "hash": "5c9a1f9acf52de281ef5753dd9753a768ce62c25bc48806dd106570840b3790a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/pathSeparator.test.ts",
@@ -6864,7 +7721,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 62,
       "hash": "75c52135911e87478d40e3e2ef49333fad034c6b4ac523cf08c50f9d36421293",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/polymorphism.common.tsx",
@@ -6872,7 +7730,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 6,
       "hash": "818efd48bc71aea55b45e4637cca773bef908e889461a339835111098d2b0108",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/polymorphism.factory.tsx",
@@ -6880,7 +7739,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 105,
       "hash": "fd4c9e5095a01e0179772e9ce9078e4c6c34829544ca9efca4eb7710908589b6",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/polymorphism.test.tsx",
@@ -6888,7 +7748,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 312,
       "hash": "0319c08b2fb837ee66c8e3ae869d82f13639fe83de93a09cf9dfdf296b94e4cb",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/procedureErrors.test.tsx",
@@ -6896,7 +7757,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 145,
       "hash": "c9d0a5c51a93e20f60d41c3866a3b9407da820536f8c31054c317694ae586875",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/queryKeyable.test.tsx",
@@ -6904,7 +7766,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 632,
       "hash": "a61e46a55a820aeba5cfe82d077f0e08e39edad73ff7036c42ff9f9524d08347",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/queryOptions.test.tsx",
@@ -6912,7 +7775,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 414,
       "hash": "85440f6ae857f07ba9c8e09457cef3f59a6b55709dca0a0de408bb31ad7074e7",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/skipToken.test.tsx",
@@ -6920,7 +7784,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 106,
       "hash": "503d4ebfbc71c7999c7d9c1d368ffcf00e497a342b4e4d0b03581c937391067b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/useSubscription.test.tsx",
@@ -6928,7 +7793,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 932,
       "hash": "d2e341b3352dcf2d1d1a0607c898ac0ac2cd36c2844568a0b4ff1b2cb08b0258",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/utils.test.ts",
@@ -6936,7 +7802,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 175,
       "hash": "705a7f26e2d19260256a79973e4391950dff0d32c297465191d85863a14b3132",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/test/__helpers.tsx",
@@ -6944,7 +7811,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 93,
       "hash": "44b8b027901db00e273696ff2a2b932992cdc46da921bb9b72d5ea6b0dd6ad2a",
       "fanIn": 12,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tanstack-react-query/tsdown.config.ts",
@@ -6952,7 +7820,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "eb191b1c01c91a03469abacc8cb172361058b0b0353b794f4b259d11b164136e",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/tanstack-react-query/vitest.config.ts",
@@ -6960,7 +7829,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "b5e0f7f504e3ca63a700587bbac05c5fab7ded895ff4903a15ee4bcf6ad31672",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "packages/tests/server/abortQuery.test.ts",
@@ -6968,7 +7838,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 43,
       "hash": "35fd02e91155b3e275b810d75f8ab0c9119fccadadcc2252c9f93b9fe06791ed",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/awsLambda.test.tsx",
@@ -6976,7 +7847,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 777,
       "hash": "d04794e9527174e5aefe1732e8ba575b69ffb61dcd9b0c18cfa3b7ce6fdfff68",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/awsLambda.test.utils.ts",
@@ -6984,7 +7856,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "9a29cca1f1f6bbf29a7c55bbfc077d1b33091ffc77660e3a0e17c47b299cb5c5",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/express.test.tsx",
@@ -6992,7 +7865,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 279,
       "hash": "5a327fcab7670184fe9312041c4eb48182b19f7fad9f2f38bf4b81ff6ee39197",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/fastify.test.ts",
@@ -7000,7 +7874,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 734,
       "hash": "c7b6860834bb1953d9543f909c27f6be3a9d46824feafacb5614b4c0a2b02d9f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/fetch.test.ts",
@@ -7008,7 +7883,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 457,
       "hash": "49ea55c60a579bbee828cfdb447c0f42089bda84da2e465f35987b8915b80528",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/next.test.ts",
@@ -7016,7 +7892,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 273,
       "hash": "b92b446a51a502ab0b90cbbe7ba246c8649dded7b003355fcee06ae9268e7ab5",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/nodeHTTPExceptionHandler.test.ts",
@@ -7024,7 +7901,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 68,
       "hash": "8769b0daea9883e742e31ef16acb4240d8cf419c0b67bb5842da67a6a2648195",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/standalone.http2.test.ts",
@@ -7032,7 +7910,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 233,
       "hash": "ee1d8cffe7fdfdae4de2cb98f6f043cfe54902511e2cb1609ff7dab5d3f3dce2",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/adapters/standalone.test.ts",
@@ -7040,7 +7919,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 371,
       "hash": "53ef4db28520e2a57b8db3d261391af81d5f4e8fd057215969e56dec2af0bbae",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/batching.test.ts",
@@ -7048,7 +7928,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 261,
       "hash": "e197793cd4b035835c966eb2e399521fce1356294df09d759d856aa66a25db8d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/caller.test.ts",
@@ -7056,7 +7937,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 86,
       "hash": "3519af5e7c87d2d40d24c53bfb7aece67386c1f2378085cbd584d1f113e3fcbb",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/callRouter.test.ts",
@@ -7064,7 +7946,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "a32a9fb6a9f989b15aad8efc2e17de8e766087b76a98cdadd1d091a6e67d176d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/children.test.ts",
@@ -7072,7 +7955,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 46,
       "hash": "03dce6e3a4de62e598ee74d6323982bbf2abe56c66641602692afb4b4e362103",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/clientInternals.test.ts",
@@ -7080,7 +7964,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "3b457d2498d63135f40e362743bbb3f5df711a59919a5a210da500a8d109593d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/contentTypeHeaders.test.ts",
@@ -7088,7 +7973,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 180,
       "hash": "a66af233042264efec89a48b643c4d33ac3d31d735b120415d31dc1684c7a561",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/createCaller.test.ts",
@@ -7096,7 +7982,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 294,
       "hash": "80f591ec2cfc6c4e8ec827758d4a03ecfb4fbaf26b0abb10efa7ae0696981c4e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/createClient.test.ts",
@@ -7104,7 +7991,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "ddb4c34a3359a225660b3c4e4c48551aa75617106f49653f2ead75f0f4519b4b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/createUntypedClient.test.ts",
@@ -7112,7 +8000,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 63,
       "hash": "75ad6d7d5f3c052d4bb3f2f75e74c98be80ef64b3a44b67dd2d318f85b758be7",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/dataloader.test.ts",
@@ -7120,7 +8009,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 156,
       "hash": "fa48e624143e6fde76ca3ed9c3cc041e4ed73955b1902bab772f33bca07effcc",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/errorFormatting.test.ts",
@@ -7128,7 +8018,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 274,
       "hash": "0c46185accf5662adb8f353d6c0146d5da2ffffc55db82176d992d119b3a5cf1",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/errors.test.ts",
@@ -7136,7 +8027,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 605,
       "hash": "84352a4c0a7275986a0698550134e42ed8ece0aee5918b1bef5b384a41da3641",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/getHTTPStatusCode.test.ts",
@@ -7144,7 +8036,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 120,
       "hash": "4c366c5286834cf71ee6d6a09a7d6c50f37e0c89ea6eb64c29c10f9aa470dc61",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/getRawInput.test.ts",
@@ -7152,7 +8045,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "d8e825828e7d1e0b0142ea60cc7bbf3734e0552ed6f9413b0e571448fe3cc5ed",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/getUntypedClient.test.ts",
@@ -7160,7 +8054,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "ab443d0fa14ef2447bdf8db0e35d88314a3fda80ff2530bce6a28b9454aea745",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/headers.test.tsx",
@@ -7168,7 +8063,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 199,
       "hash": "f55b2e8554aec25c1b68019c28a548163330f4a4605e97603ffb2fb9c3fac277",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/httpSubscriptionLink.errors.test.ts",
@@ -7176,7 +8072,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 68,
       "hash": "26138d0660d655dc589c34d0938bf9c0d2e6c7b0cdb3a90c52063260fbd1e62a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/httpSubscriptionLink.headers.retryLink.test.ts",
@@ -7184,7 +8081,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 264,
       "hash": "a77214cbc8f6f949808715ada658c1bd0d5f36346b1cde8f503798b565eff7e0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/httpSubscriptionLink.memory.test.ts",
@@ -7192,7 +8090,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 70,
       "hash": "5908e190d9b4e83c6b332ca3022c6f98768ac395c48f8aee54be58d5b15f4e9b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/httpSubscriptionLink.test.ts",
@@ -7200,7 +8099,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1909,
       "hash": "a548e3102721b51b2e6662caa40048ddca8609ea45de57256a6d2daca95ee417",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/index.test.ts",
@@ -7208,7 +8108,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 661,
       "hash": "604560125d95277a86a29e27df1720f680f2ea7c0b379862534ff46e5c4fabdf",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/inferenceHelpers.test.ts",
@@ -7216,7 +8117,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 200,
       "hash": "175e84cbd09595c58e42723ed222698770290e8c68adc2ca877dda02ceceae5d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/input.test.ts",
@@ -7224,7 +8126,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 553,
       "hash": "74c58ad434745bc9f823a14bd4f84283c54ea5ef4fbd1f684ab8fd272d0e4659",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/isDev.test.ts",
@@ -7232,7 +8135,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 55,
       "hash": "31e06580fa2679020596d2d015c5c3a938c61fe19f89cd91d4b2017a1382a309",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/jsonify.test.ts",
@@ -7240,7 +8144,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 110,
       "hash": "90a5e291c35474e716d91ad69198318dfc1eccb26e095cec0564e022eee345f7",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/links.test.ts",
@@ -7248,7 +8153,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1150,
       "hash": "c2fb6379cef513e5c912ff3a56fc373fef7f424322246c663c676097ab830574",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/meta.test.ts",
@@ -7256,7 +8162,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 59,
       "hash": "1c5d0cdd3908f01f55fd767bac1e2261a0632202f5e96ab239782eb4d3c8599e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/methodOverride.test.ts",
@@ -7264,7 +8171,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 173,
       "hash": "93e53cf0e73fd3999cfde48aab8dc252d2f794250585c29964bc4523e5649ad7",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/middlewares.test.ts",
@@ -7272,7 +8180,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 546,
       "hash": "546ce9489487e292e4516d31d3c17b2f5151d65c0aa9ccd8f24f393f07186948",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/outputParser.test.ts",
@@ -7280,7 +8189,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 458,
       "hash": "433618b85dbeb544f7a602a1523e99a4341bf6bec9ff52d027d50a9eeb8337f3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/parseTRPCMessage.test.ts",
@@ -7288,7 +8198,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 92,
       "hash": "3d6aa74d51a83b638aebb23c19bd8635d0381f3b80ec23255b57d9eb8d672730",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/pathSeparator.test.ts",
@@ -7296,7 +8207,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 383,
       "hash": "328f1675da752bad237c828e03fee93a6d2169cecca52115e698c40c682304aa",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/procedureErrors.client.test.ts",
@@ -7304,7 +8216,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 187,
       "hash": "1eecba5e29e21b0909e1cc39b18e7a407135ef762bf2d081d5dd8cdcc138d4e9",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/procedureErrors.test.ts",
@@ -7312,7 +8225,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 825,
       "hash": "7075f53833f13a7401a1aeaf4f3ce3b076bdfe5f043f1adaf8e289d7111a86fa",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/rawFetch.test.tsx",
@@ -7320,7 +8234,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "22eb2e543493fbdff2acfee818a436a69b2699dc7b5718e14b8ab86f83534a44",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-2506-headers-throwing.test.ts",
@@ -7328,7 +8243,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 70,
       "hash": "14fdd1bfc9f750c9f1c459a7eea0ea457a0d85c00829c51d9034d2db9baa1d23",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-2540-undefined-mutation.test.ts",
@@ -7336,7 +8252,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 266,
       "hash": "3eacf2c80f6f27a6b0e4d36db973b6bbfbf169bb6695900a9c9074b50ec1f43f",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-2842-createSSGHelpers-promise.test.ts",
@@ -7344,7 +8261,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "16d07d347e8f31d7220f382da29a83579262c4ca45f81e2d2147993b13fc9a9f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-2856-middleware-infer.test.ts",
@@ -7352,7 +8270,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "0db4954a8c3607ed233df5771a5b06f61823d10505d88cde880801b5c244eba5",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-3085-bad-responses.test.ts",
@@ -7360,7 +8279,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 144,
       "hash": "4c76842a387726ec43e57dacb7ae32dbbbae98755993e9cfb958e4e343031944",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-3351-TRPCError.test.ts",
@@ -7368,7 +8288,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 10,
       "hash": "286b58de0077a770d5b011e9d2a938e0e616c0631f5ec3a3beed10cba8df8c82",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-3359-http-status-413-payload-too-large.test.ts",
@@ -7376,7 +8297,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "aca88914fdad38e9c0791452b5348c809e60723523fe17e04122199eae8b652f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-3453-meta-interface.test.ts",
@@ -7384,7 +8306,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "f08a88d813b97d0eb2b7abb27f03ac51b711c9384d8ce7b6de677e33731e2ccd",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-3710-client.test.ts",
@@ -7392,7 +8315,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "e5fda6cce72676dcabfea9b233662c302fc9c9820e78f7437c38e2ee3a48e093",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4049-stripped-undefined.test.tsx",
@@ -7400,7 +8324,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 74,
       "hash": "2736fddb6df34454cece3937ed34addedb520ea749487a6b1041d86192232998",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4217-throw-non-errors.test.ts",
@@ -7408,7 +8333,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 41,
       "hash": "b1cc9baa9e4e594215008296ed1e3b4489698348151172b671e6e8ce884d8b67",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4321-context-union-inference.test.ts",
@@ -7416,7 +8342,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "03d448024f7c4b9c34a15f270c90a76a0c3d87910a48916f084139d956bbc3e6",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4527-nested-middleware-root-context.test.ts",
@@ -7424,7 +8351,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 60,
       "hash": "8d93432f990fa143309a0a52a64088da0b0c0499f6c9061863421c83c7a4811c",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4645-inferProcedureOutput.test.ts",
@@ -7432,7 +8360,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 71,
       "hash": "490fdd3375d182c9977d48fce670fd40d1039134a29a3c2bd87623a4e72ed3fb",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4673-url-encoded-batching.test.ts",
@@ -7440,7 +8369,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 87,
       "hash": "0254e199ff7bf2eb8b3ef24698cbad2d3b6cd6a6057f2d4097dea541f27cb44c",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4774-ws-create-context-backoff.test.ts",
@@ -7448,7 +8378,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 133,
       "hash": "07245fae0f95d8144aab61dcb910db85babffe09c0ebdb4c07e362a57fd9a291",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4783-charset.test.ts",
@@ -7456,7 +8387,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "89171cb6fabba46905295886a56421940b63611a8cc4d39982aa8db6aa5cf6a7",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4794-error-bad-access.test.ts",
@@ -7464,7 +8396,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "26a6b3cee8cc15ccf7312d91b44f0204792dcd800980e437ec219357b7234cd4",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-4947-merged-middleware-inputs.test.ts",
@@ -7472,7 +8405,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 80,
       "hash": "da3d8a817530240acb862cd58c8ae31d2273de105888f57bc37211dda834a368",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-5020-inference-middleware.test.ts",
@@ -7480,7 +8414,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "b38fd17ad10bbbd46bbaccde618c3559892b047a8dc720c9722d6ffa84cf941e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-5034-input-with-index-signature.test.ts",
@@ -7488,7 +8423,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 125,
       "hash": "76a1c6ddfffcc2befbe3c33a67ea2de5379f3f93a16a70ec22eadff5dcdd1353",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-5037-context-inference.test.ts",
@@ -7496,7 +8432,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 167,
       "hash": "f622e93f43897cdfe141f02503e8e3fc3735d2ff536b1fe578d37d172281b54c",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-5056-input-parser-standalone-mw-inference.test.ts",
@@ -7504,7 +8441,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 52,
       "hash": "fb022d2da1897b9a5d91fef6119899baac10c109965857cf5f13effd6ae29b2b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-5297-description-key-on-input-turns-to-void.test.ts",
@@ -7512,7 +8450,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 62,
       "hash": "108cdf640f5b9316a881213405ec96d0f616cc0b165b9c1c4b6aa1aa36b7b5c3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-5534-consumed-body-hang.test.ts",
@@ -7520,7 +8459,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 86,
       "hash": "7b0921ac2de2b9d4f7b61f34e15c88e585ce4b8001f0be118c34e87e4b2614ab",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-5945-stream-null.test.ts",
@@ -7528,7 +8468,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 140,
       "hash": "e1775d13494b0f5edb428cd12b99cda8bbdf0a1affd51141403fe1397f41edca",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-6057-node-http-handler-opts-types.test.ts",
@@ -7536,7 +8477,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 116,
       "hash": "ee350c7bf8d782d82ff2865b6425f9127e0350f99da217332d034b59b9310869",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-6461-stream-error.test.ts",
@@ -7544,7 +8486,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 46,
       "hash": "b28aa8c14389c22deac7fd32e5c1a7e58b280845a2f02af905030795bff1680b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-6977-cross-realm-error-cause.test.ts",
@@ -7552,7 +8495,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 64,
       "hash": "deb75298ea8dbdebfa64233bf611b5d47b936bd631bbe87f375f6eb408c89594",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-7272-node-vm-error-message.test.ts",
@@ -7560,7 +8504,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 69,
       "hash": "5f59058b4af4e883443c3afea4c30bdea2265b216a22e3593398a3e7c3d38811",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-7446-express5-body-parser-formdata.test.ts",
@@ -7568,7 +8513,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 114,
       "hash": "9a5423ee2b8f73835963bd72d3398194170356f80e074dacc21ea3a25dae6ce5",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/issue-7963-httplink-optional-input.test.ts",
@@ -7576,7 +8522,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "c34041daa1441a7b07b98c630b02604e0575f90e566b84ac4d59ef8ac85562ce",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/regression/serializable-inference.test.tsx",
@@ -7584,7 +8531,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 78,
       "hash": "23aa9cc83e5015e679cd1a5acc801fb073e96d17aa2a13169d536f90e95313ac",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/responseMeta.test.ts",
@@ -7592,7 +8540,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 245,
       "hash": "13089fb91f3bf62088a0b644f9eb7bf34573bc10c5bb913f3411070f46e53370",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/routerMeta.test.ts",
@@ -7600,7 +8549,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 226,
       "hash": "9ef6052036ecaebdd75e2de0b06f0465838d5b59c7a903d00e1dd46cdce55c82",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/smoke.test.ts",
@@ -7608,7 +8558,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 321,
       "hash": "da3c5300de5ff8b0ddc2c180a13c1ba03cebe7ea7716db529d8859202acb0a86",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/streamCancellation.test.ts",
@@ -7616,7 +8567,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 78,
       "hash": "f5947fcbe2b2f0bbe4f33896165e421bd4a47896f23213aa7a6e7f0403546c85",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/streaming.test.ts",
@@ -7624,7 +8576,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1470,
       "hash": "0d523544612a30c774b12d4bc6b595dcefc1225b886c5e1cce4d9a7490b3602a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/streamingLateConsumption.test.ts",
@@ -7632,7 +8585,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "52b9a88971531937d331e2ab6ad7c2355e17e69a481f8145e2f557dda5b98336",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/subscriptionAsyncIterable.test.ts",
@@ -7640,7 +8594,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 680,
       "hash": "e28e1a0df7def29cf0a0c8a2d250ad9a8be843423b894bd2caf70d24d7d2a8f0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/transformer.test.ts",
@@ -7648,7 +8603,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 651,
       "hash": "f82364719c5e6b9c4830992ac997cd0b58ff44b89dbf0cf16a5340dfe4867932",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/TRPCError.test.ts",
@@ -7656,7 +8612,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 121,
       "hash": "ce5534cceb1eb2c92226202032e661498572e74415907fb4427727389bd28eb9",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/validators.test.ts",
@@ -7664,7 +8621,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1095,
       "hash": "f9b294a5a594e8999f557d90076d1efcae8003542717100077af01fcb3321979",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.encoder.test.ts",
@@ -7672,7 +8630,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 489,
       "hash": "8fe4f0b3a9545101d393da57c55da3295560c11b8ff1e42970cc4cfa95299d26",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.flushAfterBatchFailure.test.ts",
@@ -7680,7 +8639,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 71,
       "hash": "ce13dcfeac4344259dfd48710412dbc3f3854dcdb81ef395d11adeb7b1134c22",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.maxBatchSize.test.ts",
@@ -7688,7 +8648,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 157,
       "hash": "c6643331a4163518ba8ef2d86350905a7ada08aac57e3f9c223fbf50a603319f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.memory.test.ts",
@@ -7696,7 +8657,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 131,
       "hash": "ac1995e2351ee5ae60abb30c199a2245252bb0dd68e7e69a1dae545131bb35df",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.reconnectErrors.test.ts",
@@ -7704,7 +8666,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 550,
       "hash": "25559c149ef250341a2835e39b32f90158df18e9ca077cfb44a072f3569f4da0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.retryAttempts.test.ts",
@@ -7712,7 +8675,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 142,
       "hash": "42c3d6908cbb1d8715439f70bfe8af6876330a6f77945a0650ec5bf6096c5779",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.retryLink.test.ts",
@@ -7720,7 +8684,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 87,
       "hash": "fa91adf5a27919f07c8f3f8cb1443f6fe264438f11908bd1625fa1b67702e966",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.stopTeardown.test.ts",
@@ -7728,7 +8693,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 127,
       "hash": "d10151bbc0289fb9b275490af5d68fdde8b7f082f59864f1a9580cde1154f50a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.test.ts",
@@ -7736,7 +8702,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5836,
       "hash": "c61637e27935fcfda5a3250b8edb272dbcd6aeb379d03be4d3795e35804e9032",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websockets.throwingHandlers.test.ts",
@@ -7744,7 +8711,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 87,
       "hash": "65d5f4ba40c221153802c0d2a7a16038a96e9a86ca9a5263a9cc52319f317f2c",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websocketsLifecycle.test.ts",
@@ -7752,7 +8720,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 945,
       "hash": "1f955622c026efb21eef4832f6c817b5be2050b137de5fb72f8b5092dd83308a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/websocketsThrowingCallbacks.test.ts",
@@ -7760,7 +8729,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 353,
       "hash": "18c9846b662e2384225410133c42e255e6aee3bb509dd4b21aa691d8d3b9db2b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/zAsyncIterable.ts",
@@ -7768,7 +8738,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 81,
       "hash": "343519f93f2bc1f4feb0ada0010c0c5de6f930844598c003cc3fd370fa7c587b",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/server/___testHelpers.ts",
@@ -7776,7 +8747,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 77,
       "hash": "a59c5600abeb4b6b274a6f8570ed387499024c576fb17a50e4aed27daad8c7b9",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/showcase/dataloader.test.ts",
@@ -7784,7 +8756,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 55,
       "hash": "87df9868e86ddc8676d758d628a14d2d67d6b6a0330edc0ff4433edbe119e8f8",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/showcase/tinyrpc.test.ts",
@@ -7792,7 +8765,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 105,
       "hash": "af3f0db516c01b72e708db41fc286e52c5e014233e7fdccd37319bb9438caa16",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/tests/showcase/tinyrpc.ts",
@@ -7800,7 +8774,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 110,
       "hash": "457cf62f7bf5b10c82249e30d86bf99d64e3d724321c253fbb8e55b2ad9f24fc",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/tests/suppressActWarnings.ts",
@@ -7808,7 +8783,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "52d240fdff31123077c148aad01b9230ff4b5fceb59c4bff086b09ff775ae67f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/bin/index.ts",
@@ -7816,7 +8792,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 101,
       "hash": "7804885ccd49d031a09ae86dbece6c4d94a08370902512676f15a0df25d67668",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/lib/ast/modifiers.ts",
@@ -7824,7 +8801,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "f05e0189ce99098b25693a1f11bba0438f3d3ae2252a1b2795201d980e441940",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/lib/ast/scanners.ts",
@@ -7832,7 +8810,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 130,
       "hash": "45ad4277661df5b1c7da226c0a59816e5322e220591089b3b5080e3a5f308e07",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/lib/ast/walkers.ts",
@@ -7840,7 +8819,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "7e5a2c4ecd248c739314f2e1657f6d1a34cfb1af0cccbfd7b2f4c4dc60a379e3",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/lib/execa.ts",
@@ -7848,7 +8828,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "ad91f63214a6be70d4a6119f9f49ad41a34afaed3461af0f48ad885d6c40bbaa",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/lib/git.ts",
@@ -7856,7 +8837,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 55,
       "hash": "8179cd1be271ec3aca5e25005f46fd431e0600673204c70e1cb10585ac9b9b03",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/lib/pkgmgr.ts",
@@ -7864,7 +8846,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "28fc4ea9d9b0d7c12ccfd9ac8744c4057a1d2a6947ce1a048ce4eab2c512d767",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/transforms/hooksToOptions.ts",
@@ -7872,7 +8855,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 455,
       "hash": "27caff483193eaafb31ebfb1c830aa33e31b5af8103090c0826f89f2601aaf4c",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/src/transforms/provider.ts",
@@ -7880,7 +8864,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 153,
       "hash": "560cf21b0b0e9fe2462694ac950b7724571a4553133ebf347fdebaa3e71a4d5b",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/setupTests.ts",
@@ -7888,7 +8873,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "f71ca1cf640eac1977e9a2c151d989dbaebb2eaea41c87bfee752c8734520fc9",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/specDef.ts",
@@ -7896,7 +8882,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 4,
       "hash": "52d1006081f01b3c7cfde0f85a21bfa3074b89752313c26f5246f50a6655bfcc",
       "fanIn": 8,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/transforms.test.ts",
@@ -7904,7 +8891,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 153,
       "hash": "1ae4f098d79063dfbd9ffa8989bef70ae6de1f6c0feb1e0858bf1acc3f479d23",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/basic.snap.tsx",
@@ -7912,7 +8900,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "c696fb193ff2cfe4e514dae1c9e572d44a7d239582fa871a1c611adf50644d8d",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/basic.spec.tsx",
@@ -7920,7 +8909,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "a5738447a38f780a5aa10dfec228642fecc220b02af36edf779443d7b8cabd95",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/basic.trpc.tsx",
@@ -7928,7 +8918,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "8c4be52661b9cf5edc6bd832dfcb0fd2335821e43ffbfde7ac775c9502dfcca5",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/basic.tsx",
@@ -7936,7 +8927,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "7d03376c52a147e900bd0fa0c34d4063ba62436046c2143722709d6583a911e2",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/existingRq.snap.tsx",
@@ -7944,7 +8936,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "6d4afa29b545541e8d4f3944b8217a2a23aa61bcf3503c96762cefc8f62761a2",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/existingRq.tsx",
@@ -7952,7 +8945,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "6d4afa29b545541e8d4f3944b8217a2a23aa61bcf3503c96762cefc8f62761a2",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/existingRqMix.snap.tsx",
@@ -7960,7 +8954,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "4c8cabca0ba222f3d0b0accc4464da4fc59cb72fc85eafa34135a94ceb7c4e4d",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/existingRqMix.spec.tsx",
@@ -7968,7 +8963,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "ea6385cb27ef5d8eba561b4ff757bccc540cdb5120c3393e35573347b3f42e8d",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/existingRqMix.trpc.tsx",
@@ -7976,7 +8972,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "1fc73318d284a1cc6f89372955b944847370ac82454d2ff3df0a583dfa4cbc4b",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/existingRqMix.tsx",
@@ -7984,7 +8981,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 43,
       "hash": "b2b6cd3c60405ee64fcc19033129af8105757c7a4cfb3fe3e3e1317d88d5f627",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/multipleFunctions.snap.tsx",
@@ -7992,7 +8990,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 19,
       "hash": "26d8618ab7ab3487d7f66bf5c56b7e0f06f356564f4f66b6ffd743e953bfd286",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/multipleFunctions.spec.tsx",
@@ -8000,7 +8999,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "b8392286cc12ae85db09b1a2bc67858daa6640ddf4153980da2e0779bde68150",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/multipleFunctions.trpc.tsx",
@@ -8008,7 +9008,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "514a263d6be8c25abd5b80f707785a8142eb2fff98d5e3f0ea22eb4fd0c35e81",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/multipleFunctions.tsx",
@@ -8016,7 +9017,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "d29b72a4f15d2d5acac07c2b1d947bc99e8b5497cc2736eda85157594671f351",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/optimistic-update.snap.tsx",
@@ -8024,7 +9026,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 50,
       "hash": "d9c6000efa2a13e842fe717ffbe5fd7896a9122f9d77ba98abc0679807edb0be",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/optimistic-update.spec.tsx",
@@ -8032,7 +9035,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "34af695384bfd5c68cf317a7839a833b39db504b890ef073c6b70fbe32e227c2",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/optimistic-update.trpc.tsx",
@@ -8040,7 +9044,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "026b23ad8d0d6e48ac4277a05a67326da66cbb9d1a1a6ce1f278b0b71495c8a7",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/optimistic-update.tsx",
@@ -8048,7 +9053,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 44,
       "hash": "f588a918a78df5de1a629846737494b5ec180dc87f84b65b6454edabbb8162ac",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/reactContext.snap.tsx",
@@ -8056,7 +9062,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "2d2e92c5333e30e485d9b157b9295f9acaa9f6ed92d72cf9651012e3296dda91",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/reactContext.spec.tsx",
@@ -8064,7 +9071,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "9294f56370853479abce210211859ecdd78c8a30b8a3c0496690d7561f8f25fe",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/reactContext.trpc.tsx",
@@ -8072,7 +9080,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "6117a1a6c6efa1f63fe09fddebf189306566a4d2c40cc1b8a5b326f71b4fac85",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/reactContext.tsx",
@@ -8080,7 +9089,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "e9c041b1792eb89d756917abc635b255feaeff7803fa5d98ed115b471ba3d4df",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/suspenseDestructuring.snap.tsx",
@@ -8088,7 +9098,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 62,
       "hash": "d7f0f66e17d88cfe7f34290293c0467417c84c838d99b8a9d2de57477fed5667",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/suspenseDestructuring.spec.tsx",
@@ -8096,7 +9107,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "48f59d35af4dd0a778d7e8fe0f7942953abdb66f143001f867e3368e95d0becc",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/suspenseDestructuring.trpc.tsx",
@@ -8104,7 +9116,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "e30e7573f3efc82751037049c0596b2516efd7fadd36731851bc6a7c809b9aac",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/suspenseDestructuring.tsx",
@@ -8112,7 +9125,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 45,
       "hash": "59851223ffb3ee35989a5202a4d3cd656e1092f737ca5bea72aad461323ce4fc",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/utilities.snap.tsx",
@@ -8120,7 +9134,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 74,
       "hash": "c1bbe2ba8c46d4e282da761fb0f2566ae2ffaae29a7d78f13cab847f8a5a25ab",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/utilities.trpc.tsx",
@@ -8128,7 +9143,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 29,
       "hash": "89af5383d661b6d9ac132bd03a37b9eddb8d8c5d616edbc5ec5763548dc9db52",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/utilities.tsx",
@@ -8136,7 +9152,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 65,
       "hash": "267bddcc7c82e36fbe16db8feaa7e05ddb7fd0d21e08520117de94038703298b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/withInvalidate.snap.tsx",
@@ -8144,7 +9161,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 45,
       "hash": "c32978fb70a7fd9617777283fd93f8dad9812e89532a9e74cc1d3d69859b63ad",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/withInvalidate.spec.tsx",
@@ -8152,7 +9170,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "1a5c0f077efb06562b7b3c2e9863fbdc298f61f1afd369719a6948b3bfe8894c",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/withInvalidate.trpc.tsx",
@@ -8160,7 +9179,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 31,
       "hash": "1b8eb2bbe5467bab00c84f95c79e28f1cd120aaba98f6d7c4c37f7088e563774",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/hooks/withInvalidate.tsx",
@@ -8168,7 +9188,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "1463bccc0f0720abcab80a70c5581a60852eb430e5bc5146dd0df2cfeefad620",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/provider/basic.snap.tsx",
@@ -8176,7 +9197,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "2544d13e20c74d69ec43d07c3d66c41e9c085a0085e36933f4e77fd24af14da3",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/provider/basic.trpc.tsx",
@@ -8184,7 +9206,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "9203387841959f5e169e2ab3d7e2cf8f40a4e5a0075b0aa0bb774414d0fad717",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__fixtures__/provider/basic.tsx",
@@ -8192,7 +9215,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 7,
       "hash": "18127b15786d769f93808247e43cbabe796a590ec043251e09c5c2d3bcfd8065",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/test/__helpers.tsx",
@@ -8200,7 +9224,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 69,
       "hash": "2cf78e3d2c8435df8cf4f87aad920426eb6505d984d0038fc1d16c8398eefea5",
       "fanIn": 9,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "packages/upgrade/tsdown.config.ts",
@@ -8208,7 +9233,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "38de6800537516466ae2e61b10b7ece476888fd0dbd640e88c6dd87c64b319e0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "packages/upgrade/vitest.config.ts",
@@ -8216,7 +9242,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "25998789895dcebb1a3240435d23da27f16ad4f6b9ddb2931ef6d46df7bec9aa",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "scripts/entrypoints.js",
@@ -8224,7 +9251,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 3,
       "hash": "606a2db324a602237608c80c058e0e9e721d280d7d9b0792a0557e0ae3aa3550",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "scripts/entrypoints.ts",
@@ -8232,7 +9260,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 192,
       "hash": "cd50b81d9d83ce15c58007558a1454e419084a300d37f4fff236c3f3fe40ed5d",
       "fanIn": 6,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "scripts/preview-urls.ts",
@@ -8240,7 +9269,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "2a5ec170ef28eb4464cb821776e8fc2e8a23db4f6d2ed263bedce8c021824dc9",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "scripts/verify-packed.ts",
@@ -8248,7 +9278,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 349,
       "hash": "0ba4e855b77e65bafbed619e6556af0acf6b8341d2e8fb4fc27d73a641cdb593",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/oxlint-plugin/index.ts",
@@ -8256,7 +9287,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "2a4fad77da2bb7916dcae2b549d5173bf2dce2e709653552237d6879462cd442",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "tooling/oxlint-plugin/noSymbolDispose.test.ts",
@@ -8264,7 +9296,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 40,
       "hash": "8760eac29ef388ed463fb42c71d5ca2099bea3c024dd4cda1db9ac5b50f3724f",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/oxlint-plugin/noSymbolDispose.ts",
@@ -8272,7 +9305,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 42,
       "hash": "ae791799ec2f5c54f82edbe05486334474e872e562bc2b833d99266df516e7bc",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/oxlint-plugin/typeParameterNaming.test.ts",
@@ -8280,7 +9314,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 46,
       "hash": "697d023de5bca361235f59b9e316043bd293d820fa9360db39bd8e6dbe26d1cb",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/oxlint-plugin/typeParameterNaming.ts",
@@ -8288,7 +9323,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 38,
       "hash": "9fc04dc6b58fe4f5b4c94afd42bbf4757ec3765fcc1f21cfd9f2ac23d4aacb9a",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/oxlint-plugin/vitest.config.ts",
@@ -8296,7 +9332,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "922bd325352cffc19af0f3408340651a8cd324e2a0eeefaabd14dacff5a5abbe",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "tooling/release/src/bin/release.ts",
@@ -8304,7 +9341,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 124,
       "hash": "764db27f33391700dc2b0f3553b505a2c606a0a17f6a1361cde21f6ed41eac7d",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/command.ts",
@@ -8312,7 +9350,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "a13ecab20346700e2c2363fc7a8d5553360fca414ad382cd727fb5c2ac7e8ec1",
       "fanIn": 6,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/notes.test.ts",
@@ -8320,7 +9359,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 602,
       "hash": "3fb451539382eb02b6440e423b16344c7fcb3ca040ea6d8b7ed759c35afa6336",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/notes.ts",
@@ -8328,7 +9368,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 519,
       "hash": "79e6236f787c13bca303f3de341ad1d5d31ec668e4789aacac78901c7f79785b",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/release.test.ts",
@@ -8336,7 +9377,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 279,
       "hash": "7c3762fee3453e3396573011ecb21eb0db3bbab288ec2ad811ce53c9f9786df8",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/release.ts",
@@ -8344,7 +9386,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 560,
       "hash": "cec3f757bcd4f41aa6c057a0cde69ddfd01e5ebfc9f5b00e95b630343734c1cd",
       "fanIn": 2,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/tarballs.test.ts",
@@ -8352,7 +9395,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 333,
       "hash": "11c6ef62bfd29b687140c50d325c940971d6390c1d2b5ee8a4ab2af8bfbf8e05",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/tarballs.ts",
@@ -8360,7 +9404,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 208,
       "hash": "67baff2904fe4643f5fa075a1fd3d117944dc6f7838c3b59281949517c743fca",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/version.test.ts",
@@ -8368,7 +9413,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 92,
       "hash": "beafc27eaf737f71fa29c83feec8014e2aa051f3d5190d29ff9c12bba2941dfb",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/version.ts",
@@ -8376,7 +9422,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 108,
       "hash": "78769ef0d8e227c812eab94d6a20b502aac85de05d2aa023fcc0e3ebbe501a04",
       "fanIn": 6,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/release/src/workspace.ts",
@@ -8384,7 +9431,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 117,
       "hash": "aea99ae590ddec6538c008c400a9259834daa1cb2e076c20eccf204b8512683e",
       "fanIn": 5,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/release/vitest.config.ts",
@@ -8392,7 +9440,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "1667fc001f1f3a4ed4d4ac06e439097aa16ca67fa5a8037a81f03a066f075f4a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "tooling/subtree/src/bin/standalone.ts",
@@ -8400,7 +9449,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "fcab9ab433928bbcc5931d22b5fbfccab2d5fd8260e55d3a5d1cb6fc1e390632",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/subtree/src/standalone.test.ts",
@@ -8408,7 +9458,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 450,
       "hash": "8ad032e24661987240564caab594c288ae90b3b5bf383075edea9173a21b3a0c",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/subtree/src/standalone.ts",
@@ -8416,7 +9467,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 640,
       "hash": "9ec5ab5b2438be5b4256609caed4455da08379051d4939f2bca5340b2b9c1e4a",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/subtree/vitest.config.ts",
@@ -8424,7 +9476,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "d3a9c414c6e46741cc97bbe51fdaa46ba1fe1b08c6d27d07fb3c4e409725a35b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "tooling/ui/src/components/accordion.tsx",
@@ -8432,7 +9485,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 78,
       "hash": "006db224acb457cdac19a268a6f7b55db3eaf68c06edf57363a9d7ce645fb8db",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/alert-dialog.tsx",
@@ -8440,7 +9494,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 186,
       "hash": "f18f462295a764b9d10c76099650edf1f3ca2c4ccd5b292159e1d364b0254b63",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/alert.tsx",
@@ -8448,7 +9503,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 76,
       "hash": "f296bce512f2ec2544bae581adcabae0653f255bb96567442fc6b1ddbf2a629b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/aspect-ratio.tsx",
@@ -8456,7 +9512,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "851373543e216d47dd9aa1ffd4821ecc3d4bb284c2eb7952f11ff801f043fbae",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/attachment.tsx",
@@ -8464,7 +9521,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 208,
       "hash": "a6f23c8a570908e2ca7bf0faac6e8fda5b5a7d800dea4731d7989698a1a11481",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/avatar.tsx",
@@ -8472,7 +9530,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 107,
       "hash": "6b6bb86a110d68a6527a2798b030f5631cf4ae8d38590ee3d115d2f1e5651591",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/badge.tsx",
@@ -8480,7 +9539,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 52,
       "hash": "53df834f9d45cd9ca1fb854233f3404455258746cf559c80a9809e6225b4ba95",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/breadcrumb.tsx",
@@ -8488,7 +9548,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 122,
       "hash": "86aecae7f926cea2d84c44cc85e34866ff9b101d229cddbbf576295848a605a8",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/bubble.tsx",
@@ -8496,7 +9557,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 128,
       "hash": "28ad9d3a89f68e7afed9f26960bc5eddfb418659dd4efa2e856bc0d34d56e7c3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/button-group.tsx",
@@ -8504,7 +9566,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 88,
       "hash": "7f1f147e0b70bdd27f9e2b83df70790aa7bbd5ff18cc4d784a2f7d2773d91368",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/button.tsx",
@@ -8512,7 +9575,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "eba752822e4a50cc11a675a62db69413c085fe1f85cb05c7e038a27bc10d0064",
       "fanIn": 14,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/calendar.tsx",
@@ -8520,7 +9584,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 229,
       "hash": "d2092982e9eb1d0bee01a7f29b1d1d7a1b21899e056fbb36c7a9b1c66efbc08a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/card.tsx",
@@ -8528,7 +9593,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "8efb0a46c51b89312da4e749b927bafd4288587a168db834efc1ac166766f72d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/carousel.tsx",
@@ -8536,7 +9602,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 241,
       "hash": "fd06d83a9a462ae26ae2b5c71ae05eff5fb51201c029122b7d9a37f75f971b19",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/chart.tsx",
@@ -8544,7 +9611,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 369,
       "hash": "3156919011e19e58fe1324c3b0ffcbec450b957ec44ba4d20a3c11fc53673068",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/checkbox.tsx",
@@ -8552,7 +9620,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 28,
       "hash": "9c7c029c2b1a291b2dd49a1e67cac12b41fa23aa640404e84428a16d5b838616",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/code-block.tsx",
@@ -8560,7 +9629,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 244,
       "hash": "6f1affda6402ca075d3fb3b88558f9975d2d84dc88e78f4ba3f9e3a09ec6c50d",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/collapsible.tsx",
@@ -8568,7 +9638,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "2942e39aafedf00dd4fc13643651c5fe2203778b2c4daee7eb83bb7e09fac818",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/combobox.tsx",
@@ -8576,7 +9647,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 301,
       "hash": "c0352d989528e62a7d615d6972a9c8b40cec154e97661072dbac274f5b42b836",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/command.tsx",
@@ -8584,7 +9656,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 192,
       "hash": "ff23a6da3a1146a47a7a381c0ca21ded0248dd29002e04a6589bffbfecc346ac",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/context-menu.tsx",
@@ -8592,7 +9665,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 272,
       "hash": "c0fd0bb3d5c8fa044fb99c6bd38511575b1f518807d038089104a600c2abc72b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/dialog.tsx",
@@ -8600,7 +9674,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 157,
       "hash": "0ae6508aae99ee6164f2d94385efdaefa0b82b3dafd692bf44cd4d2495aae0ca",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/direction.tsx",
@@ -8608,7 +9683,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 5,
       "hash": "6ae0352aa02e99264c3fa0c3e1bed711401b2ebd7945e8becc32c120e4abd012",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/drawer.tsx",
@@ -8616,7 +9692,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 225,
       "hash": "92129223129f4564226f71950bea9edb710833a204fc4f820e5a231a98eace2a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/dropdown-menu.tsx",
@@ -8624,7 +9701,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 270,
       "hash": "3affc070777aa087a4405b09974ef65c1dd046ce271250c7fa23a03925c4e588",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/empty.tsx",
@@ -8632,7 +9710,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 101,
       "hash": "3797a95ad971d64db5f839f6660f8477cbe20f833049c2ae1a0129075ec3e90b",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/field.tsx",
@@ -8640,7 +9719,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 237,
       "hash": "8d09ae05babe7c0cdecc6fd7d67966a8d5a459fd00aa768f116cdf4921929655",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/hover-card.tsx",
@@ -8648,7 +9728,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 51,
       "hash": "70f09fe21d2c1f87d5d37121af712bf6541244ca1621b9d8590bf08c41d1dc5f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/input-group.tsx",
@@ -8656,7 +9737,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 159,
       "hash": "e54fc5bd230d372cbc562305b4ec3ea68c432f72e6be4fbd16cc1ff17aaab297",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/input-otp.tsx",
@@ -8664,7 +9746,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 84,
       "hash": "770fe4af63319d90773fc9714bd7625bd8f8d81b0b4a4f266e34962be3846e97",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/input.tsx",
@@ -8672,7 +9755,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "f45e9af0b79d8ec765ceb45a5a79f59075c942af31d2afeb7099aa64aecef134",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/item.tsx",
@@ -8680,7 +9764,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 202,
       "hash": "04fc0523f47ea8910573c68ddfb41b13e13ba6299f3f4d43929744a5f6c07060",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/kbd.tsx",
@@ -8688,7 +9773,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "440f61fb9dcda6993c791a6bcfb74758a4bd443069fc0df36df9a04f2df740b3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/label.tsx",
@@ -8696,7 +9782,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "938155359028b144462c0d297b6ac1efa38940fea4908db3118165872c2607d5",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/marker.tsx",
@@ -8704,7 +9791,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 71,
       "hash": "bdf949bb8cc6d495fa43363f016b4f52ff411bb35c368c26c030110945ee0431",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/menubar.tsx",
@@ -8712,7 +9800,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 285,
       "hash": "93b47f001f64af70a58ede7eeed868a630b91354cfc376d6eab2d2b524eb9d1b",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/message-scroller.tsx",
@@ -8720,7 +9809,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 129,
       "hash": "c172b185f5fc142fa1ce93ddb960a93b7b4756a2a5e64c2caecf64f41de7fec1",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/message.tsx",
@@ -8728,7 +9818,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 92,
       "hash": "099f13a39ef4b43c7a5d1c533c7f06fcf4ef74355c3252a0f2f110dec41958d1",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/native-select.tsx",
@@ -8736,7 +9827,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 65,
       "hash": "a27066e9f72ec888f8e4fe587355cc885eae963c65508debdecb29fa49947ee8",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/navigation-menu.tsx",
@@ -8744,7 +9836,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 171,
       "hash": "88265db7d0687039445aa36942297158180827311db35d370adf3447418480a0",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/pagination.tsx",
@@ -8752,7 +9845,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 134,
       "hash": "1109d85f91d4cf4a703af07792be68ecc7758c5605443143d7ef1663afd79ec2",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/popover.tsx",
@@ -8760,7 +9854,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 90,
       "hash": "dd9973240f75b42e05e16be7850f66ed64e9800f444e9a9f4a84bf985f81362a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/progress.tsx",
@@ -8768,7 +9863,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 83,
       "hash": "b5e4851ae77f836656fc8f7aee1ffea63274306ff63d7daa44e06dd0a3a843ff",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/questionnaire.tsx",
@@ -8776,7 +9872,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 328,
       "hash": "a091a75167478007fbd300a88c4beb180f897edf95d6eebc0948c9c068882891",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/radio-group.tsx",
@@ -8784,7 +9881,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "063b6d98a3f3348b5095cbf08d5cf2687e7bbe3a48f04237aef9db942a07309a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/resizable.tsx",
@@ -8792,7 +9890,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 50,
       "hash": "d3611405b7aa877dff1f2dd9d14f7b44701c657a90f25223f357dbd1afb1a1cd",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/scroll-area.tsx",
@@ -8800,7 +9899,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 53,
       "hash": "ba74e14485d9816dc61417af1bbb100cfd55ab7d8374fd19f039d13568267460",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/select.tsx",
@@ -8808,7 +9908,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 202,
       "hash": "13c0efd84ff20065d43abe5f57013fcb4eb0197cd5d564c8932f1f51f1ddcbe3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/separator.tsx",
@@ -8816,7 +9917,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 23,
       "hash": "472afea858567f47e497f9a669af6884a4d48ad52a54052d826fe23f99807357",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/sheet.tsx",
@@ -8824,7 +9926,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 133,
       "hash": "7959343504a33cf5fae4bdcd1dfa9c2ae75b05e3f46ca6e17cfc24679909d069",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/sidebar.tsx",
@@ -8832,7 +9935,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 722,
       "hash": "dadb0db5adbd616d0099ea5e716108abc5873c7b8950d65b84fdd3c3e4523978",
       "fanIn": 0,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/skeleton.tsx",
@@ -8840,7 +9944,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 14,
       "hash": "c9e32812aaf99fc226c879946a370f8d4809f4c28bd829c8bde5ca0d3201c63f",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/slider.tsx",
@@ -8848,7 +9953,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 52,
       "hash": "60ddcc2c353c3b4d1a21033aa60d7254fdb8f3fb288726c56022aa9588002f6f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/sonner.tsx",
@@ -8856,7 +9962,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 44,
       "hash": "55105376f003919a2cb7c5441201a7a9577cc05f8af952b7f6b0197dc8d18c09",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/spinner.tsx",
@@ -8864,7 +9971,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "fdde740705e8b02f09ed07115e0d1b27c324351d31b0d15f39ef572f22434435",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/switch.tsx",
@@ -8872,7 +9980,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 38,
       "hash": "21332d2dfd9ba136f2e65e42dd3f1de1014ba2ce05319d5e6db0e04705ce9490",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/table.tsx",
@@ -8880,7 +9989,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 114,
       "hash": "ad2639a9a1572d6ff309b087eab94b603ca59cb9a1e94b4bfa66a157bcfc4f66",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/tabs.tsx",
@@ -8888,7 +9998,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 82,
       "hash": "dab72461506cbc8fc6fea0bb578feaa664d808d9ad0664add7bc34cb7b6dfcbb",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/textarea.tsx",
@@ -8896,7 +10007,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "156fd815088775f848be54aba35f0e56759b0940a7a695f9e4e4586a8e816fde",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/toast.tsx",
@@ -8904,7 +10016,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 230,
       "hash": "cd8893b46e239241f7b819899871d377cc77dc76ee140f5621021cddd3c805df",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/toggle-group.tsx",
@@ -8912,7 +10025,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 88,
       "hash": "df48c0576085448a5b864b36292b8c213004cbb3f318dc7a793d213466aeb3d0",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/toggle.tsx",
@@ -8920,7 +10034,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 43,
       "hash": "137880f026843d3e451a9bca8ab537d03443cc677b236d9617c5f8a5f2624371",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/tooltip.tsx",
@@ -8928,7 +10043,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 66,
       "hash": "f7e174868805f2c9f2ada2d70a18fa9936ee3dcb6a2e84f800044ad6ed2fef7f",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/components/trace.tsx",
@@ -8936,7 +10052,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 162,
       "hash": "bee2dabe6119b6b31c11b41fe0dfd863edf2b5ff8e75be87a30f3d7f48e4feac",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/hooks/use-highlighted-code.ts",
@@ -8944,7 +10061,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 76,
       "hash": "cff6cda4597c2e5f058a48c11b15b2c48181002706c795ee487b304a1df3f328",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/hooks/use-mobile.ts",
@@ -8952,7 +10070,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "721f945cc7254f2bf61fa70ffe3a9e307a3ec1362e8a03c225b6f8324acf8738",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/lib/highlighter.tsx",
@@ -8960,7 +10079,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 125,
       "hash": "d0a46536907af37ccdf883fccab299ca792969d86cff8477c95b6269f6f6e1fe",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "tooling/ui/src/lib/utils.ts",
@@ -8968,7 +10088,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 2,
       "hash": "bb028599e8f24f1d4888c30d8e6cabcd4f7d88a25b5ab22241d95f7806a79221",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "vitest.config.ts",
@@ -8976,7 +10097,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 12,
       "hash": "8f3fc9a89aadf73ad024997575eff4589db4ded651a1648371a60a42ed4e4750",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": true
     },
     {
       "path": "vitest.shared.ts",
@@ -8984,7 +10106,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 74,
       "hash": "58494f2e215d2f7f6180e981b84c35899aa6b149d367343abc4e62fa0f926aa3",
       "fanIn": 8,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/api-reference/convert.ts",
@@ -8992,7 +10115,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 153,
       "hash": "cf7a0dc379c0d14a3f69615564aa4ce59300c4368e30becc9b66659dbf3afb17",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/api-reference/generate.ts",
@@ -9000,7 +10124,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "d578fc19a63862e0d08ce00919e1cd7385fd2de103f60157edde91c7756204ae",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/not-found-check.ts",
@@ -9008,7 +10133,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 129,
       "hash": "3886bcef583deb6021b6e270a775403f78fd4ce08265f4524fb394bc825a2354",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/samples/v11/src/index.ts",
@@ -9016,7 +10142,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 4,
       "hash": "37936413b546775e2fdea257e499b0f7bd460881e9429b4fbb8a096aedeea529",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/analytics.test.ts",
@@ -9024,7 +10151,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 102,
       "hash": "66c00a1a50bb943ce10be0918b7a73a190640288a4a8ebdf209053eb75bf6cd5",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/analytics.ts",
@@ -9032,7 +10160,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 101,
       "hash": "690177a97a45a51d476290ec2617403d0b03afc28111049cd6286040e1d1ee47",
       "fanIn": 2,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/card-day.ts",
@@ -9040,7 +10169,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "aff89157db0f092dc1989c7e6a133d57e763fdabbbd1314b8dcd289b4a42727c",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/client.tsx",
@@ -9048,7 +10178,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "042d7d73753a8b7b31303d093a37590fd9e7181d8f1dc87713a971a63d7f208a",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/blog-comments.test.ts",
@@ -9056,7 +10187,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "029c7139ee34d2036092c392fc7edd7490956ac6412e17363b92cfd731d2dd5e",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/blog-comments.tsx",
@@ -9064,7 +10196,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 56,
       "hash": "36308866110cfb5a0044ccecc036f70d64d54d5ebbd287197fb831e47b6018ac",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/blog.tsx",
@@ -9072,7 +10205,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 327,
       "hash": "a0ee7903863b0bb0f24bafaf96259b3fe1b284061972fe4d9d3228262e853e65",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/doc-body.tsx",
@@ -9080,7 +10214,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 351,
       "hash": "2aa1895a8f08b8b16956f22c79c8b34ac5d6bbf104d3ab8379cdcea87daa4a8e",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/doc-page.tsx",
@@ -9088,7 +10223,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 327,
       "hash": "9d957e2379e5a86125aa8dcd9ee594c7eb9df56e5c31e454f10fac65162777cf",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/docs-nav.tsx",
@@ -9096,7 +10232,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 216,
       "hash": "8f451db6fc0d74ff54d885b43b72fe0ec484f96f5c9bf124a5e5372df61b3988",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/error-page.test.ts",
@@ -9104,7 +10241,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 77,
       "hash": "b49476bbc995dca2175d5fe5bf80c02dcf316c0870f95b8310cb9ee5c91d13f8",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/error-page.tsx",
@@ -9112,7 +10250,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 45,
       "hash": "61351f332f56e8780e6359a3b47f4fa4a1f32ff9d3550b9ccdc735330f51a312",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/github-stars-button.tsx",
@@ -9120,7 +10259,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 78,
       "hash": "4906ac6ae2b8538038ff463a50dcf2481c684a1cf011cd0337b5a0a732efec11",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/icons.tsx",
@@ -9128,7 +10268,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 26,
       "hash": "e763086186f4631ca6faac74c19f9e346942a15491280763640d1d3c44209df7",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/logo.tsx",
@@ -9136,7 +10277,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "c1a8ffb34cefaf711318e6cdd11fbab1300cfed3fdafaef07b8dca0f6453c29f",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/mobile-nav.tsx",
@@ -9144,7 +10286,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 115,
       "hash": "2785ecfaf23b74bc7f3f358543ae1d92b1de3f21527b2c2825976d5510ff9ffc",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/components/not-found.tsx",
@@ -9152,7 +10295,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 32,
       "hash": "490f09acd6039ba1a06ea8f428f2a4a7f083c83a95a78928f9b81989b39b4102",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/page-actions.tsx",
@@ -9160,7 +10304,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 136,
       "hash": "51b377a482ab3a783d08e1e51c8a9d322910c3045a4c841f27a47bb4da746dd3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/powered-by-vercel.tsx",
@@ -9168,7 +10313,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "497557d47ef1d769945a900cf090edf1295ddfe4e08ce1aa616053926bd98c12",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/search-hit.tsx",
@@ -9176,7 +10322,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 108,
       "hash": "51eb77c6f28c6843579649ff94fb40829b8184db83ece488af4f1274f6cb64b4",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/search.tsx",
@@ -9184,7 +10331,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 532,
       "hash": "04850a1c4c3cdf690d13534d71514c256f4015346665a4e4f17206e01e661736",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/site-footer.tsx",
@@ -9192,7 +10340,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "cb5ed9545102e0b549d4b0133d0f336f7f68be6dc0cbbb5d507169d6dc62577d",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/site-header.tsx",
@@ -9200,7 +10349,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 172,
       "hash": "fe23a2b9a028e4552b1906b0851f3e8853e40078d3edffc8f31840966f3e6b68",
       "fanIn": 0,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/jelly.test.ts",
@@ -9208,7 +10358,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 124,
       "hash": "7b3196e7b7d9103961574e7c653287052381374b971a80b222e248a00e9754cd",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/jelly.ts",
@@ -9216,7 +10367,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 615,
       "hash": "1c1f0aa99542d8538b43b98410bbc61135ddbf9c1ceb339191a54517b059f92b",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/pack.test.ts",
@@ -9224,7 +10376,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 150,
       "hash": "7fb165fc8d0a2a9506201372b3b98391402ab801919ca0564baf57dc80211b16",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/pack.ts",
@@ -9232,7 +10385,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 256,
       "hash": "309f96c63bee1241363276f48e7ac4de54c796451f485a6de956459c7ee3f5d2",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/partner-logos.tsx",
@@ -9240,7 +10394,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 133,
       "hash": "663758488e83ebdb097fd84c36fb94b3a60d363510d5816a1b508fa6ffeb8d99",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/partners.tsx",
@@ -9248,7 +10403,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 209,
       "hash": "6f4b53706a9d6a319f6d0e285fec125f034d0b23cd604307b160f45777ff213d",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/sponsor-cloud.test.ts",
@@ -9256,7 +10412,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 66,
       "hash": "c62adf5354c22ff4d0956ed4aa3a1f54fb199cd15d8a212ac21ce7e03fd40dfb",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/sponsor-cloud.tsx",
@@ -9264,7 +10421,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 450,
       "hash": "cf39e4c7a52eab92984d875cbd9d942f022ec585714ca7d5df07bc6611bdea66",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/supported-by.tsx",
@@ -9272,7 +10430,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 110,
       "hash": "32ecfd7e366727d222262c53a2df5e10fceb5755bf23e330880c4e0893cb98c8",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/tap-tooltips.test.ts",
@@ -9280,7 +10439,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "cd781df5f925ae7db5b319b3f1b6cfea05f96b338670c93a50e47a3a47efb4a0",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/sponsors/tap-tooltips.ts",
@@ -9288,7 +10448,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 151,
       "hash": "37265701f6f7abe2dd61445d91ce86071d82f492087517d55ef5f630848d1cbf",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/text-with-code.tsx",
@@ -9296,7 +10457,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 30,
       "hash": "c68100aa8a7e063c968245199e7ab3106e3250d6e2d16cf81764cad308ca1c3d",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/theme-provider.tsx",
@@ -9304,7 +10466,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 17,
       "hash": "e6a98ce3988d6253b20b59ad05497c232cd063925c46a1dfec04a36c28d06ae8",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/theme-toggle.tsx",
@@ -9312,7 +10475,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 76,
       "hash": "8bcf431d73ef1d2c68b479ea32003053c2b7b9615b81fbc32fc20c69a8648511",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/toc.tsx",
@@ -9320,7 +10484,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 117,
       "hash": "50e19056ea6f97ad27baaa572a77e1d65a684426a5dbf310d717840f6f0bcb6a",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/used-by/logos.ts",
@@ -9328,7 +10493,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 143,
       "hash": "8c6e7d2c1cd3ba100d6641d01593e1133b576b1a31e091cfcaa5ea2fcd9d62fd",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/used-by/used-by.tsx",
@@ -9336,7 +10502,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 86,
       "hash": "33b288bffe99226c08325953350b4bb017251e24524bf07a3e981dcf2918aeec",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/components/version-banner.tsx",
@@ -9344,7 +10511,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "481cf13500ba66cc32da1cbc5b4dbbfc9b773e8739a2443ac5ef2aea558935f5",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/components/version-switcher.tsx",
@@ -9352,7 +10520,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 71,
       "hash": "ced3946109b588bc88bfdff1c46ac48d94bdc985a480ddd7715385e6f8243cd8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/content/blog.ts",
@@ -9360,7 +10529,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 48,
       "hash": "98ffef05599004a0561c5ed7845c8aab4b5f2917e4ce9bc22c9cdd89e3c5bdfb",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/content/docs.ts",
@@ -9368,7 +10538,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 250,
       "hash": "dec3105fea893c8a95fbd9e68a2be507d9dbe15a3a257e9a0c380981cd3aecd2",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/content/inline-code.ts",
@@ -9376,7 +10547,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 22,
       "hash": "1c21bece6827192f15c728806761eb63c604d75bfa1ec48a0ce2a6af1beba016",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/content/listed.test.ts",
@@ -9384,7 +10556,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 58,
       "hash": "ab231dc09fc9602f2dad7ba8b36b63bef9d0c710e21322b0ea3150f263ed84ef",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/content/listed.ts",
@@ -9392,7 +10565,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 19,
       "hash": "6fcacfce7f19c91a80ed7a70df480861c4d83dc38b7c1c58ec18cf4dc05cd076",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/content/manifest.d.ts",
@@ -9400,7 +10574,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 69,
       "hash": "f98986bd724d8783105ddad45bedd68232a4fe605fdb984cc1669884c0e981f3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/content/search-ranking.test.ts",
@@ -9408,7 +10583,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 82,
       "hash": "aeab2815b636eca3d769606eb29c0b4e80d04c6676074880524f8a971a60225f",
       "fanIn": 0,
-      "fanOut": 7
+      "fanOut": 7,
+      "isEntry": false
     },
     {
       "path": "www/src/content/search.test.ts",
@@ -9416,7 +10592,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 238,
       "hash": "f36a7bfa1562de707bd36499c59f4632d67d0534a1d65056a5f294e1e78e911c",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/content/search.ts",
@@ -9424,7 +10601,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 490,
       "hash": "582a6fae2adfc63fa671aaaae5dfc80a5bd3e2c4aae54e02da93a09c5ca81d9a",
       "fanIn": 2,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/content/types.ts",
@@ -9432,7 +10610,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 78,
       "hash": "908d509c0f724da0a5fdf0b19d0818b2a2c6f68f2a2f855458cc092d720759b9",
       "fanIn": 7,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/demos.test.ts",
@@ -9440,7 +10619,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 358,
       "hash": "440107e9cc6aedb8a3c50fcd7d550d9db2a2016eea2786dfff507dec48c5586a",
       "fanIn": 0,
-      "fanOut": 8
+      "fanOut": 8,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/backend.ts",
@@ -9448,7 +10628,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 299,
       "hash": "bde632dcc43f672938cc2e87cb3f710b578aeb06b29f067de657f71537465550",
       "fanIn": 3,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/blog-routes.tsx",
@@ -9456,7 +10637,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 341,
       "hash": "436830201b9a1df4a7fa26699b1686c0b28b8f6ed2faf5dd907a5cc2a74f643f",
       "fanIn": 3,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/blog.tsx",
@@ -9464,7 +10646,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 361,
       "hash": "5f86de37eb17eceb1716aa6ed71a879c438678e178e2f42c1fa6907a0a627f09",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/browser.tsx",
@@ -9472,7 +10655,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 274,
       "hash": "b181c73ec748d9a69b9b8b9459c960ad5389895c40a80658f2a3f03d0a80ede7",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/frame.tsx",
@@ -9480,7 +10664,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 179,
       "hash": "f1e35dfc5b59b84e54fb5031a58820359692f0d7ee4c3ff29b0dbf7630f69a8f",
       "fanIn": 2,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/network-panel.tsx",
@@ -9488,7 +10673,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 217,
       "hash": "0adde51a9aef72f8a7a66b39e536fdbfeffc0937a0bdfaefb8753dcd5dbe504e",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/network.ts",
@@ -9496,7 +10682,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 251,
       "hash": "48365a6bd058efede383f3f986ce076a81ec4ff26b5eed080b2eb2a95bc7f6e8",
       "fanIn": 5,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/kit/session.tsx",
@@ -9504,7 +10691,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 64,
       "hash": "909cdbb2b504e5f585d2f9ab130378e30ec0756f5abc0d9ed03869f1dd58fe07",
       "fanIn": 5,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/loader-handles.tsx",
@@ -9512,7 +10700,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 328,
       "hash": "df08b476c2770f5ba3b66d6ffe669d73a702e950a914736f56ccaa45c1844742",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/names.ts",
@@ -9520,7 +10709,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 71,
       "hash": "e676d680c71ffa4078f3fb794e3e6bf5924f5e15b8dac48a25e45dd0e2cfa7e4",
       "fanIn": 7,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/page-demos.tsx",
@@ -9528,7 +10718,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 103,
       "hash": "6737d7a0a1ab7c43a3a1b8f268e482cba57c2f4bea299970b0e4298965466f07",
       "fanIn": 1,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/random.ts",
@@ -9536,7 +10727,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "3cc43a7620567a221e116c52adbd4cf12bc074d13bbd1405a4386bacb029a011",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/request-timeline.tsx",
@@ -9544,7 +10736,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 279,
       "hash": "a0bdfa7fd622b95bd76225809710a22fe1cef22eceae2da4e22914b6e6b31106",
       "fanIn": 1,
-      "fanOut": 6
+      "fanOut": 6,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/reserve.tsx",
@@ -9552,7 +10745,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 25,
       "hash": "6d1e6bfdc146a15c962014d3f4f20375044536e6e4547c0e72a8bc292eeccd3c",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/segmented.tsx",
@@ -9560,7 +10754,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 46,
       "hash": "763e70b7102f7fcb31d1b00ee29fef144dca6ba42cc24e879154d58f8d905d2e",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/starting-queries.tsx",
@@ -9568,7 +10763,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 67,
       "hash": "f17b39846aa1a9cf9e6b30386d2bacce6177bbc22b8571f9fa143d3bd2d6dd18",
       "fanIn": 1,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/timeline.ts",
@@ -9576,7 +10772,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 99,
       "hash": "3394569fcb242e52e105339d57e306610f5a8b8d37058ca448ed0306c30755c1",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/url-input.tsx",
@@ -9584,7 +10781,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 362,
       "hash": "52f25d24d945bd555826bf7d7873eb801f8d5b8b83171ef895fedccd998392df",
       "fanIn": 1,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/url-state.ts",
@@ -9592,7 +10790,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 87,
       "hash": "b1ee6c80f0a010897f4be5306a5f4459496cba53c7ee8ab0b260987236166f17",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/use-playback.ts",
@@ -9600,7 +10799,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "bf369abc7eaff19c6fab49c8b29cd26834fcf7d387208a563c7ac00843190cff",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/demos/waterfalls.tsx",
@@ -9608,7 +10808,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 47,
       "hash": "75a61d89c8b46e6bb89b9acfeda53eb99567e1ca093e667853ff436ce6b64014",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/env.d.ts",
@@ -9616,7 +10817,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "fa59bd6d9f6bcc278247290473587b4839734e99c06b40d41fd5529e5ae1c08f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/experiments.ts",
@@ -9624,7 +10826,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 18,
       "hash": "27e9ba1173e100ca6de828f2f4624353bd0d6642fe267dee399cec7961e15a0c",
       "fanIn": 4,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/first-doc.test.ts",
@@ -9632,7 +10835,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 39,
       "hash": "a806f4dfbd18686fbff9306f0d1d7a61a6e7f8ead81791338b566ea5d8e8958b",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/first-doc.ts",
@@ -9640,7 +10844,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 37,
       "hash": "c3b913f6c1d77d44e47dd8082e860cddc59f4b649d8e207d8248727e1a70254a",
       "fanIn": 2,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/flags.test.ts",
@@ -9648,7 +10853,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 73,
       "hash": "62b6456c3473e87f00663fb6ef569204841cb7816bebfcb3fb387c218bb5d644",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/flags.ts",
@@ -9656,7 +10862,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 202,
       "hash": "7f93003174a0639c1098e045afa5d495fd8c3eca287c2a959ec8991783522805",
       "fanIn": 1,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/og/avatar.test.ts",
@@ -9664,7 +10871,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 183,
       "hash": "a3770974feb7dd412828df5a5cb630ffb3049f32626153b23c21fcd1d5f0744a",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/og/avatar.ts",
@@ -9672,7 +10880,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 252,
       "hash": "9f89d5dce30bdd72bf3bc1e06bcbb049dfbd448e1399350ded80828ffcb85729",
       "fanIn": 3,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/og/card.test.ts",
@@ -9680,7 +10889,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 337,
       "hash": "0f63fb8fcc698f12fda0eeff510dfd16723413d2f2b858bcc6f7cc0c241e1d7b",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/og/card.ts",
@@ -9688,7 +10898,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 1022,
       "hash": "ff5774e9417fa84b356ca5cee4b9ac983f2729f3c833616c98a750d892c24309",
       "fanIn": 8,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/og/fake-avatars.ts",
@@ -9696,7 +10907,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 106,
       "hash": "2a5591a5ce2a9c7562f4cc185a4593b0e448ffa13619185c0b91db220811ee4d",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/og/live.test.ts",
@@ -9704,7 +10916,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 184,
       "hash": "ae022cce3caff7cefb242d242370ff4270311126797d1292838653886cb1f062",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/og/live.ts",
@@ -9712,7 +10925,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 159,
       "hash": "41c5b30940e11ca13845d47d83ec989b0defc4ba702d1370b831a4ba61fe0183",
       "fanIn": 7,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/og/render.test.ts",
@@ -9720,7 +10934,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 396,
       "hash": "4ac7abb3ee62d918441a72b87178802a87e9e9790a812f30058e241decc5b8af",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/og/render.ts",
@@ -9728,7 +10943,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 93,
       "hash": "004632fded1faeadf7ee9e058ddb843fca149418d14ffca882764213e881d9f3",
       "fanIn": 3,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/og/serve.ts",
@@ -9736,7 +10952,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 118,
       "hash": "0cb46f12cd91d47aaa1176160ef1bee84962c69c9de4c954d75db60bb0e7c136",
       "fanIn": 1,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/og/sponsor-cloud.test.ts",
@@ -9744,7 +10961,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 166,
       "hash": "2ecb2c5401aca587484f651a6fcf3f8c66db235121ff3688978dc7d0585c27cc",
       "fanIn": 0,
-      "fanOut": 5
+      "fanOut": 5,
+      "isEntry": false
     },
     {
       "path": "www/src/og/sponsor-cloud.ts",
@@ -9752,7 +10970,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 131,
       "hash": "fe4c7504718aa445d4bc7e013551afacc7fb5b0bc8392c055eb0c290951a5bcd",
       "fanIn": 4,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/og/version.test.ts",
@@ -9760,7 +10979,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 273,
       "hash": "5600669ce80bf4a243e94243f763b9deef7e578bc091c9750fa2947d4d86f3a3",
       "fanIn": 0,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/og/version.ts",
@@ -9768,7 +10988,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 126,
       "hash": "27ac83a555bc64440cef84e9a4ff17e5df3308bc2e2b1dc8f7e99efd88c23e3c",
       "fanIn": 8,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/pages.ts",
@@ -9776,7 +10997,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 45,
       "hash": "1424d0766e0b8304485e08f7d6353d1000a851573f876758f271e4411e3815eb",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/partners-bar.test.ts",
@@ -9784,7 +11006,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 55,
       "hash": "f6292febba4caedcb06fd21d49998f23618f9a4444095c90c5e871a9c9501b51",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/partners-bar.ts",
@@ -9792,7 +11015,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "48140f1ff3158d33ba9abd179c16c15b72e68b62fde44702b56cf493f848dd02",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/recent-searches.test.ts",
@@ -9800,7 +11024,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 86,
       "hash": "968e7a5ef7b92fd161cffb0aeee830184d3b2cfc8579a2bb0ffae4ecd3558e31",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/recent-searches.ts",
@@ -9808,7 +11033,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 62,
       "hash": "191f54b222e7affa805ff717bd68b80ca9d0e4f696822b388f3df9d53e0f9281",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/rendered-path.test.ts",
@@ -9816,7 +11042,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 33,
       "hash": "2a769ccc55334de7890363b84e1918b2dfc0c73b3501c986f512d893725faede",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/rendered-path.ts",
@@ -9824,7 +11051,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 54,
       "hash": "68648dc4d27a56a5ad4bbe45ff915c3d87f538f90f0866272dd1587e23c8518c",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/router.tsx",
@@ -9832,7 +11060,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 64,
       "hash": "e530b74459fad884ff9ad69624803f08fbd2b7f680bd1c2efcafa1125c083dee",
       "fanIn": 1,
-      "fanOut": 8
+      "fanOut": 8,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/404.tsx",
@@ -9840,7 +11069,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "87965ff165b1b3ce78c902d8236706addc819963e6ce29345dde0514b0c8a6d6",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/blog.$slug.tsx",
@@ -9848,7 +11078,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 16,
       "hash": "e02cb1512168b4b4594983ed7b60a21bc3e10b664aaad652eed67f2cb907eec0",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/blog.index.tsx",
@@ -9856,7 +11087,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 9,
       "hash": "ef3bc13f57b64639cb8f0fb18baae9b44504c0dabf521466a44f424d7fe2d0da",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/docs.$.tsx",
@@ -9864,7 +11096,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "6a7a6f1b92a08d7b610896b04111064aaa00ae4c8d64f12bc7ddce181d2256a6",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/docs.tsx",
@@ -9872,7 +11105,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "6accced3c856b2dec9df7bd956b8ae391f1ae6ac04b7a2f313e7d2403f9272a4",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/docs_.v10.$.tsx",
@@ -9880,7 +11114,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 13,
       "hash": "e8e2921f6ae0e92f8c655fdc5b05229ca95406477d65c3d46d3497df3a7f6926",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/docs_.v10.tsx",
@@ -9888,7 +11123,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "eaf97f5e71de170e32c6b2dd9ddf5f38c1115db24d11dc5b2f6df6be1106f8af",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/docs_.v9.$.tsx",
@@ -9896,7 +11132,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 11,
       "hash": "807c9da185e9bb1d1936bafa913467f34c87276e25bd8cfb0e7a3f6855f246a3",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/docs_.v9.tsx",
@@ -9904,7 +11141,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 8,
       "hash": "108f7548df2fa3a4b6ba2f3b08480e28b4e48996f4074bd84253a7bbfded2cc1",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/index.tsx",
@@ -9912,7 +11150,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 428,
       "hash": "b494b6fee83dc79468874bb25c6ef35d04ea9e24923d1e004a1964595856e704",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/media.tsx",
@@ -9920,7 +11159,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 111,
       "hash": "5ceadb1ca7700936c499ab90cb381e72aa9fc619846721019fe122289667a45d",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/og.$.ts",
@@ -9928,7 +11168,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "f862250851c5060c905f4fb13713d2a16f53cdd89cfe7aae61b7c6bfa6b414a8",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/search.tsx",
@@ -9936,7 +11177,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 167,
       "hash": "a29d96f47dc7b25cc029627fa0e6089fa1133316ff82fa5b64fe1b186194c09c",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/sponsor.tsx",
@@ -9944,7 +11186,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 380,
       "hash": "fd10d253edc8d626cb6a3b8ac62e2795ca1bb9933a94e50dd9e4701790734211",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routes/__root.tsx",
@@ -9952,7 +11195,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 116,
       "hash": "6a1cf0b3a4377aa02be7698257c4e273f044d90a7fe427b9ff5bbb5c8b3ab1e5",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/routeTree.gen.ts",
@@ -9960,7 +11204,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 372,
       "hash": "94c386abb0a7521a9633f7cae11379c2a2e4aae883966e523a4fbaff77b95e89",
       "fanIn": 1,
-      "fanOut": 16
+      "fanOut": 16,
+      "isEntry": false
     },
     {
       "path": "www/src/sentry-browser.ts",
@@ -9968,7 +11213,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 61,
       "hash": "675c57033a9afa402d7d18d14e53226fdfdb588bc70490c56000a0d7f403f869",
       "fanIn": 1,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/sentry-client.test.ts",
@@ -9976,7 +11222,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 75,
       "hash": "15dbeb54fa8c1adcae45470db84e3c76959714bf8243213e057ff7d14089ef66",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/sentry-client.ts",
@@ -9984,7 +11231,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 148,
       "hash": "3499731613a77742a79dc15a47f61562cf90217de842066a8ae8fc44237c5ae7",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/sentry-config.ts",
@@ -9992,7 +11240,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 27,
       "hash": "c5bf9183698d11aa314830b2885f96a627dfd6b4b22cf13096d554a769f3f982",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/seo.test.ts",
@@ -10000,7 +11249,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 109,
       "hash": "f2bc289001f18177ada5451dae9b87107471078946440bdbe52fd91ac6ae3e82",
       "fanIn": 0,
-      "fanOut": 4
+      "fanOut": 4,
+      "isEntry": false
     },
     {
       "path": "www/src/seo.ts",
@@ -10008,7 +11258,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 202,
       "hash": "623392f414dec9af523ad705c80b11ad70be9d54a9f41c8a804dc99098fec3e6",
       "fanIn": 5,
-      "fanOut": 3
+      "fanOut": 3,
+      "isEntry": false
     },
     {
       "path": "www/src/server.ts",
@@ -10016,7 +11267,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 47,
       "hash": "8c0bc6a5c286610257c0e7bf16e038ff91ad27360c58a74b006aad3a8216d140",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/site.ts",
@@ -10024,7 +11276,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 157,
       "hash": "c6c9ea77b833a648d4d7336ea7650c488ccad841e8a88bdaca169c55c7f0b617",
       "fanIn": 8,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/sponsors.test.ts",
@@ -10032,7 +11285,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 324,
       "hash": "2eef20bd48338de21f27d891d40f4ace4383463d91216297ef62fa33d5e3ccc9",
       "fanIn": 0,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/sponsors.ts",
@@ -10040,7 +11294,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 412,
       "hash": "19f8ffc673d465ffc5c896177997b4a5438ec5468edafde8b498968a5ef9a5bd",
       "fanIn": 4,
-      "fanOut": 2
+      "fanOut": 2,
+      "isEntry": false
     },
     {
       "path": "www/src/tabs.test.ts",
@@ -10048,7 +11303,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 34,
       "hash": "ffebdb22eaf115a0e61c6f00aa8635507d366ae067b886938276e5a8464b6c88",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/tabs.ts",
@@ -10056,7 +11312,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 36,
       "hash": "1b00c62b93516a9494ab36ec7503ca66048bd907258f6b7cdd07ac9e0bef8ecc",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/twoslash-hovers.test.ts",
@@ -10064,7 +11321,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 235,
       "hash": "f71923fd5fcf7c81286997de740c4d6ff8a823c897d73f7169fe82d60af71314",
       "fanIn": 0,
-      "fanOut": 1
+      "fanOut": 1,
+      "isEntry": false
     },
     {
       "path": "www/src/twoslash-hovers.ts",
@@ -10072,7 +11330,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 307,
       "hash": "aad8b95e82b41e49901281d3abbe0450012fd903dbb46f325f541e2a5e0e41d0",
       "fanIn": 1,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/src/when-idle.ts",
@@ -10080,7 +11339,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 20,
       "hash": "461b90b5bb583636038cd883ffe598edf4ddedfee69764416a3b285f7731074e",
       "fanIn": 2,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     },
     {
       "path": "www/vite.config.ts",
@@ -10088,7 +11348,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 259,
       "hash": "38aa1b1b5142daffabfc05a49655c0c5eff27be22bebc407c8733e1d0f049e9f",
       "fanIn": 0,
-      "fanOut": 18
+      "fanOut": 18,
+      "isEntry": true
     },
     {
       "path": "www/vitest.config.ts",
@@ -10096,7 +11357,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 15,
       "hash": "a3aada608043541c0772c6327bb2715cd703c7e7616c639393043b143e97a06f",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": true
     },
     {
       "path": "www/vitest.setup.ts",
@@ -10104,7 +11366,8 @@ export const MOCK_ANALYSIS: AnalysisResult = {
       "lineCount": 35,
       "hash": "f748af131625601bbd1f03b94e1f0e6f17613cf2e92751cd8115d34bcecf56a3",
       "fanIn": 0,
-      "fanOut": 0
+      "fanOut": 0,
+      "isEntry": false
     }
   ],
   "edges": [

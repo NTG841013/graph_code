@@ -3,7 +3,11 @@ import { requireOrganization } from "@/app/lib/auth";
 import { AnalysisList } from "@/app/components/analysis-list";
 import { Suspense } from "react";
 
-export default function Home() {
+export default function Home({ 
+  searchParams 
+}: { 
+  searchParams: Promise<{ page?: string }> 
+}) {
   return (
     <Suspense
       fallback={
@@ -12,13 +16,21 @@ export default function Home() {
         </main>
       }
     >
-      <OrganizationHome />
+      <OrganizationHome searchParams={searchParams} />
     </Suspense>
   );
 }
 
-async function OrganizationHome() {
+async function OrganizationHome({ 
+  searchParams 
+}: { 
+  searchParams: Promise<{ page?: string }> 
+}) {
   const { orgName, orgId } = await requireOrganization("/");
+  const resolvedSearchParams = await searchParams;
+  const pageParam = resolvedSearchParams.page;
+  const page = pageParam ? parseInt(pageParam, 10) : 1;
+  const validPage = isNaN(page) || page < 1 ? 1 : page;
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -42,7 +54,7 @@ async function OrganizationHome() {
             <div className="mt-8 h-48 border border-border bg-surface/30" />
           }
         >
-          <AnalysisList orgName={orgName} />
+          <AnalysisList orgName={orgName} page={validPage} />
         </Suspense>
 
         <footer className="mt-12 border-t border-border/30 pt-4">

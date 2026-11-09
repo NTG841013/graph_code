@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
   auth: vi.fn(),
+  clerkClient: vi.fn(),
   redirect: vi.fn((destination: string): never => {
     throw new Error(`NEXT_REDIRECT:${destination}`);
   }),
@@ -9,6 +10,7 @@ const mocks = vi.hoisted(() => ({
 
 vi.mock("@clerk/nextjs/server", () => ({
   auth: mocks.auth,
+  clerkClient: mocks.clerkClient,
 }));
 
 vi.mock("next/navigation", () => ({
@@ -50,10 +52,16 @@ describe("authentication guards", () => {
 
   it("AC-6: returns both identity values when the user has an organization", async () => {
     mocks.auth.mockResolvedValue({ userId: "user-1", orgId: "org-1" });
+    mocks.clerkClient.mockResolvedValue({
+      organizations: {
+        getOrganization: vi.fn().mockResolvedValue({ name: "Org 1" }),
+      },
+    });
 
     await expect(requireOrganization("/repo")).resolves.toEqual({
       userId: "user-1",
       orgId: "org-1",
+      orgName: "Org 1",
     });
   });
 });

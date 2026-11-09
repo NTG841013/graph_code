@@ -10,6 +10,8 @@ export interface MapNodeData {
   connectedFilePaths: Set<string>;
   hasSelection: boolean;
   isActive: boolean;
+  isDimmed?: boolean;
+  matchCount?: number;
 }
 
 export interface MapEdgeData {

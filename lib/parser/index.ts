@@ -46,7 +46,8 @@ export async function analyze(root: string, adapter: ParserAdapter = FallbackAda
   const nodesWithStats: FileNode[] = includedNodes.map(node => ({
     ...node,
     fanIn: fanInMap[node.path] || 0,
-    fanOut: fanOutMap[node.path] || 0
+    fanOut: fanOutMap[node.path] || 0,
+    isEntry: adapter.isEntry(node.path)
   }));
 
   return {

@@ -2,6 +2,7 @@ import "server-only";
 
 import { auth } from "@clerk/nextjs/server";
 import { createClient } from "@supabase/supabase-js";
+import { Database } from "./database.types";
 
 export async function createSupabaseServerClient() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -13,7 +14,7 @@ export async function createSupabaseServerClient() {
 
   const { getToken } = await auth();
 
-  return createClient(url, publishableKey, {
+  return createClient<Database>(url, publishableKey, {
     accessToken: async () => {
       const token = await getToken();
 
@@ -34,7 +35,7 @@ export function createSupabaseAdminClient() {
     throw new Error("Supabase URL and service role key must be configured.");
   }
 
-  return createClient(url, serviceRoleKey, {
+  return createClient<Database>(url, serviceRoleKey, {
     auth: {
       autoRefreshToken: false,
       persistSession: false,

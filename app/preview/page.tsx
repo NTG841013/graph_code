@@ -11,6 +11,7 @@ import { FolderNode } from "@/lib/parser/folding";
 export default function PreviewPage() {
   const [selectedFile, setSelectedFile] = useState<FileNode | null>(null);
   const [selectedFolder, setSelectedFolder] = useState<FolderNode | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const extensionCounts = MOCK_ANALYSIS.nodes.reduce((acc, node) => {
     const parts = node.path.split('.');
@@ -54,16 +55,23 @@ export default function PreviewPage() {
             <ul className="space-y-0.5">
               {categories.map((cat) => (
                 <li key={cat.name}>
-                  <div className="flex items-center gap-2.5 rounded-sm px-2 py-1 text-[11px] hover:bg-surface cursor-default group transition-colors">
+                  <button 
+                    type="button"
+                    onClick={() => setSelectedCategory(prev => prev === cat.name ? null : cat.name)}
+                    aria-pressed={selectedCategory === cat.name}
+                    className={`w-full text-left flex items-center gap-2.5 rounded-sm px-2 py-1 text-[11px] group transition-colors focus-visible:outline-accent ${selectedCategory === cat.name ? 'bg-surface ring-1 ring-white/10' : 'hover:bg-surface/50'}`}
+                  >
                     <span 
-                      className="h-2 w-2 shrink-0 rounded-[1px]" 
+                      className={`h-2 w-2 shrink-0 rounded-[1px] transition-opacity ${selectedCategory && selectedCategory !== cat.name ? 'opacity-30' : 'opacity-100'}`} 
                       style={{ backgroundColor: cat.color }} 
                     />
-                    <span className="flex-1 font-mono text-foreground/80">{cat.name}</span>
+                    <span className={`flex-1 font-mono transition-colors ${selectedCategory === cat.name ? 'text-foreground font-medium' : 'text-foreground/80'}`}>
+                      {cat.name}
+                    </span>
                     <span className="font-mono text-[10px] text-muted group-hover:text-foreground/60 transition-colors">
                       {cat.count}
                     </span>
-                  </div>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -76,6 +84,7 @@ export default function PreviewPage() {
             analysis={MOCK_ANALYSIS} 
             selectedFilePath={selectedFile?.path ?? null}
             selectedFolderId={selectedFolder?.id ?? null}
+            selectedCategory={selectedCategory}
             onFileSelect={setSelectedFile}
             onFolderSelect={setSelectedFolder}
           />

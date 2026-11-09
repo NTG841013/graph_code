@@ -1,17 +1,34 @@
-import { Project, SyntaxKind, SourceFile } from 'ts-morph';
+import { Project, SyntaxKind, SourceFile, ts } from 'ts-morph';
 import path from 'path';
+import fs from 'fs';
 import { Edge, UnresolvedImport } from './types';
 
 export function processRepo(root: string, filePaths: string[]): { edges: Edge[]; unresolved: UnresolvedImport[] } {
+  const tsConfigPath = path.join(root, 'tsconfig.json');
+  const hasTsConfig = fs.existsSync(tsConfigPath);
+
+  let compilerOptions: ts.CompilerOptions = {
+    allowJs: true,
+    checkJs: false,
+  };
+
+  if (hasTsConfig) {
+    try {
+      const configFile = ts.readConfigFile(tsConfigPath, ts.sys.readFile);
+      const parsedConfig = ts.parseJsonConfigFileContent(configFile.config, ts.sys, root);
+      compilerOptions = { ...compilerOptions, ...parsedConfig.options };
+    } catch (err) {
+      console.warn(`Failed to parse tsconfig.json: ${err}`);
+    }
+  }
+
   const project = new Project({
-    compilerOptions: {
-      allowJs: true,
-      checkJs: false,
-    },
+    compilerOptions,
   });
 
   const absoluteRoot = path.resolve(root);
   const absolutePaths = filePaths.map(p => path.join(absoluteRoot, p));
+  const allowedPaths = new Set(absolutePaths.map(p => path.resolve(p)));
   
   // Only add JS/TS files to ts-morph project
   absolutePaths.forEach(p => {
@@ -36,13 +53,18 @@ export function processRepo(root: string, filePaths: string[]): { edges: Edge[];
     if (targetFile) {
       const targetPath = path.resolve(targetFile.getFilePath());
       const normalizedRoot = path.resolve(absoluteRoot);
+      const rootWithSep = normalizedRoot.endsWith(path.sep) ? normalizedRoot : normalizedRoot + path.sep;
       
-      // Ensure the target is within the root
-      if (targetPath.startsWith(normalizedRoot.endsWith(path.sep) ? normalizedRoot : normalizedRoot + path.sep)) {
+      // Ensure the target is within the root and was not excluded by the crawler
+      if (targetPath.startsWith(rootWithSep) && allowedPaths.has(targetPath)) {
         const to = path.relative(normalizedRoot, targetPath).replace(/\\/g, '/');
         edges.push({ from, to, type });
-      } else {
+      } else if (!targetPath.startsWith(rootWithSep)) {
         unresolved.push({ file: from, specifier, reason: 'outside' });
+      } else {
+        // Inside root but not allowed by crawler
+        const reason = isExternal(specifier) ? 'outside' : 'failed';
+        unresolved.push({ file: from, specifier, reason });
       }
     } else {
       const reason = isExternal(specifier) ? 'outside' : 'failed';

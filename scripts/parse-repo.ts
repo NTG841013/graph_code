@@ -1,4 +1,5 @@
 import { analyze } from '../lib/parser';
+import { NextAdapter } from '../lib/adapters/next-adapter';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -7,7 +8,7 @@ async function main() {
   const outputFile = process.argv[3];
 
   console.log(`Analyzing repository at: ${path.resolve(root)}`);
-  const result = await analyze(root);
+  const result = await analyze(root, NextAdapter);
 
   console.log('\nStats:');
   console.log(`  Total files:   ${result.stats.totalFiles}`);

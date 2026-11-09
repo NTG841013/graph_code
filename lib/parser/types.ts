@@ -5,6 +5,7 @@ export interface FileNode {
   hash: string;
   fanIn: number;
   fanOut: number;
+  isEntry?: boolean;
 }
 
 export type EdgeType = 'import' | 're-export' | 'dynamic';
