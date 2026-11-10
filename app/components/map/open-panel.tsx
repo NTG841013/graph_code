@@ -37,7 +37,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
   return (
     <div className={`
       border shadow-2xl min-w-[180px] max-w-[300px] overflow-hidden group transition-all rounded-sm bg-background/95
-      ${data.isSelected ? 'border-accent ring-2 ring-accent/30 border-2' : isActuallyActive ? 'border-white/80 border-2' : 'border-white/10'}
+      ${data.isSelected ? 'border-accent ring-2 ring-accent/30 border-2' : isActuallyActive ? 'border-border border-2' : 'border-border/40'}
       ${isDimmed ? 'grayscale-[0.5]' : ''}
     `}>
       <header 
@@ -45,7 +45,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
           e.stopPropagation();
           onClose(folder.id);
         }}
-        className={`flex flex-col border-b px-2 py-1.5 cursor-pointer transition-colors ${isActuallyActive ? 'border-white/20 bg-surface/50 hover:bg-surface/70' : 'border-white/10 bg-surface/30'}`}
+        className={`flex flex-col border-b px-2 py-1.5 cursor-pointer transition-colors ${isActuallyActive ? 'border-border/40 bg-surface/50 hover:bg-surface/70' : 'border-border/20 bg-surface/30'}`}
       >
         <span className={`font-mono text-[8px] truncate uppercase tracking-tighter text-muted/70`}>
           {folder.id === '.' ? 'root' : folder.id}
@@ -95,7 +95,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
                   type="target" 
                   position={Position.Left} 
                   id={file.path}
-                  className={`!-left-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${(isDimmedFile && isActuallyActive) ? '!bg-muted/40' : '!bg-white/80'}`}
+                  className={`!-left-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${(isDimmedFile && isActuallyActive) ? '!bg-muted/40' : '!bg-border'}`}
                 />
               )}
               
@@ -120,7 +120,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
                   type="source" 
                   position={Position.Right} 
                   id={file.path}
-                  className={`!-right-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${(isDimmedFile && isActuallyActive) ? '!bg-muted/40' : '!bg-white/80'}`}
+                  className={`!-right-1 !w-1 !h-1 !border-none !min-h-0 !transition-colors ${(isDimmedFile && isActuallyActive) ? '!bg-muted/40' : '!bg-border'}`}
                 />
               )}
             </div>

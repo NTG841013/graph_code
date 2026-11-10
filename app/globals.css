@@ -5,7 +5,9 @@
   --foreground: #171717;
   --surface: #f4f4f5;
   --muted: #52525b;
-  --border: #d4d4d8;
+  --border: #71717a;
+  --color-accent-rgb: 29, 78, 216;
+  --map-dots: rgba(0, 0, 0, 0.05);
   --accent: #1d4ed8;
   --accent-foreground: #ffffff;
   --danger: #b91c1c;
@@ -31,7 +33,9 @@
     --foreground: #ffffff;
     --surface: #0a0a0a;
     --muted: #71717a;
-    --border: #27272a;
+    --border: #52525b;
+    --color-accent-rgb: 99, 102, 241;
+    --map-dots: rgba(255, 255, 255, 0.05);
     --accent: #6366f1;
     --accent-foreground: #ffffff;
     --danger: #ef4444;
@@ -44,11 +48,22 @@
   --foreground: #ffffff;
   --surface: #0a0a0a;
   --muted: #71717a;
-  --border: #27272a;
+  --border: #52525b;
+  --color-accent-rgb: 99, 102, 241;
+  --map-dots: rgba(255, 255, 255, 0.05);
   --accent: #6366f1;
   --accent-foreground: #ffffff;
   --danger: #ef4444;
   color-scheme: dark;
+}
+
+@keyframes progress-indefinite {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-progress-indefinite {
+  animation: progress-indefinite 1.5s infinite linear;
 }
 
 body {

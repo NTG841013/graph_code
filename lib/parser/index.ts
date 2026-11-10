@@ -6,6 +6,7 @@ export const FallbackAdapter: ParserAdapter = {
   isEntry: () => false,
   shouldInclude: () => true,
   resolveImport: () => null,
+  getRole: () => null,
 };
 
 export async function analyze(root: string, adapter: ParserAdapter = FallbackAdapter): Promise<AnalysisResult> {
@@ -20,7 +21,7 @@ export async function analyze(root: string, adapter: ParserAdapter = FallbackAda
     ...excludedNodes.map(n => ({ path: n.path, reason: 'adapter-excluded' }))
   ];
 
-  const { edges, unresolved } = processRepo(root, includedNodes.map(n => n.path));
+  const { edges, unresolved } = processRepo(root, includedNodes.map(n => n.path), adapter);
 
   // Remove duplicate edges
   const edgeKeys = new Set<string>();
@@ -47,7 +48,8 @@ export async function analyze(root: string, adapter: ParserAdapter = FallbackAda
     ...node,
     fanIn: fanInMap[node.path] || 0,
     fanOut: fanOutMap[node.path] || 0,
-    isEntry: adapter.isEntry(node.path)
+    isEntry: adapter.isEntry(node.path),
+    role: adapter.getRole(node.path) || undefined
   }));
 
   return {

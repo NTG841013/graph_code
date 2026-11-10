@@ -1,9 +1,13 @@
 import { Project, SyntaxKind, SourceFile, ts } from 'ts-morph';
 import path from 'path';
 import fs from 'fs';
-import { Edge, UnresolvedImport } from './types';
+import { Edge, UnresolvedImport, ParserAdapter } from './types';
 
-export function processRepo(root: string, filePaths: string[]): { edges: Edge[]; unresolved: UnresolvedImport[] } {
+export function processRepo(
+  root: string, 
+  filePaths: string[], 
+  adapter?: ParserAdapter
+): { edges: Edge[]; unresolved: UnresolvedImport[] } {
   const tsConfigPath = path.join(root, 'tsconfig.json');
   const hasTsConfig = fs.existsSync(tsConfigPath);
 
@@ -30,10 +34,10 @@ export function processRepo(root: string, filePaths: string[]): { edges: Edge[];
   const absolutePaths = filePaths.map(p => path.join(absoluteRoot, p));
   const allowedPaths = new Set(absolutePaths.map(p => path.resolve(p)));
   
-  // Only add JS/TS files to ts-morph project
+  // Only add JS/TS/JSON files to ts-morph project
   absolutePaths.forEach(p => {
     const ext = path.extname(p);
-    if (['.ts', '.tsx', '.js', '.jsx'].includes(ext)) {
+    if (['.ts', '.tsx', '.js', '.jsx', '.mjs', '.cjs', '.json'].includes(ext)) {
       try {
         project.addSourceFileAtPath(p);
       } catch (err) {
@@ -50,8 +54,18 @@ export function processRepo(root: string, filePaths: string[]): { edges: Edge[];
   }
 
   function resolveAndAdd(from: string, specifier: string, targetFile: SourceFile | undefined, type: Edge['type']) {
+    let targetPath: string | null = null;
+    
     if (targetFile) {
-      const targetPath = path.resolve(targetFile.getFilePath());
+      targetPath = path.resolve(targetFile.getFilePath());
+    } else if (adapter) {
+      const resolved = adapter.resolveImport(path.join(absoluteRoot, from), specifier);
+      if (resolved) {
+        targetPath = path.resolve(absoluteRoot, resolved);
+      }
+    }
+
+    if (targetPath) {
       const normalizedRoot = path.resolve(absoluteRoot);
       const rootWithSep = normalizedRoot.endsWith(path.sep) ? normalizedRoot : normalizedRoot + path.sep;
       
@@ -59,17 +73,12 @@ export function processRepo(root: string, filePaths: string[]): { edges: Edge[];
       if (targetPath.startsWith(rootWithSep) && allowedPaths.has(targetPath)) {
         const to = path.relative(normalizedRoot, targetPath).replace(/\\/g, '/');
         edges.push({ from, to, type });
-      } else if (!targetPath.startsWith(rootWithSep)) {
-        unresolved.push({ file: from, specifier, reason: 'outside' });
-      } else {
-        // Inside root but not allowed by crawler
-        const reason = isExternal(specifier) ? 'outside' : 'failed';
-        unresolved.push({ file: from, specifier, reason });
+        return;
       }
-    } else {
-      const reason = isExternal(specifier) ? 'outside' : 'failed';
-      unresolved.push({ file: from, specifier, reason });
     }
+
+    const reason = isExternal(specifier) ? 'outside' : 'failed';
+    unresolved.push({ file: from, specifier, reason });
   }
 
   for (const sourceFile of project.getSourceFiles()) {

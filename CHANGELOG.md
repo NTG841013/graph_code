@@ -10,3 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Clerk sign in, protected access, and organization selection or creation with validated return paths.
 - Added a system, light, or dark theme preference that stays consistent across routes and reloads.
 - Added a server side Supabase client that passes the Clerk session token.
+- Added repository analysis pipeline including fetching, parsing, and storage.
+- Added real-time progress broadcasting from the database via Supabase Broadcast.
+- Added coverage statistics tracking for analyzed repositories.
+- Implemented "One analysis per repository" constraint.

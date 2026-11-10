@@ -28,8 +28,18 @@ export const NextAdapter: ParserAdapter = {
     return !excluded.test(path);
   },
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   resolveImport(_sourceFile: string, _specifier: string): string | null {
     // In the future, this could handle Next.js aliases if ts-morph doesn't
+    return null;
+  },
+
+  getRole(path: string): string | null {
+    if (/\/(?:page|layout)\.(?:tsx|ts|js|jsx)$/.test(path)) return 'Page route';
+    if (/\/(?:route)\.(?:ts|js)$/.test(path)) return 'API endpoint';
+    if (/\/(?:actions)\.(?:ts|js)$/.test(path) || path.includes('/actions/')) return 'Server action';
+    if (path.includes('/components/')) return 'Component';
+    if (path.includes('/lib/') || path.includes('/utils/') || path.includes('/hooks/')) return 'Logic';
     return null;
   }
 };

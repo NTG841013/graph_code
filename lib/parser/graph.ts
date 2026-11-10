@@ -7,25 +7,33 @@ export interface GraphInsight {
   data?: unknown;
 }
 
+export interface RadiusResult {
+  path: string;
+  distance: number;
+}
+
 function walkGraph(
   edges: Edge[],
   startNode: string,
   direction: 'up' | 'down',
   maxDepth: number
-): string[] {
-  const result = new Set<string>();
+): RadiusResult[] {
+  const result: RadiusResult[] = [];
+  const visited = new Set<string>();
+  visited.add(startNode);
   let currentLayer = new Set([startNode]);
 
-  for (let depth = 0; depth < maxDepth; depth++) {
+  for (let depth = 1; depth <= maxDepth; depth++) {
     const nextLayer = new Set<string>();
     for (const node of currentLayer) {
       for (const edge of edges) {
         const match = direction === 'down' ? edge.from === node : edge.to === node;
         const target = direction === 'down' ? edge.to : edge.from;
 
-        if (match && !result.has(target) && target !== startNode) {
+        if (match && !visited.has(target) && target !== startNode) {
           nextLayer.add(target);
-          result.add(target);
+          visited.add(target);
+          result.push({ path: target, distance: depth });
         }
       }
     }
@@ -33,14 +41,14 @@ function walkGraph(
     currentLayer = nextLayer;
   }
 
-  return Array.from(result);
+  return result;
 }
 
 export function getBlastRadius(
   edges: Edge[],
   startNode: string,
   maxDepth: number = 2
-): string[] {
+): RadiusResult[] {
   return walkGraph(edges, startNode, 'up', maxDepth);
 }
 
@@ -48,7 +56,7 @@ export function getDependencyChain(
   edges: Edge[],
   startNode: string,
   maxDepth: number = 2
-): string[] {
+): RadiusResult[] {
   return walkGraph(edges, startNode, 'down', maxDepth);
 }
 
