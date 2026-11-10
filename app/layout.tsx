@@ -23,7 +23,24 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('graphcode-theme');
+                if (theme === 'light' || theme === 'dark' || theme === 'system') {
+                  document.documentElement.dataset.theme = theme;
+                } else {
+                  document.documentElement.dataset.theme = 'system';
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <ClerkProvider
           appearance={{
@@ -38,6 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               colorInput: "var(--color-background)",
               colorInputForeground: "var(--color-foreground)",
               colorDanger: "var(--color-danger)",
+              fontFamily: "var(--font-geist-sans)",
             },
           }}
         >

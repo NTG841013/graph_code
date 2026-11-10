@@ -22,8 +22,12 @@ export type Database = {
           finished_at: string | null
           id: string
           organization_id: string
+          parsed_files: number | null
           project_id: string
+          stage: string | null
+          stage_message: string | null
           status: "pending" | "running" | "completed" | "failed"
+          total_files: number | null
         }
         Insert: {
           commit_hash?: string | null
@@ -32,8 +36,12 @@ export type Database = {
           finished_at?: string | null
           id?: string
           organization_id: string
+          parsed_files?: number | null
           project_id: string
+          stage?: string | null
+          stage_message?: string | null
           status: "pending" | "running" | "completed" | "failed"
+          total_files?: number | null
         }
         Update: {
           commit_hash?: string | null
@@ -42,8 +50,12 @@ export type Database = {
           finished_at?: string | null
           id?: string
           organization_id?: string
+          parsed_files?: number | null
           project_id?: string
+          stage?: string | null
+          stage_message?: string | null
           status?: "pending" | "running" | "completed" | "failed"
+          total_files?: number | null
         }
         Relationships: [
           {
@@ -232,7 +244,9 @@ export type Database = {
           analysis_id: string
           content_summary: string | null
           created_at: string
+          hash: string | null
           id: string
+          line_count: number | null
           organization_id: string
           path: string
         }
@@ -240,7 +254,9 @@ export type Database = {
           analysis_id: string
           content_summary?: string | null
           created_at?: string
+          hash?: string | null
           id?: string
+          line_count?: number | null
           organization_id: string
           path: string
         }
@@ -248,7 +264,9 @@ export type Database = {
           analysis_id?: string
           content_summary?: string | null
           created_at?: string
+          hash?: string | null
           id?: string
+          line_count?: number | null
           organization_id?: string
           path?: string
         }

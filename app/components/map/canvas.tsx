@@ -198,11 +198,8 @@ function MapCanvasInner({
 
     const matchesCategory = (filePath: string) => {
       if (!selectedCategory) return true;
-      if (selectedCategory === 'other') {
-        const parts = filePath.split('.');
-        return parts.length <= 1;
-      }
-      return filePath.endsWith(selectedCategory);
+      const ext = filePath.includes('.') ? `.${filePath.split('.').pop()}` : 'other';
+      return ext === selectedCategory;
     };
 
     if (hasCategorySelection) {
@@ -315,7 +312,7 @@ function MapCanvasInner({
     });
 
     return { nodes: finalNodes, edges: finalEdges };
-  }, [folders, analysis.edges, onOpen, onClose, onSelectFile, selectedNodeId, selectedFilePath, selectedCategory]);
+  }, [folders, analysis.edges, analysis.nodes, onOpen, onClose, onSelectFile, selectedNodeId, selectedFilePath, selectedCategory]);
 
   const [rfNodes, setRfNodes, onNodesChange] = useNodesState(nodes);
   const [rfEdges, setRfEdges, onEdgesChange] = useEdgesState(edges);
@@ -338,6 +335,7 @@ function MapCanvasInner({
 
   return (
     <ReactFlow
+      className="bg-background"
       nodes={rfNodes}
       edges={rfEdges}
       onNodesChange={onNodesChange}
@@ -365,10 +363,10 @@ function MapCanvasInner({
       minZoom={0.1}
       maxZoom={2}
     >
-      <Background variant={BackgroundVariant.Dots} color="var(--color-border)" gap={20} size={0.5} />
+      <Background variant={BackgroundVariant.Dots} color="var(--map-dots)" gap={20} size={1} />
       <Controls 
         showInteractive={false} 
-        className="!bg-background !border-white/10 !fill-foreground !shadow-none [&_button]:!border-white/10 [&_button]:hover:!bg-white/5" 
+        className="!bg-background !border-border !shadow-none [&_button]:!bg-background [&_button]:!border-border [&_button]:hover:!bg-surface [&_button_svg]:!fill-foreground" 
       />
     </ReactFlow>
   );

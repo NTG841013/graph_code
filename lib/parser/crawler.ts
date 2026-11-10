@@ -3,8 +3,8 @@ import path from 'path';
 import crypto from 'crypto';
 import { SkippedFile } from './types';
 
-const IGNORED_DIRS = new Set(['node_modules', '.git', '.next', 'dist', 'build']);
-const SUPPORTED_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.jsx']);
+const IGNORED_DIRS = new Set(['node_modules', '.git', '.next', 'dist', 'build', '.turbo']);
+const SUPPORTED_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.jsx', '.mjs', '.cjs', '.json', '.css', '.scss', '.svg']);
 
 export interface RawFileNode {
   path: string;

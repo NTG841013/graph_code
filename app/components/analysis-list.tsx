@@ -1,5 +1,6 @@
 import { getAnalyses, type AnalysisResponse } from "@/app/lib/data/analyses";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; page?: number }) {
   let response: AnalysisResponse;
@@ -16,6 +17,12 @@ export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; pa
   }
 
   const { data: analyses, totalCount, totalPages } = response;
+
+  // If a page becomes invalid (e.g. after deletions), redirect to the last valid page.
+  // This prevents users from getting stuck on an empty state with no pagination controls.
+  if (totalCount > 0 && page > totalPages) {
+    redirect(`/?page=${totalPages}`);
+  }
 
   if (totalCount === 0) {
     return (
@@ -77,22 +84,38 @@ export async function AnalysisList({ orgName, page = 1 }: { orgName?: string; pa
             {analyses.length > 0 ? (
               analyses.map((analysis) => {
                 const [owner, repo] = (analysis.projects?.name || "unnamed/project").split('/');
+                const isUnfinished = analysis.status === 'running' || analysis.status === 'pending';
+                const isStale = isUnfinished && 
+                  (new Date().getTime() - new Date(analysis.created_at).getTime() > 10 * 60 * 1000); // 10 minutes
+
                 return (
                   <tr key={analysis.id} className="group align-top">
                     <td className="px-1 py-3">
-                      <div className="text-muted/80">
-                        {owner}{repo ? '/' : ''}<span className="font-bold text-foreground">{repo || ''}</span>
-                      </div>
+                      <Link 
+                        href={analysis.status === 'completed' ? `/repo/${analysis.id}` : `/analysis/${analysis.id}`}
+                        className="group/link block"
+                      >
+                        <div className="text-muted/80 group-hover/link:text-accent transition-colors">
+                          {owner}{repo ? '/' : ''}<span className="font-bold text-foreground group-hover/link:text-accent">{repo || ''}</span>
+                        </div>
+                      </Link>
                       {analysis.status === 'failed' && analysis.error_message && (
                         <div className="mt-1 text-[10px] text-muted leading-tight">
                           {analysis.error_message}
                         </div>
                       )}
+                      {isStale && (
+                        <div className="mt-1 text-[10px] text-amber-500/80 leading-tight italic">
+                          This analysis seems to have stalled.
+                        </div>
+                      )}
                     </td>
                     <td className="px-1 py-3">
                       <div className="flex items-center gap-2 text-muted">
-                        <StatusIcon status={analysis.status} className="w-3.5 h-3.5" />
-                        <span>{analysis.status === 'running' ? 'parsing' : analysis.status === 'pending' ? 'queued' : analysis.status === 'completed' ? 'complete' : analysis.status}</span>
+                        <StatusIcon status={isStale ? 'failed' : analysis.status} className={`w-3.5 h-3.5 ${isStale ? 'text-amber-500/50' : ''}`} />
+                        <span className={isStale ? 'text-amber-500/70' : ''}>
+                          {isStale ? 'stale' : analysis.status === 'running' ? 'parsing' : analysis.status === 'pending' ? 'queued' : analysis.status === 'completed' ? 'complete' : analysis.status}
+                        </span>
                       </div>
                     </td>
                       <td className="px-1 py-3 text-muted">

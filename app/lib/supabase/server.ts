@@ -16,7 +16,7 @@ export async function createSupabaseServerClient() {
 
   return createClient<Database>(url, publishableKey, {
     accessToken: async () => {
-      const token = await getToken();
+      const token = await getToken({ template: "supabase" });
 
       if (!token) {
         throw new Error("A Clerk session token is required for Supabase access.");

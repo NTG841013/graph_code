@@ -1,6 +1,7 @@
 import { AppHeader } from "@/app/components/app-header";
 import { requireOrganization } from "@/app/lib/auth";
 import { AnalysisList } from "@/app/components/analysis-list";
+import { AnalysisForm } from "@/app/components/analysis-form";
 import { Suspense } from "react";
 
 export default function Home({ 
@@ -48,6 +49,8 @@ async function OrganizationHome({
             analysis. All data in this workspace belongs to this team.
           </p>
         </div>
+
+        <AnalysisForm />
 
         <Suspense
           fallback={

@@ -3,13 +3,12 @@ import { createSupabaseServerClient } from "@/app/lib/supabase/server";
 import { Database } from "@/app/lib/supabase/database.types";
 import { QueryData, SupabaseClient } from "@supabase/supabase-js";
 
-type DB = Database["public"]["Tables"];
-
 /**
  * Shape derived from the Supabase query in getAnalyses.
  * This ensures that changes to the database schema are reflected in the type system.
  * This is wrapped in a function to avoid execution at runtime while preserving type inference.
  */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function queryForType() {
   return ({} as SupabaseClient<Database>)
     .from("analyses")
@@ -20,6 +19,10 @@ function queryForType() {
       finished_at,
       commit_hash,
       error_message,
+      stage,
+      stage_message,
+      total_files,
+      parsed_files,
       projects (
         name,
         repo_url
@@ -55,6 +58,10 @@ export async function getAnalyses(
       finished_at,
       commit_hash,
       error_message,
+      stage,
+      stage_message,
+      total_files,
+      parsed_files,
       projects (
         name,
         repo_url
@@ -78,4 +85,36 @@ export async function getAnalyses(
     pageSize,
     totalPages: Math.ceil(totalCount / pageSize),
   };
+}
+
+export async function getAnalysis(id: string): Promise<Analysis | null> {
+  const supabase = await createSupabaseServerClient();
+
+  const { data, error } = await supabase
+    .from("analyses")
+    .select(`
+      id,
+      status,
+      created_at,
+      finished_at,
+      commit_hash,
+      error_message,
+      stage,
+      stage_message,
+      total_files,
+      parsed_files,
+      projects (
+        name,
+        repo_url
+      )
+    `)
+    .eq("id", id)
+    .single();
+
+  if (error) {
+    if (error.code === 'PGRST116') return null; // Not found
+    throw new Error(`Failed to load analysis: ${error.message}`);
+  }
+
+  return data;
 }

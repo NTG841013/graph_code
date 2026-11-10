@@ -6,6 +6,7 @@ export interface FileNode {
   fanIn: number;
   fanOut: number;
   isEntry?: boolean;
+  role?: string;
 }
 
 export type EdgeType = 'import' | 're-export' | 'dynamic';
@@ -44,4 +45,5 @@ export interface ParserAdapter {
   isEntry(path: string): boolean;
   shouldInclude(path: string): boolean;
   resolveImport(sourceFile: string, specifier: string): string | null;
+  getRole(path: string): string | null;
 }
