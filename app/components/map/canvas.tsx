@@ -198,8 +198,9 @@ function MapCanvasInner({
 
     const matchesCategory = (filePath: string) => {
       if (!selectedCategory) return true;
-      const ext = filePath.includes('.') ? `.${filePath.split('.').pop()}` : 'other';
-      return ext === selectedCategory;
+      const node = analysis.nodes.find(n => n.path === filePath);
+      const role = node?.role || 'Logic';
+      return role === selectedCategory;
     };
 
     if (hasCategorySelection) {
@@ -247,23 +248,26 @@ function MapCanvasInner({
           isEdgeConnected = true;
         }
 
-        // If category selection is active, edges between matching files should be active?
-        // Spec says "dims everything that isn't in it".
-        if (hasCategorySelection && matchesCategory(from) && matchesCategory(to)) {
+        // If category selection is active, edges connected to matching files should be active
+        if (hasCategorySelection && (matchesCategory(from) || matchesCategory(to))) {
           isEdgeConnected = true;
-        }
-
-        // Priority: category filter dims anything that doesn't match
-        if (hasCategorySelection && (!matchesCategory(from) || !matchesCategory(to))) {
-          isEdgeConnected = false;
         }
 
         if (isEdgeConnected) {
           activeEdgeIds.add(edge.id);
-          activeNodeIds.add(edge.source);
-          activeNodeIds.add(edge.target);
-          activeFilePaths.add(from);
-          activeFilePaths.add(to);
+          
+          // Highlight both ends for explicit selection (file or folder).
+          // For category selection, we only highlight the matching side (already done),
+          // keeping the focus on the category while showing the connecting edges.
+          if (
+            (selectedFilePath && (from === selectedFilePath || to === selectedFilePath)) ||
+            (selectedNodeId && (edge.source === selectedNodeId || edge.target === selectedNodeId))
+          ) {
+            activeNodeIds.add(edge.source);
+            activeNodeIds.add(edge.target);
+            activeFilePaths.add(from);
+            activeFilePaths.add(to);
+          }
         }
       });
     }

@@ -1,16 +1,21 @@
 import { crawl } from './crawler';
 import { processRepo } from './processor';
 import { AnalysisResult, FileNode, Edge, ParserAdapter } from './types';
+import { detectAdapter } from '../adapters';
+import { FRAMEWORK_TAXONOMY } from '../adapters/taxonomy';
 
-export const FallbackAdapter: ParserAdapter = {
-  isEntry: () => false,
-  shouldInclude: () => true,
-  resolveImport: () => null,
-  getRole: () => null,
-};
-
-export async function analyze(root: string, adapter: ParserAdapter = FallbackAdapter): Promise<AnalysisResult> {
-  const { nodes, skipped } = await crawl(root);
+export async function analyze(root: string, providedAdapter?: ParserAdapter): Promise<AnalysisResult> {
+  const { nodes: rawNodes, skipped } = await crawl(root);
+  
+  // Deduplicate nodes by path just in case
+  const nodeMap = new Map<string, typeof rawNodes[0]>();
+  for (const node of rawNodes) {
+    nodeMap.set(node.path, node);
+  }
+  const nodes = Array.from(nodeMap.values());
+  
+  const filePaths = nodes.map(n => n.path);
+  const adapter = providedAdapter || detectAdapter(filePaths);
   
   // Filter nodes based on adapter (though crawler already does some filtering)
   const includedNodes = nodes.filter(n => adapter.shouldInclude(n.path));
@@ -21,7 +26,7 @@ export async function analyze(root: string, adapter: ParserAdapter = FallbackAda
     ...excludedNodes.map(n => ({ path: n.path, reason: 'adapter-excluded' }))
   ];
 
-  const { edges, unresolved } = processRepo(root, includedNodes.map(n => n.path), adapter);
+  const { edges, unresolved, routes } = processRepo(root, includedNodes.map(n => n.path), adapter);
 
   // Remove duplicate edges
   const edgeKeys = new Set<string>();
@@ -57,6 +62,11 @@ export async function analyze(root: string, adapter: ParserAdapter = FallbackAda
     edges: uniqueEdges,
     unresolved,
     skipped: finalSkipped,
+    routes,
+    framework: {
+      name: adapter.name,
+      categories: FRAMEWORK_TAXONOMY[adapter.name] || FRAMEWORK_TAXONOMY['Generic']
+    },
     stats: {
       totalFiles: nodes.length + skipped.length,
       parsedFiles: includedNodes.length,

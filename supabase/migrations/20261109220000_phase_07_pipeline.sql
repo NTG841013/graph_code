@@ -63,7 +63,18 @@ BEGIN
   END IF;
   RETURN NEW;
 END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY INVOKER;
+
+-- Trigger functions must be executable by whoever performs the action
+REVOKE EXECUTE ON FUNCTION public.on_analysis_progress_update() FROM PUBLIC;
+GRANT EXECUTE ON FUNCTION public.on_analysis_progress_update() TO authenticated;
+GRANT EXECUTE ON FUNCTION public.on_analysis_progress_update() TO service_role;
+
+-- To broadcast, the invoker needs permission to call the realtime utility
+GRANT USAGE ON SCHEMA realtime TO authenticated;
+GRANT USAGE ON SCHEMA realtime TO service_role;
+GRANT EXECUTE ON FUNCTION realtime.send(jsonb, text, text, boolean) TO authenticated;
+GRANT EXECUTE ON FUNCTION realtime.send(jsonb, text, text, boolean) TO service_role;
 
 CREATE TRIGGER analysis_progress_broadcast
   AFTER UPDATE ON public.analyses

@@ -1,7 +1,9 @@
 import { getSupabaseAdmin } from "./supabase-admin";
+import { normalizeRepoUrl } from "./url-utils";
 
 export async function findOrCreateAnalysis(repoUrl: string, organizationId: string) {
   const supabase = getSupabaseAdmin();
+  const normalizedUrl = normalizeRepoUrl(repoUrl);
 
   // 0. Ensure organization exists (fallback for manual sync)
   const { data: orgExists } = await supabase
@@ -17,52 +19,58 @@ export async function findOrCreateAnalysis(repoUrl: string, organizationId: stri
   }
 
   // 1. Check if project already exists for this org
-  let { data: project } = await supabase
+  const { data: project, error: pError } = await supabase
     .from('projects')
     .select('id')
-    .eq('repo_url', repoUrl)
+    .eq('repo_url', normalizedUrl)
     .eq('organization_id', organizationId)
     .maybeSingle();
 
-  if (project) {
+  if (pError) throw new Error(`Project lookup failed: ${pError.message}`);
+
+  let existingProject = project;
+
+  if (existingProject) {
     // 2. Check if an analysis already exists for this project
-    const { data: analysis } = await supabase
+    const { data: analysis, error: aLookupError } = await supabase
       .from('analyses')
       .select('id, status')
-      .eq('project_id', project.id)
+      .eq('project_id', existingProject.id)
       .order('created_at', { ascending: false })
       .limit(1)
       .maybeSingle();
 
+    if (aLookupError) throw new Error(`Analysis lookup failed: ${aLookupError.message}`);
+
     if (analysis) {
-      return { analysis, project, isNew: false };
+      return { analysis, project: existingProject, isNew: false };
     }
   }
 
   // 3. Create project if not exists
-  if (!project) {
-    const match = repoUrl.match(/github\.com\/([^/]+\/[^/]+)/);
-    const projectName = match ? match[1] : repoUrl.split('/').pop() || 'unnamed';
+  if (!existingProject) {
+    const match = normalizedUrl.match(/github\.com\/([^/]+\/[^/]+)/);
+    const projectName = match ? match[1] : normalizedUrl.split('/').pop() || 'unnamed';
 
-    const { data: newProject, error: pError } = await supabase
+    const { data: newProject, error: pInsertError } = await supabase
       .from('projects')
       .insert({
         name: projectName,
-        repo_url: repoUrl,
+        repo_url: normalizedUrl,
         organization_id: organizationId
       })
       .select()
       .single();
     
-    if (pError) throw new Error(`Failed to create project: ${pError.message}`);
-    project = newProject;
+    if (pInsertError) throw new Error(`Failed to create project: ${pInsertError.message}`);
+    existingProject = newProject;
   }
 
   // 4. Create new analysis
-  const { data: analysis, error: aError } = await supabase
+  const { data: analysis, error: aInsertError } = await supabase
     .from('analyses')
     .insert({
-      project_id: project!.id,
+      project_id: existingProject!.id,
       organization_id: organizationId,
       status: 'pending',
       stage: 'queued',
@@ -71,7 +79,7 @@ export async function findOrCreateAnalysis(repoUrl: string, organizationId: stri
     .select()
     .single();
 
-  if (aError) throw new Error(`Failed to create analysis: ${aError.message}`);
+  if (aInsertError) throw new Error(`Failed to create analysis: ${aInsertError.message}`);
 
-  return { analysis, project, isNew: true };
+  return { analysis, project: existingProject, isNew: true };
 }

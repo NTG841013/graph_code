@@ -20,36 +20,12 @@ export function AnalysisProgress({ initialAnalysis }: { initialAnalysis: Analysi
       return;
     }
 
-    // Polling fallback - check every 5 seconds in case Realtime fails
-    const pollInterval = setInterval(async () => {
-      const { data, error } = await supabase
-        .from('analyses')
-        .select('status, stage, stage_message, total_files, parsed_files, error_message')
-        .eq('id', analysis.id)
-        .single();
-      
-      if (data && !error) {
-        setAnalysis(prev => {
-          // Only update if something actually changed to avoid unnecessary re-renders
-          if (
-            data.status !== prev.status || 
-            data.stage !== prev.stage || 
-            data.stage_message !== prev.stage_message ||
-            data.total_files !== prev.total_files ||
-            data.parsed_files !== prev.parsed_files
-          ) {
-            return { ...prev, ...data };
-          }
-          return prev;
-        });
-      }
-    }, 5000);
-
     // 1. Subscribe to Broadcast channel for live stage updates
     // This is the primary way we get fast progress updates
     const channel = supabase
       .channel(`analysis:${analysis.id}`, {
         config: {
+          private: true,
           broadcast: { ack: true }
         }
       })
@@ -67,19 +43,7 @@ export function AnalysisProgress({ initialAnalysis }: { initialAnalysis: Analysi
           }
         }
       )
-      .subscribe((status) => {
-        if (status === 'SUBSCRIBED') {
-          // Once subscribed, do an immediate check to catch anything missed during transition
-          void (async () => {
-            const { data } = await supabase
-              .from('analyses')
-              .select('status, stage, stage_message, total_files, parsed_files')
-              .eq('id', analysis.id)
-              .single();
-            if (data) setAnalysis(prev => ({ ...prev, ...data }));
-          })();
-        }
-      });
+      .subscribe();
 
     // 2. Subscribe to table changes as a fallback/backup
     const tableChannel = supabase
@@ -103,7 +67,6 @@ export function AnalysisProgress({ initialAnalysis }: { initialAnalysis: Analysi
       .subscribe();
 
     return () => {
-      clearInterval(pollInterval);
       void supabase.removeChannel(channel);
       void supabase.removeChannel(tableChannel);
     };

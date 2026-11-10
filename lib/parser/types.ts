@@ -1,3 +1,5 @@
+import { SourceFile } from 'ts-morph';
+
 export interface FileNode {
   path: string;
   folder: string;
@@ -29,11 +31,25 @@ export interface SkippedFile {
   reason: string;
 }
 
+export interface Route {
+  method: string;
+  path: string;
+  file: string;
+  line?: number;
+}
+
+export interface FrameworkInfo {
+  name: string;
+  categories: string[];
+}
+
 export interface AnalysisResult {
   nodes: FileNode[];
   edges: Edge[];
   unresolved: UnresolvedImport[];
   skipped: SkippedFile[];
+  routes: Route[];
+  framework?: FrameworkInfo;
   stats: {
     totalFiles: number;
     parsedFiles: number;
@@ -42,8 +58,11 @@ export interface AnalysisResult {
 }
 
 export interface ParserAdapter {
+  name: string;
+  detect(filePaths: string[]): boolean;
   isEntry(path: string): boolean;
   shouldInclude(path: string): boolean;
   resolveImport(sourceFile: string, specifier: string): string | null;
   getRole(path: string): string | null;
+  getRoutes?(sourceFile: SourceFile): Route[];
 }

@@ -1,8 +1,9 @@
 import { getAnalysis } from "@/app/lib/data/analyses";
 import { createSupabaseServerClient } from "@/app/lib/supabase/server";
+import { fetchAll } from "@/app/lib/supabase/utils";
 import { Explorer } from "./explorer";
 import { notFound } from "next/navigation";
-import { FileNode, Edge } from "@/lib/parser/types";
+import { FileNode, Edge, Route } from "@/lib/parser/types";
 import { Suspense } from "react";
 import { AppHeader } from "@/app/components/app-header";
 
@@ -28,31 +29,37 @@ async function RepoContent({ params }: { params: Promise<{ id: string }> }) {
 
   const supabase = await createSupabaseServerClient();
   
-  // 1. Fetch files, edges and roles
-  const [filesRes, edgesRes, rolesRes] = await Promise.all([
-    supabase
-      .from('files')
-      .select('id, path, line_count, hash')
-      .eq('analysis_id', id),
-    supabase
-      .from('edges')
-      .select(`
-        id,
-        from:from_file_id(path),
-        to:to_file_id(path)
-      `)
-      .eq('analysis_id', id),
-    supabase
-      .from('file_roles')
-      .select('file_id, role')
-      .eq('analysis_id', id)
+  // 1. Fetch files, edges, roles and routes
+  const [dbFiles, dbEdgesRaw, dbRoles, dbRoutes] = await Promise.all([
+    fetchAll<{ id: string; path: string; line_count: number | null; hash: string | null; is_entry: boolean | null }>(
+      supabase
+        .from('files')
+        .select('id, path, line_count, hash, is_entry')
+        .eq('analysis_id', id)
+    ),
+    fetchAll<{ id: string; from: { path: string }; to: { path: string } }>(
+      supabase
+        .from('edges')
+        .select(`
+          id,
+          from:from_file_id(path),
+          to:to_file_id(path)
+        `)
+        .eq('analysis_id', id)
+    ),
+    fetchAll<{ file_id: string; role: string }>(
+      supabase
+        .from('file_roles')
+        .select('file_id, role')
+        .eq('analysis_id', id)
+    ),
+    fetchAll<{ method: string; path: string; handler_file_id: string | null; line_number: number | null }>(
+      supabase
+        .from('routes')
+        .select('method, path, handler_file_id, line_number')
+        .eq('analysis_id', id)
+    )
   ]);
-
-  if (filesRes.error) throw new Error(`Failed to load files: ${filesRes.error.message}`);
-  if (edgesRes.error) throw new Error(`Failed to load edges: ${edgesRes.error.message}`);
-  if (rolesRes.error) throw new Error(`Failed to load roles: ${rolesRes.error.message}`);
-
-  const dbFiles = filesRes.data;
   
   interface DBEdge {
     id: string;
@@ -60,8 +67,7 @@ async function RepoContent({ params }: { params: Promise<{ id: string }> }) {
     to: { path: string };
   }
   
-  const dbEdges = (edgesRes.data as unknown) as DBEdge[];
-  const dbRoles = rolesRes.data;
+  const dbEdges = (dbEdgesRaw as unknown) as DBEdge[];
 
   // 2. Reconstruct Edge objects
   const edges: Edge[] = dbEdges.map(e => ({
@@ -84,6 +90,8 @@ async function RepoContent({ params }: { params: Promise<{ id: string }> }) {
     roleMap.set(r.file_id, r.role);
   });
 
+  const fileIdToPath = new Map(dbFiles.map(f => [f.id, f.path]));
+
   // 4. Reconstruct FileNode objects O(N)
   const fileNodes: FileNode[] = dbFiles.map(f => {
     const role = roleMap.get(f.id);
@@ -95,15 +103,24 @@ async function RepoContent({ params }: { params: Promise<{ id: string }> }) {
       fanIn: fanInMap.get(f.path) || 0,
       fanOut: fanOutMap.get(f.path) || 0,
       role,
-      isEntry: role === 'Page route' || role === 'API endpoint' || role === 'entry'
+      isEntry: !!f.is_entry
     };
   });
+
+  // 5. Reconstruct Routes
+  const routes: Route[] = dbRoutes.map(r => ({
+    method: r.method,
+    path: r.path,
+    file: r.handler_file_id ? fileIdToPath.get(r.handler_file_id) || '' : '',
+    line: r.line_number || undefined
+  }));
 
   return (
     <Explorer 
       analysis={analysis}
       nodes={fileNodes}
       edges={edges}
+      routes={routes}
     />
   );
 }
