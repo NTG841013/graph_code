@@ -1,13 +1,13 @@
 import { Project, SyntaxKind, SourceFile, ts } from 'ts-morph';
 import path from 'path';
 import fs from 'fs';
-import { Edge, UnresolvedImport, ParserAdapter } from './types';
+import { Edge, UnresolvedImport, ParserAdapter, Route } from './types';
 
 export function processRepo(
   root: string, 
   filePaths: string[], 
   adapter?: ParserAdapter
-): { edges: Edge[]; unresolved: UnresolvedImport[] } {
+): { edges: Edge[]; unresolved: UnresolvedImport[]; routes: Route[] } {
   const tsConfigPath = path.join(root, 'tsconfig.json');
   const hasTsConfig = fs.existsSync(tsConfigPath);
 
@@ -48,6 +48,7 @@ export function processRepo(
 
   const edges: Edge[] = [];
   const unresolved: UnresolvedImport[] = [];
+  const routes: Route[] = [];
 
   function isExternal(specifier: string) {
     return !specifier.startsWith('.') && !path.isAbsolute(specifier);
@@ -55,6 +56,7 @@ export function processRepo(
 
   function resolveAndAdd(from: string, specifier: string, targetFile: SourceFile | undefined, type: Edge['type']) {
     let targetPath: string | null = null;
+    let isOutside = false;
     
     if (targetFile) {
       targetPath = path.resolve(targetFile.getFilePath());
@@ -75,14 +77,33 @@ export function processRepo(
         edges.push({ from, to, type });
         return;
       }
+
+      if (!targetPath.startsWith(rootWithSep)) {
+        isOutside = true;
+      }
     }
 
-    const reason = isExternal(specifier) ? 'outside' : 'failed';
+    const reason = (isOutside || isExternal(specifier)) ? 'outside' : 'failed';
     unresolved.push({ file: from, specifier, reason });
   }
 
   for (const sourceFile of project.getSourceFiles()) {
     const from = path.relative(absoluteRoot, sourceFile.getFilePath()).replace(/\\/g, '/');
+
+    // Extract framework routes
+    if (adapter?.getRoutes) {
+      try {
+        const fileRoutes = adapter.getRoutes(sourceFile);
+        fileRoutes.forEach(r => {
+          if (path.isAbsolute(r.file)) {
+            r.file = path.relative(absoluteRoot, r.file).replace(/\\/g, '/');
+          }
+        });
+        routes.push(...fileRoutes);
+      } catch (err) {
+        console.warn(`Failed to extract routes from ${from}: ${err}`);
+      }
+    }
 
     // Standard Imports
     sourceFile.getImportDeclarations().forEach(imp => {
@@ -139,5 +160,5 @@ export function processRepo(
     }
   }
 
-  return { edges: uniqueEdges, unresolved };
+  return { edges: uniqueEdges, unresolved, routes };
 }

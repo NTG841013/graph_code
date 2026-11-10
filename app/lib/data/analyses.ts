@@ -23,6 +23,7 @@ function queryForType() {
       stage_message,
       total_files,
       parsed_files,
+      framework,
       projects (
         name,
         repo_url
@@ -62,6 +63,7 @@ export async function getAnalyses(
       stage_message,
       total_files,
       parsed_files,
+      framework,
       projects (
         name,
         repo_url
@@ -103,6 +105,7 @@ export async function getAnalysis(id: string): Promise<Analysis | null> {
       stage_message,
       total_files,
       parsed_files,
+      framework,
       projects (
         name,
         repo_url

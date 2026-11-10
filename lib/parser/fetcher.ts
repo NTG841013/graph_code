@@ -1,11 +1,14 @@
 import fs from 'node:fs/promises';
+import { createWriteStream } from 'node:fs';
+import { Readable, Transform } from 'node:stream';
+import { pipeline } from 'node:stream/promises';
 import path from 'node:path';
 import os from 'node:os';
-import { exec } from 'node:child_process';
-import { promisify } from 'node:util';
 import crypto from 'node:crypto';
+import AdmZip from 'adm-zip';
 
-const execAsync = promisify(exec);
+const MAX_ZIP_SIZE = 50 * 1024 * 1024; // 50MB
+const MAX_EXTRACTED_SIZE = 200 * 1024 * 1024; // 200MB
 
 export interface FetchResult {
   rootPath: string;
@@ -56,7 +59,7 @@ export async function fetchRepo(repoUrl: string): Promise<FetchResult> {
     const meta = await metaRes.json() as { sha: string };
     const commitHash = meta.sha;
 
-    // 2. Download ZIP
+    // 2. Download ZIP (Streaming with limit)
     const zipUrl = `https://api.github.com/repos/${owner}/${repo}/zipball/${commitHash}`;
     const zipRes = await fetch(zipUrl, { headers });
     
@@ -64,13 +67,45 @@ export async function fetchRepo(repoUrl: string): Promise<FetchResult> {
       throw new Error(`Failed to download repository archive: ${zipRes.statusText}`);
     }
 
-    const buffer = await zipRes.arrayBuffer();
-    await fs.writeFile(zipPath, Buffer.from(buffer));
+    if (!zipRes.body) {
+      throw new Error('Response body is null');
+    }
 
-    // 3. Extract ZIP using PowerShell (Windows native)
-    // PowerShell command: Expand-Archive -Path $zipPath -DestinationPath $extractDir
-    // We double quote paths to handle spaces
-    await execAsync(`powershell.exe -Command "Expand-Archive -Path '${zipPath}' -DestinationPath '${extractDir}'"`);
+    let downloadedBytes = 0;
+    const limitStream = new Transform({
+      transform(chunk, encoding, callback) {
+        downloadedBytes += chunk.length;
+        if (downloadedBytes > MAX_ZIP_SIZE) {
+          callback(new Error(`Repository archive is too large (max ${MAX_ZIP_SIZE / 1024 / 1024}MB).`));
+        } else {
+          callback(null, chunk);
+        }
+      }
+    });
+
+    await pipeline(
+      Readable.fromWeb(zipRes.body as unknown as import('node:stream/web').ReadableStream),
+      limitStream,
+      createWriteStream(zipPath)
+    );
+
+    // 3. Extract ZIP using adm-zip (cross-platform)
+    const zip = new AdmZip(zipPath);
+    
+    // Check total uncompressed size before extraction to prevent memory exhaustion/zip bombs
+    const zipEntries = zip.getEntries();
+    let totalUncompressedSize = 0;
+    for (const entry of zipEntries) {
+      if (!entry.isDirectory) {
+        totalUncompressedSize += entry.header.size;
+      }
+    }
+    
+    if (totalUncompressedSize > MAX_EXTRACTED_SIZE) {
+      throw new Error(`Extracted repository size is too large (max ${MAX_EXTRACTED_SIZE / 1024 / 1024}MB).`);
+    }
+
+    zip.extractAllTo(extractDir, true);
 
     // 4. Find the extracted root (GitHub wraps it in a folder like owner-repo-sha)
     const entries = await fs.readdir(extractDir);

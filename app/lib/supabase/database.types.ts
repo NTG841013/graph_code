@@ -28,6 +28,7 @@ export type Database = {
           stage_message: string | null
           status: "pending" | "running" | "completed" | "failed"
           total_files: number | null
+          framework: Json | null
         }
         Insert: {
           commit_hash?: string | null
@@ -42,6 +43,7 @@ export type Database = {
           stage_message?: string | null
           status: "pending" | "running" | "completed" | "failed"
           total_files?: number | null
+          framework?: Json | null
         }
         Update: {
           commit_hash?: string | null
@@ -56,6 +58,7 @@ export type Database = {
           stage_message?: string | null
           status?: "pending" | "running" | "completed" | "failed"
           total_files?: number | null
+          framework?: Json | null
         }
         Relationships: [
           {
@@ -246,6 +249,7 @@ export type Database = {
           created_at: string
           hash: string | null
           id: string
+          is_entry: boolean | null
           line_count: number | null
           organization_id: string
           path: string
@@ -256,6 +260,7 @@ export type Database = {
           created_at?: string
           hash?: string | null
           id?: string
+          is_entry?: boolean | null
           line_count?: number | null
           organization_id: string
           path: string
@@ -266,6 +271,7 @@ export type Database = {
           created_at?: string
           hash?: string | null
           id?: string
+          is_entry?: boolean | null
           line_count?: number | null
           organization_id?: string
           path?: string
@@ -427,6 +433,7 @@ export type Database = {
           created_at: string
           handler_file_id: string | null
           id: string
+          line_number: number | null
           method: string
           organization_id: string
           path: string
@@ -436,6 +443,7 @@ export type Database = {
           created_at?: string
           handler_file_id?: string | null
           id?: string
+          line_number?: number | null
           method: string
           organization_id: string
           path: string
@@ -445,6 +453,7 @@ export type Database = {
           created_at?: string
           handler_file_id?: string | null
           id?: string
+          line_number?: number | null
           method?: string
           organization_id?: string
           path?: string

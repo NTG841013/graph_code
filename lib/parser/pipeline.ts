@@ -1,7 +1,6 @@
 import { fetchRepo } from './fetcher';
 import { analyze } from './index';
 import { updateAnalysisProgress, saveAnalysisResults, failAnalysis } from '../data/storage';
-import { NextAdapter } from '../adapters/next-adapter';
 
 export interface PipelineOptions {
   analysisId: string;
@@ -29,13 +28,10 @@ export async function runAnalysisPipeline(options: PipelineOptions) {
     );
 
     // 2. Analyze (Crawl + Select + Parse)
-    // We use NextAdapter by default since this is a Next.js world, 
-    // but the adapter logic should ideally be detected.
-    // For Phase 7, we keep it simple.
     await updateAnalysisProgress(analysisId, 'parsing', 'Parsing source code and building graph...');
     
     const root = fetchResult.rootPath;
-    const results = await analyze(root, NextAdapter);
+    const results = await analyze(root);
 
     // 3. Store
     await updateAnalysisProgress(analysisId, 'storing', 'Saving results to database...');

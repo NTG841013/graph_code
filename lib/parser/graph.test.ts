@@ -17,6 +17,7 @@ describe('findInsights', () => {
       edges,
       unresolved: [],
       skipped: [],
+      routes: [],
       stats: { totalFiles: 2, parsedFiles: 2, skippedFiles: 0 }
     };
     const insights = findInsights(analysis);
@@ -46,6 +47,7 @@ describe('findInsights', () => {
       edges, 
       unresolved: [],
       skipped: [],
+      routes: [],
       stats: { totalFiles: depth, parsedFiles: depth, skippedFiles: 0 }
     };
     

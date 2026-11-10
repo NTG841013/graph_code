@@ -4,12 +4,15 @@ import React, { useState, useMemo } from 'react';
 import { AnalysisResult, FileNode } from '@/lib/parser/types';
 import { FolderNode } from '@/lib/parser/folding';
 import { getBlastRadius, getDependencyChain, findInsights, RadiusResult } from '@/lib/parser/graph';
+import { reRunAnalysis } from '@/app/lib/actions/analysis';
+import { useFormStatus } from 'react-dom';
 
 interface DetailPaneProps {
   analysis: AnalysisResult;
   selectedFile: FileNode | null;
   selectedFolder: FolderNode | null;
   onFileSelect: (path: string | null) => void;
+  analysisId?: string;
 }
 
 export function DetailPane({
@@ -17,6 +20,7 @@ export function DetailPane({
   selectedFile,
   selectedFolder,
   onFileSelect,
+  analysisId,
 }: DetailPaneProps) {
   const [activeTab, setActiveTab] = useState<'structure' | 'explanation'>('structure');
   const [radiusMode, setRadiusMode] = useState<'blast' | 'chain' | null>(null);
@@ -50,8 +54,12 @@ export function DetailPane({
     return analysis.nodes.filter(n => n.fanIn > 0).length;
   }, [analysis.nodes]);
 
-  const routesCount = useMemo(() => {
-    return analysis.nodes.filter(n => n.isEntry).length;
+  const importedByNothing = useMemo(() => {
+    return analysis.nodes.filter(n => n.fanIn === 0).sort((a, b) => a.path.localeCompare(b.path)).slice(0, 10);
+  }, [analysis.nodes]);
+
+  const importedByNothingCount = useMemo(() => {
+    return analysis.nodes.filter(n => n.fanIn === 0).length;
   }, [analysis.nodes]);
 
   const dependencies = useMemo(() => {
@@ -105,34 +113,30 @@ export function DetailPane({
       <div className="flex-1 overflow-y-auto custom-scrollbar">
         <div className="flex flex-col min-h-full">
             {!selectedFile && !selectedFolder ? (
-              // Repository Summary (matching 1.png)
+              // Repository Summary
               <div className="flex flex-col">
-                <div className="border-b border-border p-4">
-                  <p className="text-[10px] text-muted uppercase tracking-widest">Framework</p>
-                  <p className="text-sm font-bold">Next.js</p>
+                <div className="border-b border-border p-4 flex justify-between items-center">
+                  <div>
+                    <p className="text-[10px] text-muted uppercase tracking-widest">Framework</p>
+                    <p className="text-sm font-bold">{analysis.framework?.name || 'Generic'}</p>
+                  </div>
+                  {analysisId && (
+                    <form action={() => reRunAnalysis(analysisId)}>
+                      <RerunButton />
+                    </form>
+                  )}
                 </div>
 
-                <div className="grid grid-cols-3 border-b border-border">
+                <div className="grid grid-cols-2 border-b border-border">
                   <div className="p-4 border-r border-border">
                     <p className="text-[9px] text-muted uppercase tracking-tighter mb-1">Files</p>
                     <p className="text-xl">{analysis.stats.totalFiles}</p>
                   </div>
-                  <div className="p-4 border-r border-border">
+                  <div className="p-4">
                     <p className="text-[9px] text-muted uppercase tracking-tighter mb-1">Imports</p>
                     <p className="text-xl">{analysis.edges.length}</p>
                     {analysis.unresolved.length > 0 && (
                       <p className="text-[8px] text-muted/60 mt-1">{analysis.unresolved.length} unresolved</p>
-                    )}
-                  </div>
-                  <div className="p-4">
-                    <p className="text-[9px] text-muted uppercase tracking-tighter mb-1">Routes</p>
-                    {routesCount > 0 ? (
-                      <p className="text-xl">{routesCount}</p>
-                    ) : (
-                      <>
-                        <p className="text-xl opacity-40">—</p>
-                        <p className="text-[8px] text-muted/60 mt-1">not recovered</p>
-                      </>
                     )}
                   </div>
                 </div>
@@ -164,6 +168,33 @@ export function DetailPane({
                   {dependedOnCount > mostDependedOn.length && (
                     <p className="text-[9px] text-muted/40 italic">
                       {dependedOnCount - mostDependedOn.length} more not listed
+                    </p>
+                  )}
+                </div>
+
+                <div className="p-4 space-y-4 pt-0">
+                  <div className="flex justify-between items-baseline">
+                    <h3 className="text-[10px] text-muted uppercase tracking-widest">Imported by nothing <span className="text-[9px] normal-case opacity-40 ml-1">where reading starts</span></h3>
+                    <span className="text-xs text-muted/60">{importedByNothingCount}</span>
+                  </div>
+
+                  <div className="space-y-0.5">
+                    {importedByNothing.map(file => (
+                      <button
+                        key={file.path}
+                        onClick={() => onFileSelect(file.path)}
+                        className="w-full flex justify-between items-center py-1 hover:bg-surface/50 transition-colors group text-left"
+                      >
+                        <span className="text-[10px] text-muted group-hover:text-foreground truncate">
+                          {file.path}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+
+                  {importedByNothingCount > importedByNothing.length && (
+                    <p className="text-[9px] text-muted/40 italic">
+                      {importedByNothingCount - importedByNothing.length} more not listed
                     </p>
                   )}
                 </div>
@@ -239,6 +270,10 @@ export function DetailPane({
                               <span>.{selectedFile.path.split('.').pop()}</span>
                             </div>
                           } 
+                        />
+                        <PropertyRow 
+                          label="Role" 
+                          value={selectedFile.role || 'Unclassified'} 
                         />
                         <PropertyRow 
                           label="Folder" 
@@ -452,5 +487,19 @@ function PropertyRow({ label, value, valueClassName = "" }: { label: string; val
       <span className="text-muted">{label}</span>
       <span className={`text-foreground/90 truncate ${valueClassName}`}>{value}</span>
     </div>
+  );
+}
+
+function RerunButton() {
+  const { pending } = useFormStatus();
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="text-[10px] text-muted hover:text-accent transition-colors flex items-center gap-1 group disabled:opacity-50"
+    >
+      <span className={pending ? 'animate-spin' : 'group-hover:rotate-180 transition-transform duration-500'}>↻</span>
+      <span>{pending ? 'Restarting...' : 'Rerun'}</span>
+    </button>
   );
 }
