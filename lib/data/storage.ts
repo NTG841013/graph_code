@@ -99,7 +99,8 @@ export async function saveAnalysisResults(
       organization_id: organizationId,
       path: route.path,
       method: route.method,
-      handler_file_id: fileId || null
+      handler_file_id: fileId || null,
+      line_number: route.line ?? null
     };
   });
 
