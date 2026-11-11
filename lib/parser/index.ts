@@ -3,6 +3,8 @@ import { processRepo } from './processor';
 import { AnalysisResult, FileNode, Edge, ParserAdapter } from './types';
 import { detectAdapter } from '../adapters';
 import { FRAMEWORK_TAXONOMY } from '../adapters/taxonomy';
+import { classifyRole } from '../ai/explain';
+import { isAIConfigured } from '../ai/client';
 
 export async function analyze(root: string, providedAdapter?: ParserAdapter): Promise<AnalysisResult> {
   const { nodes: rawNodes, skipped } = await crawl(root);
@@ -49,12 +51,29 @@ export async function analyze(root: string, providedAdapter?: ParserAdapter): Pr
     fanInMap[edge.to] = (fanInMap[edge.to] || 0) + 1;
   });
 
-  const nodesWithStats: FileNode[] = includedNodes.map(node => ({
-    ...node,
-    fanIn: fanInMap[node.path] || 0,
-    fanOut: fanOutMap[node.path] || 0,
-    isEntry: adapter.isEntry(node.path),
-    role: adapter.getRole(node.path) || undefined
+  const nodesWithStats: FileNode[] = await Promise.all(includedNodes.map(async node => {
+    let role = adapter.getRole(node.path);
+    
+    // Only classify if adapter couldn't identify AND it's a code file
+    const isCode = /\.(ts|tsx|js|jsx|mjs|cjs)$/.test(node.path);
+    if (!role && isAIConfigured() && isCode) {
+      try {
+        role = await classifyRole(node.path, node.content);
+      } catch (err) {
+        console.warn(`AI classification failed for ${node.path}:`, err);
+      }
+    }
+
+    return {
+      path: node.path,
+      folder: node.folder,
+      lineCount: node.lineCount,
+      hash: node.hash,
+      fanIn: fanInMap[node.path] || 0,
+      fanOut: fanOutMap[node.path] || 0,
+      isEntry: adapter.isEntry(node.path),
+      role: role || undefined
+    };
   }));
 
   return {

@@ -1,11 +1,13 @@
 import { ParserAdapter } from '../parser/types';
 import { NextAdapter } from './next-adapter';
 import { NestAdapter } from './nest-adapter';
+import { ExpressAdapter } from './express-adapter';
 import { ReactAdapter } from './react-adapter';
 
 export const ADAPTERS: ParserAdapter[] = [
   NextAdapter,
   NestAdapter,
+  ExpressAdapter,
   ReactAdapter,
 ];
 
