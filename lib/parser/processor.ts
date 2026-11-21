@@ -93,7 +93,7 @@ export function processRepo(
     // Extract framework routes
     if (adapter?.getRoutes) {
       try {
-        const fileRoutes = adapter.getRoutes(sourceFile);
+        const fileRoutes = adapter.getRoutes(sourceFile, from);
         fileRoutes.forEach(r => {
           if (path.isAbsolute(r.file)) {
             r.file = path.relative(absoluteRoot, r.file).replace(/\\/g, '/');
@@ -142,6 +142,28 @@ export function processRepo(
             if (stringLiteral) {
               const targetFile = stringLiteral.getSymbol()?.getDeclarations()[0]?.getSourceFile();
               resolveAndAdd(from, specifier, targetFile, 'dynamic');
+            }
+          }
+        }
+      }
+    });
+
+    // CommonJS require()
+    sourceFile.getDescendantsOfKind(SyntaxKind.CallExpression).forEach(call => {
+      const expression = call.getExpression();
+      if (
+        expression.getKind() === SyntaxKind.Identifier && 
+        expression.getText() === 'require'
+      ) {
+        const args = call.getArguments();
+        if (args.length === 1) {
+          const arg = args[0];
+          if (arg.getKind() === SyntaxKind.StringLiteral) {
+            const specifier = arg.getText().slice(1, -1);
+            const stringLiteral = arg.asKind(SyntaxKind.StringLiteral);
+            if (stringLiteral) {
+              const targetFile = stringLiteral.getSymbol()?.getDeclarations()[0]?.getSourceFile();
+              resolveAndAdd(from, specifier, targetFile, 'require');
             }
           }
         }

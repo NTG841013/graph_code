@@ -33,7 +33,8 @@ export const NestAdapter: ParserAdapter = {
     return 'Logic';
   },
 
-  getRoutes(sourceFile: SourceFile): Route[] {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  getRoutes(sourceFile: SourceFile, _relativePath: string): Route[] {
     const routes: Route[] = [];
     const filePath = sourceFile.getFilePath();
 

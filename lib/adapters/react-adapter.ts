@@ -1,3 +1,4 @@
+import { SourceFile } from 'ts-morph';
 import { ParserAdapter } from '../parser/types';
 
 export const ReactAdapter: ParserAdapter = {
@@ -30,7 +31,8 @@ export const ReactAdapter: ParserAdapter = {
     return 'Logic';
   },
 
-  getRoutes(): [] {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  getRoutes(_sourceFile: SourceFile, _relativePath: string): [] {
     return []; // Plain React doesn't have a standard routing convention we can easily parse without inference
   }
 };

@@ -157,24 +157,36 @@ export type Database = {
           created_at: string
           id: string
           organization_id: string
-          target_id: string
+          target_id: string | null
           text: string
+          content_hash: string | null
+          model: string | null
+          target_path: string | null
+          target_type: "file" | "folder" | null
         }
         Insert: {
           analysis_id: string
           created_at?: string
           id?: string
           organization_id: string
-          target_id: string
+          target_id?: string | null
           text: string
+          content_hash?: string | null
+          model?: string | null
+          target_path?: string | null
+          target_type?: "file" | "folder" | null
         }
         Update: {
           analysis_id?: string
           created_at?: string
           id?: string
           organization_id?: string
-          target_id?: string
+          target_id?: string | null
           text?: string
+          content_hash?: string | null
+          model?: string | null
+          target_path?: string | null
+          target_type?: "file" | "folder" | null
         }
         Relationships: [
           {

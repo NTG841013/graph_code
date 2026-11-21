@@ -14,15 +14,21 @@ interface ExplorerProps {
   nodes: FileNode[];
   edges: Edge[];
   routes: Route[];
+  aiStatus: { configured: boolean; tracing: boolean };
 }
 
 type Category = string;
 
-export function Explorer({ analysis, nodes, edges, routes }: ExplorerProps) {
+export function Explorer({ analysis, nodes, edges, routes, aiStatus }: ExplorerProps) {
   const [selectedFile, setSelectedFile] = useState<FileNode | null>(null);
   const [selectedFolder, setSelectedFolder] = useState<FolderNode | null>(null);
   const [activeCategory, setActiveCategory] = useState<Category>('all');
   const [activeTab, setActiveTab] = useState<'map' | 'routes'>('map');
+  const [explanations, setExplanations] = useState<Record<string, string>>({});
+
+  const setExplanation = useCallback((path: string, text: string) => {
+    setExplanations(prev => ({ ...prev, [path]: text }));
+  }, []);
 
   const result: AnalysisResult = {
     nodes,
@@ -92,7 +98,7 @@ export function Explorer({ analysis, nodes, edges, routes }: ExplorerProps) {
 
   return (
     <div className="h-screen flex flex-col bg-background selection:bg-accent/20">
-      <AppHeader returnTo="/" />
+      <AppHeader returnTo="/" aiStatus={aiStatus} />
       
       <div className="flex-1 flex overflow-hidden">
         {/* Left Pane: Categories */}
@@ -206,6 +212,8 @@ export function Explorer({ analysis, nodes, edges, routes }: ExplorerProps) {
           selectedFolder={selectedFolder}
           onFileSelect={handleFileSelectByPath}
           analysisId={analysis.id}
+          explanations={explanations}
+          setExplanation={setExplanation}
         />
       </div>
     </div>

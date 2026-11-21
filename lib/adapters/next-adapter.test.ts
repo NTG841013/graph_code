@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+import { Project } from 'ts-morph';
 import { NextAdapter } from './next-adapter';
 
 describe('NextAdapter', () => {
@@ -55,6 +56,49 @@ describe('NextAdapter', () => {
       expect(NextAdapter.shouldInclude('lib/parser/graph.ts')).toBe(true);
       expect(NextAdapter.shouldInclude('lib/distribution.ts')).toBe(true);
       expect(NextAdapter.shouldInclude('components/distance.tsx')).toBe(true);
+    });
+  });
+
+  describe('getRoutes', () => {
+    const project = new Project();
+
+    function getRoutePath(filePath: string) {
+      const sourceFile = project.createSourceFile(filePath, '', { overwrite: true });
+      const routes = NextAdapter.getRoutes?.(sourceFile, filePath) || [];
+      return routes.length > 0 ? routes[0].path : null;
+    }
+
+    it('recovers simple routes', () => {
+      expect(getRoutePath('app/page.tsx')).toBe('/');
+      expect(getRoutePath('app/dashboard/page.tsx')).toBe('/dashboard');
+    });
+
+    it('recovers dynamic segments', () => {
+      expect(getRoutePath('app/blog/[id]/page.tsx')).toBe('/blog/[id]');
+    });
+
+    it('recovers catch-all routes', () => {
+      expect(getRoutePath('app/blog/[...slug]/page.tsx')).toBe('/blog/[...slug]');
+    });
+
+    it('omits parallel slots', () => {
+      expect(getRoutePath('app/@sidebar/page.tsx')).toBe(null);
+    });
+
+    it('handles route groups correctly', () => {
+      expect(getRoutePath('app/(auth)/login/page.tsx')).toBe('/login');
+    });
+
+    it('handles optional catch-all routes', () => {
+      expect(getRoutePath('app/docs/[[...slug]]/page.tsx')).toBe('/docs/[[...slug]]');
+    });
+
+    it('omits private folders', () => {
+      expect(getRoutePath('app/_utils/page.tsx')).toBe(null);
+    });
+
+    it('omits intercepting routes', () => {
+      expect(getRoutePath('app/feed/(.)[id]/page.tsx')).toBe(null);
     });
   });
 });

@@ -16,5 +16,6 @@ export const FRAMEWORK_TAXONOMY: Record<string, string[]> = {
   ],
   'NestJS': ['Controller', 'Service', 'Module', 'Entity', 'Logic'],
   'React': ['Component', 'Hook', 'Context', 'Logic'],
+  'Express': ['Route', 'Controller', 'Middleware', 'Model', 'Service', 'Logic'],
   'Generic': ['Entry point', 'Logic', 'Component', 'Utility'],
 };

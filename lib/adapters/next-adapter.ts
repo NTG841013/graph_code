@@ -63,58 +63,90 @@ export const NextAdapter: ParserAdapter = {
     return 'Unclassified';
   },
 
-  getRoutes(sourceFile: SourceFile): Route[] {
-    const filePath = sourceFile.getFilePath().replace(/\\/g, '/');
+  getRoutes(sourceFile: SourceFile, relativePath: string): Route[] {
+    const filePath = relativePath;
+    const absolutePath = sourceFile.getFilePath().replace(/\\/g, '/');
     const routes: Route[] = [];
 
     // App Router: Page
-    if (/\/(?:page)\.(?:tsx|ts|js|jsx)$/.test(filePath)) {
-      routes.push({
-        method: 'GET',
-        path: getNextPath(filePath),
-        file: filePath,
-        line: 1 // Pages don't have a specific line, but we can point to the top
-      });
+    if (/\/(?:page)\.(?:tsx|ts|js|jsx)$/.test(filePath) || filePath.endsWith('page.tsx')) {
+      const nextPath = getNextPath(filePath);
+      if (nextPath) {
+        routes.push({
+          method: 'GET',
+          path: nextPath,
+          file: absolutePath,
+          line: 1 // Pages don't have a specific line, but we can point to the top
+        });
+      }
     }
 
     // App Router: Route Handler
-    if (/\/(?:route)\.(?:ts|js)$/.test(filePath)) {
+    if (/\/(?:route)\.(?:ts|js)$/.test(filePath) || filePath.endsWith('route.ts')) {
       const nextPath = getNextPath(filePath);
-      const methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'];
-      
-      sourceFile.getExportedDeclarations().forEach((decls, name) => {
-        if (methods.includes(name.toUpperCase())) {
-          // Get the line number of the first declaration
-          const firstDecl = decls[0];
-          const line = firstDecl ? firstDecl.getStartLineNumber() : 1;
+      if (nextPath) {
+        const methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'];
+        
+        sourceFile.getExportedDeclarations().forEach((decls, name) => {
+          if (methods.includes(name.toUpperCase())) {
+            // Get the line number of the first declaration
+            const firstDecl = decls[0];
+            const line = firstDecl ? firstDecl.getStartLineNumber() : 1;
 
-          routes.push({
-            method: name.toUpperCase(),
-            path: nextPath,
-            file: filePath,
-            line
-          });
-        }
-      });
+            routes.push({
+              method: name.toUpperCase(),
+              path: nextPath,
+              file: absolutePath,
+              line
+            });
+          }
+        });
+      }
     }
 
     return routes;
   }
 };
 
-function getNextPath(filePath: string): string {
-  let p = filePath;
-  // Handle absolute paths by looking for "app/" or "src/app/"
-  const appMatch = p.match(/\/(?:src\/)?app\/(.*)$/);
-  if (!appMatch) return '/';
+function getNextPath(filePath: string): string | null {
+  const normalizedPath = filePath.replace(/\\/g, '/');
+  // Handle absolute paths and various prefixes by looking for "app/" or "src/app/"
+  const appMatch = normalizedPath.match(/(?:^|\/)(?:src\/)?app\/(.*)$/);
+  if (!appMatch) return null;
 
-  p = appMatch[1];
-  // Remove filename
-  p = p.replace(/\/(?:page|route)\.(?:tsx|ts|js|jsx)$/, '');
-  // If the file was app/page.tsx, p might be "page.tsx" or similar depending on the above
-  if (p.includes('.')) p = ''; 
+  let p = appMatch[1];
+  // Remove special filename at the end
+  p = p.replace(/(?:^|\/)(?:page|route)\.(?:tsx|ts|js|jsx)$/, '');
   
-  // Remove route groups like (auth)
-  const segments = p.split('/').filter(s => s && !(s.startsWith('(') && s.endsWith(')')));
-  return '/' + segments.join('/');
+  if (p === '') return '/';
+
+  const segments = p.split('/').filter(Boolean);
+  const routeSegments: string[] = [];
+
+  for (const segment of segments) {
+    // Intercepting routes: (.), (..), (...)
+    // These are for UI state and cannot be reliably recovered as unique route paths
+    if (segment.startsWith('(.)') || segment.startsWith('(..)') || segment.startsWith('(...)')) {
+      return null;
+    }
+
+    // Route groups: (auth) -> skipped in URL
+    if (segment.startsWith('(') && segment.endsWith(')')) {
+      continue;
+    }
+
+    // Parallel slots: @sidebar -> not a route
+    if (segment.startsWith('@')) {
+      return null;
+    }
+
+    // Private folders: _utils -> not a route
+    if (segment.startsWith('_')) {
+      return null;
+    }
+
+    routeSegments.push(segment);
+  }
+
+  return '/' + routeSegments.join('/');
 }

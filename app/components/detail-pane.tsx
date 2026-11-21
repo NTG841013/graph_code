@@ -7,12 +7,17 @@ import { getBlastRadius, getDependencyChain, findInsights, RadiusResult } from '
 import { reRunAnalysis } from '@/app/lib/actions/analysis';
 import { useFormStatus } from 'react-dom';
 
+import { ExplanationRenderer } from './explanation-renderer';
+import { checkStaleness, requestFileExplanation, requestFolderExplanation } from '@/app/lib/actions/ai';
+
 interface DetailPaneProps {
   analysis: AnalysisResult;
   selectedFile: FileNode | null;
   selectedFolder: FolderNode | null;
   onFileSelect: (path: string | null) => void;
   analysisId?: string;
+  explanations: Record<string, string>;
+  setExplanation: (path: string, text: string) => void;
 }
 
 export function DetailPane({
@@ -21,8 +26,79 @@ export function DetailPane({
   selectedFolder,
   onFileSelect,
   analysisId,
+  explanations,
+  setExplanation,
 }: DetailPaneProps) {
   const [activeTab, setActiveTab] = useState<'structure' | 'explanation'>('structure');
+  const [loading, setLoading] = useState(false);
+  const [staleness, setStaleness] = useState<{ isStale: boolean; reason: string | null; content?: string } | null>(null);
+
+  const currentExplanation = selectedFile 
+    ? explanations[selectedFile.path] 
+    : selectedFolder 
+      ? explanations[selectedFolder.id] 
+      : null;
+
+  const handleExplain = async () => {
+    if (!analysisId) return;
+    setLoading(true);
+
+    try {
+      if (selectedFile) {
+        const { isStale, reason, content } = await checkStaleness(analysisId, selectedFile.path, selectedFile.hash);
+        
+        if (isStale && !staleness) {
+          setStaleness({ isStale, reason, content });
+          setLoading(false);
+          return;
+        }
+
+        const neighbors = {
+          imports: analysis.edges.filter(e => e.from === selectedFile.path).map(e => e.to),
+          dependents: analysis.edges.filter(e => e.to === selectedFile.path).map(e => e.from),
+        };
+
+        const result = await requestFileExplanation({
+          analysisId,
+          targetPath: selectedFile.path,
+          content: content || '',
+          neighbors,
+        });
+        setExplanation(selectedFile.path, result);
+        setStaleness(null);
+      } else if (selectedFolder) {
+        const folderFiles = selectedFolder.files.map(f => ({
+          path: f.path,
+          role: f.role
+        }));
+        
+        // Dependents of folder: files not in folder that import files in folder
+        const folderFilePaths = new Set(selectedFolder.files.map(f => f.path));
+        const dependents = Array.from(new Set(
+          analysis.edges
+            .filter(e => folderFilePaths.has(e.to) && !folderFilePaths.has(e.from))
+            .map(e => e.from)
+        ));
+
+        const result = await requestFolderExplanation({
+          analysisId,
+          folderPath: selectedFolder.id,
+          files: folderFiles,
+          dependents,
+        });
+        setExplanation(selectedFolder.id, result);
+      }
+    } catch (err) {
+      console.error("Explanation failed:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleReAnalyze = () => {
+    setStaleness(null);
+    handleExplain();
+  };
   const [radiusMode, setRadiusMode] = useState<'blast' | 'chain' | null>(null);
   const [radiusDepth, setRadiusDepth] = useState<1 | 2 | 3>(2);
   const [isInsightsOpen, setIsInsightsOpen] = useState(false);
@@ -249,11 +325,64 @@ export function DetailPane({
                   </div>
                 </div>
 
-                <div className="p-4">
+                <div className="p-4 flex-1">
                   {activeTab === 'explanation' ? (
-                    <div className="py-8 flex flex-col items-center justify-center text-center space-y-2">
-                      <p className="text-[11px] text-muted italic">No explanation available yet.</p>
-                      <p className="text-[9px] text-muted/60 uppercase tracking-tight">AI insight follows model call</p>
+                    <div className="flex flex-col h-full">
+                      {currentExplanation ? (
+                        <div className="space-y-6">
+                          <ExplanationRenderer 
+                            text={currentExplanation} 
+                            onPathClick={onFileSelect} 
+                          />
+                          {staleness && (
+                            <div className="p-3 bg-amber-500/10 border border-amber-500/20 rounded-md space-y-2">
+                              <p className="text-[10px] text-amber-500 font-medium uppercase tracking-tight">Stale Explanation</p>
+                              <p className="text-[10px] text-muted leading-relaxed">
+                                {staleness.reason === 'file_changed' 
+                                  ? "This file has changed since it was last analysed." 
+                                  : "The repository has moved past the commit that was analysed."}
+                              </p>
+                              <button 
+                                onClick={handleReAnalyze}
+                                className="text-[10px] text-amber-500 hover:text-amber-400 underline underline-offset-2"
+                              >
+                                Re-analyse now
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      ) : staleness ? (
+                        <div className="p-4 bg-amber-500/10 border border-amber-500/20 rounded-md space-y-3">
+                          <p className="text-[11px] text-amber-500 font-bold uppercase">Stale Content</p>
+                          <p className="text-[10px] text-muted leading-relaxed">
+                            {staleness.reason === 'file_changed' 
+                               ? "The file content has changed since the analysis was run." 
+                               : "The repository has new commits since the analysis was run."}
+                          </p>
+                          <button 
+                            onClick={handleReAnalyze}
+                            disabled={loading}
+                            className="w-full py-2 bg-amber-500 text-white text-[10px] font-bold rounded-sm hover:bg-amber-400 disabled:opacity-50 transition-colors"
+                          >
+                            {loading ? "ANALYISING..." : "RE-ANALYSE & EXPLAIN"}
+                          </button>
+                        </div>
+                      ) : (
+                        <div className="py-12 flex flex-col items-center justify-center text-center space-y-4">
+                          <div className="space-y-2">
+                            <p className="text-[11px] text-muted italic">No explanation available yet.</p>
+                            <p className="text-[9px] text-muted/60 uppercase tracking-tight">AI insight follows model call</p>
+                          </div>
+                          <button 
+                            onClick={handleExplain}
+                            disabled={loading}
+                            className="px-6 py-2 bg-accent text-white text-[11px] font-bold rounded-sm hover:opacity-90 disabled:opacity-50 transition-all flex items-center gap-2"
+                          >
+                            {loading && <span className="w-3 h-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />}
+                            {loading ? "EXPLAINING..." : "EXPLAIN"}
+                          </button>
+                        </div>
+                      )}
                     </div>
                   ) : (
                     <div className="space-y-6">

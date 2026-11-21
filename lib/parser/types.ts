@@ -11,7 +11,7 @@ export interface FileNode {
   role?: string;
 }
 
-export type EdgeType = 'import' | 're-export' | 'dynamic';
+export type EdgeType = 'import' | 're-export' | 'dynamic' | 'require';
 
 export interface Edge {
   from: string;
@@ -64,5 +64,5 @@ export interface ParserAdapter {
   shouldInclude(path: string): boolean;
   resolveImport(sourceFile: string, specifier: string): string | null;
   getRole(path: string): string | null;
-  getRoutes?(sourceFile: SourceFile): Route[];
+  getRoutes?(sourceFile: SourceFile, relativePath: string): Route[];
 }

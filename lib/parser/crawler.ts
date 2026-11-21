@@ -11,6 +11,7 @@ export interface RawFileNode {
   folder: string;
   lineCount: number;
   hash: string;
+  content: string;
 }
 
 export async function crawl(root: string): Promise<{ nodes: RawFileNode[]; skipped: SkippedFile[] }> {
@@ -48,6 +49,7 @@ export async function crawl(root: string): Promise<{ nodes: RawFileNode[]; skipp
             folder: folder.replace(/\\/g, '/'),
             lineCount,
             hash,
+            content,
           });
         } catch (err) {
           skipped.push({ path: relativePath, reason: `read-failed: ${err instanceof Error ? err.message : String(err)}` });

@@ -115,12 +115,18 @@ async function RepoContent({ params }: { params: Promise<{ id: string }> }) {
     line: r.line_number || undefined
   }));
 
+  const aiStatus = {
+    configured: !!process.env.OPENAI_API_KEY,
+    tracing: process.env.LANGSMITH_TRACING === "true"
+  };
+
   return (
     <Explorer 
       analysis={analysis}
       nodes={fileNodes}
       edges={edges}
       routes={routes}
+      aiStatus={aiStatus}
     />
   );
 }
