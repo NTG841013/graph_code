@@ -163,6 +163,9 @@ export type Database = {
           model: string | null
           target_path: string | null
           target_type: "file" | "folder" | null
+          input_paths: string[] | null
+          invented_paths: string[] | null
+          evaluation_score: number | null
         }
         Insert: {
           analysis_id: string
@@ -175,6 +178,9 @@ export type Database = {
           model?: string | null
           target_path?: string | null
           target_type?: "file" | "folder" | null
+          input_paths?: string[] | null
+          invented_paths?: string[] | null
+          evaluation_score?: number | null
         }
         Update: {
           analysis_id?: string
@@ -187,6 +193,9 @@ export type Database = {
           model?: string | null
           target_path?: string | null
           target_type?: "file" | "folder" | null
+          input_paths?: string[] | null
+          invented_paths?: string[] | null
+          evaluation_score?: number | null
         }
         Relationships: [
           {
@@ -204,6 +213,39 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      eval_experiments: {
+        Row: {
+          id: string
+          name: string
+          dataset_size: number
+          score_a: number
+          score_b: number
+          score_c: number | null
+          details: Json | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          name: string
+          dataset_size: number
+          score_a: number
+          score_b: number
+          score_c?: number | null
+          details?: Json | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          name?: string
+          dataset_size?: number
+          score_a?: number
+          score_b?: number
+          score_c?: number | null
+          details?: Json | null
+          created_at?: string
+        }
+        Relationships: []
       }
       file_roles: {
         Row: {

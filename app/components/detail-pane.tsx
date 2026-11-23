@@ -313,11 +313,13 @@ export function DetailPane({
                   )}
                 </div>
               </div>
-            ) : selectedFile ? (
-              // File Selection (matching 1.png detail view)
+            ) : selectedFile || selectedFolder ? (
+              // File or Folder Selection
               <div className="flex flex-col min-h-full">
                 <div className="p-4 border-b border-border/50">
-                  <p className="text-[11px] text-foreground/90 mb-4 truncate">{selectedFile.path}</p>
+                  <p className="text-[11px] text-foreground/90 mb-4 truncate">
+                    {selectedFile ? selectedFile.path : (selectedFolder?.id === '.' ? 'root' : selectedFolder?.id)}
+                  </p>
                   
                   <div className="flex gap-4 -mb-4">
                     {renderTabTrigger('structure', 'Structure')}
@@ -334,7 +336,7 @@ export function DetailPane({
                             text={currentExplanation} 
                             onPathClick={onFileSelect} 
                           />
-                          {staleness && (
+                          {selectedFile && staleness && (
                             <div className="p-3 bg-amber-500/10 border border-amber-500/20 rounded-md space-y-2">
                               <p className="text-[10px] text-amber-500 font-medium uppercase tracking-tight">Stale Explanation</p>
                               <p className="text-[10px] text-muted leading-relaxed">
@@ -351,7 +353,7 @@ export function DetailPane({
                             </div>
                           )}
                         </div>
-                      ) : staleness ? (
+                      ) : selectedFile && staleness ? (
                         <div className="p-4 bg-amber-500/10 border border-amber-500/20 rounded-md space-y-3">
                           <p className="text-[11px] text-amber-500 font-bold uppercase">Stale Content</p>
                           <p className="text-[10px] text-muted leading-relaxed">
@@ -384,7 +386,7 @@ export function DetailPane({
                         </div>
                       )}
                     </div>
-                  ) : (
+                  ) : selectedFile ? (
                     <div className="space-y-6">
                       {/* Properties List */}
                       <div className="space-y-1.5">
@@ -564,43 +566,65 @@ export function DetailPane({
                         </div>
                       </div>
                     </div>
-                  )}
-                </div>
-              </div>
-            ) : selectedFolder ? (
-              // Folder Selection
-              <div className="p-4 space-y-6">
-                <div className="space-y-1">
-                  <p className="font-mono text-[9px] uppercase text-accent tracking-wider">Folder</p>
-                  <p className="font-mono text-[11px] break-all">{selectedFolder.id === '.' ? 'root' : selectedFolder.id}</p>
-                </div>
-
-                <div className="space-y-3 pt-3 border-t border-border/20">
-                  <p className="font-mono text-[9px] uppercase text-muted tracking-wider">Contents</p>
-                  <div className="space-y-2">
-                    {folderStats?.map(([ext, count]) => (
-                      <div key={ext} className="flex justify-between items-center">
-                        <span className="font-mono text-[10px] uppercase text-foreground/80">{ext} files</span>
-                        <span className="font-mono text-[10px] text-muted">{count}</span>
+                  ) : (
+                    // Folder Structure View
+                    <div className="space-y-6">
+                      {/* Folder Properties */}
+                      <div className="space-y-1.5">
+                        <PropertyRow 
+                          label="Kind" 
+                          value="Folder" 
+                        />
+                        <PropertyRow 
+                          label="Files" 
+                          value={`${selectedFolder?.files.length} files`} 
+                        />
+                        <PropertyRow 
+                          label="Depends on" 
+                          value={`${selectedFolder?.fanOut} external`} 
+                        />
+                        <PropertyRow 
+                          label="Depended on by" 
+                          value={`${selectedFolder?.fanIn} external`} 
+                          valueClassName="text-green-500/80"
+                        />
                       </div>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <p className="font-mono text-[9px] uppercase text-muted tracking-wider">Files</p>
-                  <ul className="space-y-1">
-                    {selectedFolder.files.map(file => (
-                      <li key={file.path}>
-                        <button 
-                          onClick={() => onFileSelect(file.path)}
-                          className="w-full text-left font-mono text-[10px] truncate p-1 rounded-sm hover:bg-surface transition-colors"
-                        >
-                          {file.path.split('/').pop()}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
+
+                      <div className="space-y-3 pt-4 border-t border-border/20">
+                        <p className="text-[9px] uppercase text-muted tracking-wider font-mono">Contents</p>
+                        <div className="space-y-2">
+                          {folderStats?.map(([ext, count]) => (
+                            <div key={ext} className="flex justify-between items-center">
+                              <div className="flex items-center gap-2">
+                                <div 
+                                  className="w-2 h-2 rounded-sm" 
+                                  style={{ backgroundColor: getExtColor(`.${ext}`) }}
+                                />
+                                <span className="text-[10px] uppercase text-foreground/80 font-mono">{ext} files</span>
+                              </div>
+                              <span className="text-[10px] text-muted font-mono">{count}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-2 pt-4 border-t border-border/20">
+                        <p className="text-[9px] uppercase text-muted tracking-wider font-mono">Files</p>
+                        <ul className="space-y-1">
+                          {selectedFolder?.files.map(file => (
+                            <li key={file.path}>
+                              <button 
+                                onClick={() => onFileSelect(file.path)}
+                                className="w-full text-left text-[10px] truncate p-1 rounded-sm hover:bg-surface transition-colors font-mono"
+                              >
+                                {file.path.split('/').pop()}
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             ) : null}
