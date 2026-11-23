@@ -90,6 +90,10 @@ export async function getAnalyses(
 }
 
 export async function getAnalysis(id: string): Promise<Analysis | null> {
+  // Validate UUID to avoid Postgres error on invalid syntax
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  if (!uuidRegex.test(id)) return null;
+
   const supabase = await createSupabaseServerClient();
 
   const { data, error } = await supabase

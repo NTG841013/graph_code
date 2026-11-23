@@ -1,7 +1,8 @@
-import { aiClient, MODELS } from "./client";
-import { traceable } from "langsmith/traceable";
+import { aiClient, lsClient, MODELS } from "./client";
+import { traceable, getCurrentRunTree } from "langsmith/traceable";
 import { getSupabaseAdmin } from "../data/supabase-admin";
 import crypto from "crypto";
+import { validatePaths } from "../evals/invented-path";
 
 export interface ExplainParams {
   analysisId: string;
@@ -43,21 +44,24 @@ export const explainFile = traceable(
     // 2. AI Call
     const prompt = `
 Explain the purpose of the file "${targetPath}" in the context of its neighbors.
-It imports: ${neighbors.imports.join(", ") || "nothing"}
-It is imported by: ${neighbors.dependents.join(", ") || "nothing"}
+Describe exactly what it does and why it exists in the architecture.
+
+Context:
+- Imports: ${neighbors.imports.join(", ") || "nothing"}
+- Dependents: ${neighbors.dependents.join(", ") || "nothing"}
 
 File content:
 \`\`\`
 ${content}
 \`\`\`
 
-Constraints:
-- Describe what it does and why it exists.
-- Use exactly three formatting styles: **bold** for emphasis, - bullets for lists, and \`inline code\` for file paths or symbols.
-- DO NOT use headings (# or ##).
-- DO NOT use blocks of code.
-- If you mention any file path from the repository, write it exactly as it appears in the repo (e.g. \`lib/parser/types.ts\`).
-- Keep it to 2-3 short paragraphs.
+Instructions:
+- Provide a detailed, specific breakdown of the file's components and functions.
+- Explain the role of this file within the larger application architecture.
+- Use **bold** for emphasis, - bullets for lists, and \`inline code\` for file paths or symbols.
+- Mentioned file paths MUST match the repository exactly (e.g. \`lib/parser/types.ts\`).
+- DO NOT use headings (# or ##) or large code blocks.
+- Aim for technical depth over brevity.
 `.trim();
 
     const response = await aiClient.chat.completions.create({
@@ -74,9 +78,25 @@ Constraints:
 
     const result = response.choices[0].message.content || "";
 
-    // 3. Save to cache
-    // Note: organization_id is required by schema but we don't have it here easily.
-    // We should probably pass it or fetch it from analysis.
+    // 3. Live Evaluation: Invented Path Check
+    const allowedPaths = new Set([targetPath, ...neighbors.imports, ...neighbors.dependents]);
+    const evalResult = validatePaths(result, allowedPaths);
+
+    // LangSmith live evaluation feedback
+    const runTree = getCurrentRunTree();
+    if (runTree) {
+      await lsClient.createFeedback({
+        runId: runTree.id,
+        key: "invented_path",
+        score: evalResult.valid ? 1.0 : 0.0,
+        comment: evalResult.invented.length > 0 
+          ? `Invented: ${evalResult.invented.join(", ")}` 
+          : "None",
+      } as any).catch(() => {});
+    }
+    await lsClient.awaitPendingTraceBatches();
+
+    // 4. Save to cache
     const { data: analysis } = await supabase.from('analyses').select('organization_id').eq('id', analysisId).single();
     if (!analysis) throw new Error("Analysis not found");
 
@@ -88,6 +108,9 @@ Constraints:
       content_hash: contentHash,
       model: MODEL_NAME,
       text: result,
+      input_paths: Array.from(allowedPaths),
+      invented_paths: evalResult.invented,
+      evaluation_score: evalResult.valid ? 1.0 : 0.0,
     });
 
     return result;
@@ -117,17 +140,21 @@ export const explainFolder = traceable(
 
     const prompt = `
 Explain the purpose of the folder "${folderPath}".
-It contains these files:
+Describe its responsibility and why other parts of the codebase depend on it.
+
+Contents:
 ${files.map(f => `- \`${f.path}\` (Role: ${f.role || "unknown"})`).join("\n")}
 
-It is depended on by files in these paths: ${dependents.join(", ") || "none"}
+Context:
+- It is depended on by files in these paths: ${dependents.join(", ") || "none"}
 
-Constraints:
-- Describe what this folder's responsibility is and why so much points at it (if applicable).
-- Use exactly three formatting styles: **bold** for emphasis, - bullets for lists, and \`inline code\` for file paths or symbols.
-- DO NOT use headings (# or ##).
-- DO NOT use blocks of code.
-- Keep it to 2-3 short paragraphs.
+Instructions:
+- Provide a detailed, specific breakdown of the folder's responsibility.
+- Explain how the files within it work together to achieve its purpose.
+- Use **bold** for emphasis, - bullets for lists, and \`inline code\` for file paths or symbols.
+- Mentioned file paths MUST match the repository exactly.
+- DO NOT use headings (# or ##) or large code blocks.
+- Aim for technical depth over brevity.
 `.trim();
 
     const response = await aiClient.chat.completions.create({
@@ -144,6 +171,24 @@ Constraints:
 
     const result = response.choices[0].message.content || "";
 
+    // 3. Live Evaluation: Invented Path Check
+    const allowedPaths = new Set([folderPath, ...files.map(f => f.path), ...dependents]);
+    const evalResult = validatePaths(result, allowedPaths);
+
+    // LangSmith live evaluation feedback
+    const runTree = getCurrentRunTree();
+    if (runTree) {
+      await lsClient.createFeedback({
+        runId: runTree.id,
+        key: "invented_path",
+        score: evalResult.valid ? 1.0 : 0.0,
+        comment: evalResult.invented.length > 0 
+          ? `Invented: ${evalResult.invented.join(", ")}` 
+          : "None",
+      } as any).catch(() => {});
+    }
+    await lsClient.awaitPendingTraceBatches();
+
     const { data: analysis } = await supabase.from('analyses').select('organization_id').eq('id', analysisId).single();
     if (!analysis) throw new Error("Analysis not found");
 
@@ -155,6 +200,9 @@ Constraints:
       content_hash: contentHash,
       model: MODEL_NAME,
       text: result,
+      input_paths: Array.from(allowedPaths),
+      invented_paths: evalResult.invented,
+      evaluation_score: evalResult.valid ? 1.0 : 0.0,
     });
 
     return result;

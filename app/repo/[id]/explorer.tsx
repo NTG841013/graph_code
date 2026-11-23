@@ -6,7 +6,7 @@ import { DetailPane } from "@/app/components/detail-pane";
 import { RouteTable } from "@/app/components/route-table";
 import { AnalysisResult, FileNode, Edge, Route, FrameworkInfo } from "@/lib/parser/types";
 import { useState, useCallback, useMemo } from "react";
-import { FolderNode } from "@/lib/parser/folding";
+import { FolderNode, computeFoldedGraph } from "@/lib/parser/folding";
 import { AppHeader } from "@/app/components/app-header";
 
 interface ExplorerProps {
@@ -25,6 +25,8 @@ export function Explorer({ analysis, nodes, edges, routes, aiStatus }: ExplorerP
   const [activeCategory, setActiveCategory] = useState<Category>('all');
   const [activeTab, setActiveTab] = useState<'map' | 'routes'>('map');
   const [explanations, setExplanations] = useState<Record<string, string>>({});
+
+  const folders = useMemo(() => computeFoldedGraph(nodes), [nodes]);
 
   const setExplanation = useCallback((path: string, text: string) => {
     setExplanations(prev => ({ ...prev, [path]: text }));
@@ -80,14 +82,22 @@ export function Explorer({ analysis, nodes, edges, routes, aiStatus }: ExplorerP
   const handleFileSelectByPath = useCallback((path: string | null) => {
     if (!path) {
       setSelectedFile(null);
+      setSelectedFolder(null);
       return;
     }
     const node = nodes.find(n => n.path === path);
     if (node) {
       setSelectedFile(node);
       setSelectedFolder(null);
+      return;
     }
-  }, [nodes]);
+
+    const folder = folders.find(f => f.id === path);
+    if (folder) {
+      setSelectedFolder(folder);
+      setSelectedFile(null);
+    }
+  }, [nodes, folders]);
 
   const [owner, repo] = (analysis.projects?.name || "unnamed/project").split('/');
   const totalFiles = analysis.total_files ?? 0;
@@ -162,6 +172,7 @@ export function Explorer({ analysis, nodes, edges, routes, aiStatus }: ExplorerP
                 <MapCanvas 
                   analysis={result}
                   selectedFilePath={selectedFile?.path}
+                  selectedFolderId={selectedFolder?.id}
                   selectedCategory={activeCategory === 'all' ? null : activeCategory}
                   onFileSelect={setSelectedFile}
                   onFolderSelect={setSelectedFolder}

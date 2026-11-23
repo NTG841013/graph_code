@@ -18,6 +18,13 @@ export function AppHeader({ returnTo, aiStatus }: AppHeaderProps) {
           >
             Graphcode
           </Link>
+
+          <Link
+            href="/evals"
+            className="text-[10px] font-mono uppercase tracking-tighter text-foreground/40 hover:text-foreground/80 transition-colors"
+          >
+            Evals
+          </Link>
           
           {aiStatus && (
             <div className="flex items-center gap-2 px-2 py-0.5 rounded-full border border-border bg-surface/30 font-mono text-[9px] uppercase tracking-tighter">
