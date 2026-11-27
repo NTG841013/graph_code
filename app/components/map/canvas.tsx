@@ -20,12 +20,14 @@ import { computeFoldedGraph, FolderNode } from '@/lib/parser/folding';
 import { FoldedNode } from './folded-node';
 import { OpenPanelNode } from './open-panel';
 import { MapNodeData } from './types';
-import { getFileColor } from './constants';
+import { getFileColor, getRoleColor } from './constants';
 
 const nodeTypes = {
   folded: FoldedNode,
   open: OpenPanelNode,
 };
+
+const edgeTypes = {};
 
 interface MapCanvasProps {
   analysis: AnalysisResult;
@@ -294,7 +296,8 @@ function MapCanvasInner({
     const finalEdges = rfEdges.map(edge => {
       const isDimmed = hasSelection && !activeEdgeIds.has(edge.id);
       const sourceFile = edge.data.from;
-      const color = getFileColor(sourceFile);
+      const sourceNode = analysis.nodes.find(n => n.path === sourceFile);
+      const color = sourceNode?.role ? getRoleColor(sourceNode.role) : getFileColor(sourceFile);
       
       return {
         ...edge,
@@ -345,6 +348,7 @@ function MapCanvasInner({
       onNodesChange={onNodesChange}
       onEdgesChange={onEdgesChange}
       nodeTypes={nodeTypes}
+      edgeTypes={edgeTypes}
       onNodeClick={(_, node) => {
         if (externalSelectedFolderId === undefined) {
           setInternalSelectedNodeId(prev => prev === node.id ? null : node.id);

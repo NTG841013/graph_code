@@ -8,6 +8,7 @@ import { AnalysisResult, FileNode, Edge, Route, FrameworkInfo } from "@/lib/pars
 import { useState, useCallback, useMemo } from "react";
 import { FolderNode, computeFoldedGraph } from "@/lib/parser/folding";
 import { AppHeader } from "@/app/components/app-header";
+import { getRoleColor } from "@/app/components/map/constants";
 
 interface ExplorerProps {
   analysis: Analysis;
@@ -65,19 +66,6 @@ export function Explorer({ analysis, nodes, edges, routes, aiStatus }: ExplorerP
     return taxonomy.map(cat => [cat, counts.get(cat) || 0] as [string, number]);
   }, [nodes, analysis.framework]);
 
-  const getCategoryColor = (cat: string) => {
-    switch (cat) {
-      case 'Page route': 
-      case 'Controller': return '#818cf8'; // Indigo
-      case 'API endpoint':
-      case 'Service': return '#f472b6'; // Pink
-      case 'Server action':
-      case 'Module': return '#fbbf24'; // Amber
-      case 'Component': return '#2dd4bf'; // Teal
-      case 'Entity': return '#a855f7'; // Purple
-      default: return '#64748b';
-    }
-  };
 
   const handleFileSelectByPath = useCallback((path: string | null) => {
     if (!path) {
@@ -132,7 +120,7 @@ export function Explorer({ analysis, nodes, edges, routes, aiStatus }: ExplorerP
                 <div className="flex items-center gap-3">
                   <div 
                     className="w-2 h-2 rounded-full" 
-                    style={{ backgroundColor: getCategoryColor(cat) }}
+                    style={{ backgroundColor: getRoleColor(cat) }}
                   />
                   <span className="font-mono text-sm">{cat}</span>
                 </div>

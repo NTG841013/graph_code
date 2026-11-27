@@ -1,3 +1,6 @@
+packages:
+  - "langchain-agent"
+
 allowBuilds:
   esbuild: true
   sharp: false

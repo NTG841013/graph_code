@@ -1,12 +1,23 @@
-// @ts-expect-error - next/env types are not always visible in standalone script context
+// @ts-ignore
 import { loadEnvConfig } from '@next/env';
+import path from 'path';
+import fs from 'fs';
 
 /**
  * Loads environment variables from .env.local and other standard Next.js env files.
- * This should be called at the very beginning of any script that runs outside the Next.js app context
- * but needs access to the same configuration (e.g., Supabase keys, OpenAI keys).
+ * Searches upwards from the current directory to find the project root.
  */
 export function loadEnv() {
-  const projectDir = process.cwd();
-  loadEnvConfig(projectDir);
+  let currentDir = process.cwd();
+  
+  // Search upwards for .env.local or package.json that marks the root
+  while (currentDir !== path.parse(currentDir).root) {
+    if (fs.existsSync(path.join(currentDir, '.env.local')) || 
+        fs.existsSync(path.join(currentDir, 'pnpm-workspace.yaml'))) {
+      break;
+    }
+    currentDir = path.dirname(currentDir);
+  }
+
+  loadEnvConfig(currentDir);
 }

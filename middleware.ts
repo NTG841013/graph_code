@@ -1,23 +1,23 @@
-import { clerkMiddleware } from "@clerk/nextjs/server";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import { getAppOrigin, getValidatedReturnTo } from "./app/lib/return-to";
 
-function isRouteOrSubpath(pathname: string, route: string) {
-  return pathname === route || pathname.startsWith(`${route}/`);
-}
+const isPublicRoute = createRouteMatcher([
+  "/",
+  "/sign-in(.*)",
+  "/sign-up(.*)",
+  "/api/agent/tools(.*)"
+]);
 
 export default clerkMiddleware(async (auth, request) => {
-  const appOrigin = getAppOrigin();
   const { pathname, search } = request.nextUrl;
-
-  if (
-    isRouteOrSubpath(pathname, "/sign-in") ||
-    isRouteOrSubpath(pathname, "/sign-up")
-  ) {
+  
+  if (isPublicRoute(request)) {
     return;
   }
 
   const { userId, orgId } = await auth();
+  const appOrigin = getAppOrigin();
   const returnTo = getValidatedReturnTo(`${pathname}${search}`, appOrigin) ?? "/";
 
   if (!userId) {

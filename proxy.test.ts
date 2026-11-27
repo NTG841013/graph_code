@@ -14,7 +14,7 @@ vi.mock("@clerk/nextjs/server", () => ({
   clerkMiddleware: (handler: MiddlewareHandler) => handler,
 }));
 
-import proxy from "./proxy";
+import middleware from "./middleware";
 
 async function runMiddleware(
   path: string,
@@ -22,7 +22,7 @@ async function runMiddleware(
 ): Promise<Response | undefined> {
   const request = new NextRequest(`http://localhost:3000${path}`);
   auth.mockResolvedValue(identity);
-  const response: unknown = await Reflect.apply(proxy, undefined, [
+  const response: unknown = await Reflect.apply(middleware, undefined, [
     auth,
     request,
     undefined,

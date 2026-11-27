@@ -3,12 +3,29 @@ import { requireOrganization } from "@/app/lib/auth";
 import { AnalysisList } from "@/app/components/analysis-list";
 import { AnalysisForm } from "@/app/components/analysis-form";
 import { Suspense } from "react";
+import { auth } from "@clerk/nextjs/server";
+import { MarketingPage } from "@/app/components/marketing-page";
+import { redirect } from "next/navigation";
 
-export default function Home({ 
+export const instant = false;
+
+export default async function Home({ 
   searchParams 
 }: { 
-  searchParams: Promise<{ page?: string }> 
+  searchParams: Promise<{ page?: string; repoUrl?: string }> 
 }) {
+  const { userId } = await auth();
+  const resolvedSearchParams = await searchParams;
+
+  if (!userId) {
+    return <MarketingPage />;
+  }
+
+  // If we have a repoUrl after sign-in, redirect to the start flow
+  if (resolvedSearchParams.repoUrl) {
+    redirect(`/analysis/start?repoUrl=${encodeURIComponent(resolvedSearchParams.repoUrl)}`);
+  }
+
   return (
     <Suspense
       fallback={
@@ -17,7 +34,7 @@ export default function Home({
         </main>
       }
     >
-      <OrganizationHome searchParams={searchParams} />
+      <OrganizationHome searchParams={resolvedSearchParams} />
     </Suspense>
   );
 }
@@ -25,11 +42,10 @@ export default function Home({
 async function OrganizationHome({ 
   searchParams 
 }: { 
-  searchParams: Promise<{ page?: string }> 
+  searchParams: { page?: string } 
 }) {
   const { orgName, orgId } = await requireOrganization("/");
-  const resolvedSearchParams = await searchParams;
-  const pageParam = resolvedSearchParams.page;
+  const pageParam = searchParams.page;
   const page = pageParam ? parseInt(pageParam, 10) : 1;
   const validPage = isNaN(page) || page < 1 ? 1 : page;
 
