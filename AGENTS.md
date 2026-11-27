@@ -11,8 +11,9 @@ rules themselves.
 
 Next.js 16 App Router, React 19, TypeScript strict. ts-morph for parsing. React
 Flow and dagre for the map. Clerk for sign-in and organizations. Supabase for
-Postgres, row-level security and realtime. The OpenAI SDK through one wrapped
-client, traced with LangSmith. Tailwind v4. pnpm.
+Postgres, row-level security and realtime. The OpenAI SDK and LangChain through
+one wrapped client, traced with LangSmith. Tailwind v4. pnpm. Managed Deep Agents
+for the agent service.
 
 Next.js 16 changed a lot. If you're not certain about an API, read the docs
 inside the installed package rather than going from memory.
@@ -156,3 +157,7 @@ the provider can retry.
 - Index foreign key columns to prevent full table scans on joins/deletes.
 - Use `timestamptz` for all timestamps to ensure consistent time zone handling.
 - Use `text` instead of `varchar(n)` unless a hard limit is a business rule.
+
+## Context files
+
+- [langchain-agent/AGENTS.md](langchain-agent/AGENTS.md): The repository wide analysis agent service.

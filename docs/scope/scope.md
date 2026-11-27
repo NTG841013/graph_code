@@ -13,6 +13,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 |---|---------|-------|--------|
 | 1 | Clerk authentication and organization setup | Foundation | done |
 | 2 | Organization invitations and member management | 14 | in-progress |
+| 12 | Repository-wide analysis agent and chat | 12 | done |
 | 3 | Production Clerk configuration | Deferred | planned |
 
 ## Foundations
@@ -53,6 +54,25 @@ Let organization members manage their profile, members, and invitations in Graph
 * [ ] Document it: `/document Organization invitations and member management`
 
 Spec [phase-14](../specs/phase-14.md)
+
+### 12. Repository-wide analysis agent and chat · done
+
+Ask the repository questions through a streaming agent service with real-time tool visibility.
+**Done when:** users can ask questions in the chat panel, see tool execution as it happens, and get answers based on real graph analysis.
+* [x] Design it (spec): `/architect Repository-wide analysis agent and chat`
+* [x] Build it: `/develop Repository-wide analysis agent and chat`
+  * [x] Standalone agent service with graph tools (summary, search, neighbors, walk)
+  * [x] Signed credentials for secure, scoped analysis access
+  * [x] Chat panel with streaming and tool call visibility
+  * [x] Integrated Ask mode in the right-hand detail pane
+* [x] Verify it: `/check verify Repository-wide analysis agent and chat`
+* [x] Test it: `/test Repository-wide analysis agent and chat`
+* [x] Review it (fresh model): `/check review Repository-wide analysis agent and chat`
+* [x] Document it: `/document Repository-wide analysis agent and chat`
+
+Code: [langchain-agent/](../../langchain-agent/), [app/api/agent/](../../app/api/agent/), [app/components/ask-panel.tsx](../../app/components/ask-panel.tsx)
+
+Spec [phase-12](../specs/phase-12.md)
 
 ## Deferred
 
