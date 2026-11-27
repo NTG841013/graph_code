@@ -14,7 +14,7 @@ describe("ThemeControl", () => {
     const user = userEvent.setup();
     render(<ThemeControl />);
 
-    await user.selectOptions(screen.getByRole("combobox", { name: "Theme" }), "dark");
+    await user.click(screen.getByRole("button", { name: "Switch to dark theme" }));
 
     expect(window.localStorage.getItem("graphcode-theme")).toBe("dark");
     expect(document.documentElement).toHaveAttribute("data-theme", "dark");
@@ -25,8 +25,8 @@ describe("ThemeControl", () => {
     render(<ThemeControl />);
 
     expect(
-      await screen.findByRole("combobox", { name: "Theme" }),
-    ).toHaveValue("light");
+      screen.getByRole("button", { name: "Switch to light theme" }),
+    ).toHaveClass("text-foreground");
     expect(document.documentElement).toHaveAttribute("data-theme", "light");
   });
 
@@ -35,8 +35,8 @@ describe("ThemeControl", () => {
     render(<ThemeControl />);
 
     expect(
-      await screen.findByRole("combobox", { name: "Theme" }),
-    ).toHaveValue("system");
+      screen.getByRole("button", { name: "Switch to system theme" }),
+    ).toHaveClass("text-foreground");
     expect(document.documentElement).toHaveAttribute("data-theme", "system");
   });
 });

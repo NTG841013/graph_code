@@ -1,6 +1,6 @@
 import { Handle, Position, useUpdateNodeInternals } from 'reactflow';
 import { MapNodeData } from './types';
-import { getFileColor } from './constants';
+import { getFileColor, getRoleColor } from './constants';
 import { useRef, useCallback, useEffect, useState } from 'react';
 
 export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
@@ -71,7 +71,7 @@ export function OpenPanelNode({ id, data }: { id: string, data: MapNodeData }) {
       >
         {displayedFiles.map((file, index) => {
           const isDimmedFile = hasSelection && !connectedFilePaths.has(file.path);
-          const color = getFileColor(file.path);
+          const color = file.role ? getRoleColor(file.role) : getFileColor(file.path);
           
           // Only show handles if the file is within the visible scroll area
           const isVisible = (index * rowHeight) >= (scrollTop - rowHeight) && 

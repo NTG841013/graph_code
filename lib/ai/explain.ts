@@ -85,14 +85,14 @@ Instructions:
     // LangSmith live evaluation feedback
     const runTree = getCurrentRunTree();
     if (runTree) {
-      await lsClient.createFeedback({
+      await (lsClient as any).createFeedback({
         runId: runTree.id,
         key: "invented_path",
         score: evalResult.valid ? 1.0 : 0.0,
         comment: evalResult.invented.length > 0 
           ? `Invented: ${evalResult.invented.join(", ")}` 
           : "None",
-      } as any).catch(() => {});
+      }).catch(() => {});
     }
     await lsClient.awaitPendingTraceBatches();
 
@@ -178,14 +178,14 @@ Instructions:
     // LangSmith live evaluation feedback
     const runTree = getCurrentRunTree();
     if (runTree) {
-      await lsClient.createFeedback({
+      await (lsClient as any).createFeedback({
         runId: runTree.id,
         key: "invented_path",
         score: evalResult.valid ? 1.0 : 0.0,
         comment: evalResult.invented.length > 0 
           ? `Invented: ${evalResult.invented.join(", ")}` 
           : "None",
-      } as any).catch(() => {});
+      }).catch(() => {});
     }
     await lsClient.awaitPendingTraceBatches();
 

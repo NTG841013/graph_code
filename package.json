@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:agent": "pnpm --filter langchain-agent dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -15,6 +16,7 @@
     "@types/dagre": "^0.7.54",
     "adm-zip": "^0.6.1",
     "dagre": "^0.8.5",
+    "jose": "^6.2.18",
     "langsmith": "^0.11.8",
     "next": "16.4.5",
     "openai": "^7.55.0",

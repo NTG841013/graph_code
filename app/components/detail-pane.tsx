@@ -8,6 +8,7 @@ import { reRunAnalysis } from '@/app/lib/actions/analysis';
 import { useFormStatus } from 'react-dom';
 
 import { ExplanationRenderer } from './explanation-renderer';
+import { AskPanel } from './ask-panel';
 import { checkStaleness, requestFileExplanation, requestFolderExplanation } from '@/app/lib/actions/ai';
 
 interface DetailPaneProps {
@@ -30,6 +31,7 @@ export function DetailPane({
   setExplanation,
 }: DetailPaneProps) {
   const [activeTab, setActiveTab] = useState<'structure' | 'explanation'>('structure');
+  const [paneMode, setPaneMode] = useState<'overview' | 'ask'>('overview');
   const [loading, setLoading] = useState(false);
   const [staleness, setStaleness] = useState<{ isStale: boolean; reason: string | null; content?: string } | null>(null);
 
@@ -186,8 +188,29 @@ export function DetailPane({
 
   return (
     <aside className="w-96 flex flex-col border-l border-border bg-background overflow-hidden font-mono">
+      {/* Pane Tabs */}
+      <div className="flex border-b border-border shrink-0 bg-background/50 backdrop-blur-sm">
+        <button
+          onClick={() => setPaneMode('overview')}
+          className={`flex-1 py-2.5 text-[10px] font-bold uppercase tracking-widest transition-colors ${
+            paneMode === 'overview' ? 'text-accent border-b-2 border-accent' : 'text-muted hover:text-foreground/70'
+          }`}
+        >
+          Overview
+        </button>
+        <button
+          onClick={() => setPaneMode('ask')}
+          className={`flex-1 py-2.5 text-[10px] font-bold uppercase tracking-widest transition-colors ${
+            paneMode === 'ask' ? 'text-accent border-b-2 border-accent' : 'text-muted hover:text-foreground/70'
+          }`}
+        >
+          Ask
+        </button>
+      </div>
+
       <div className="flex-1 overflow-y-auto custom-scrollbar">
-        <div className="flex flex-col min-h-full">
+        {paneMode === 'overview' ? (
+          <div className="flex flex-col min-h-full">
             {!selectedFile && !selectedFolder ? (
               // Repository Summary
               <div className="flex flex-col">
@@ -628,7 +651,15 @@ export function DetailPane({
                 </div>
               </div>
             ) : null}
-        </div>
+          </div>
+        ) : (
+          <AskPanel 
+            analysisId={analysisId || ''} 
+            selectedFile={selectedFile?.path}
+            selectedFolder={selectedFolder?.id}
+            onFileSelect={(path) => onFileSelect(path)}
+          />
+        )}
       </div>
     </aside>
   );

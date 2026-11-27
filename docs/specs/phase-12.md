@@ -1,5 +1,7 @@
 # Phase 12 — The agent
 
+**Status**: Accepted
+
 **Goal.** Ask the repository a question and watch it look the answer up.
 
 This is a lot for one phase. Split it: the tools and the agent itself first,
